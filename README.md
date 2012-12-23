@@ -1,7 +1,7 @@
 Macro-Explain-o-Matic
 =====================
 
-This is all the source and tools for Fitzcairn's Macro Explain-o-matic (www.macroexplain.com).  I am choosing to release all the source for this project in the hope that someone will find it useful.
+This repository contains all the source and tools for Fitzcairn's Macro Explain-o-matic (www.macroexplain.com).  I am choosing to release all the source for this project in the hope that someone will find it useful.
 
 A couple things to note about this code:
 
