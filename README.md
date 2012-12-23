@@ -9,6 +9,6 @@ A couple things to note about this code:
 2. This is my first foray into writing a parse tree + interpreter.  You have been warned. :)
 3. I'm also including all of the JS code I wrote to empower sites to take advantage of my API to do explain macros.
 
-For a good intro to WoW's macro language, please see: http://www.wowwiki.com/Making_a_macro.  I owe much to Cogwheel, the author of this (and many other) articles.
+For a good intro to WoW's macro language, please see: http://www.wowwiki.com/Making_a_macro.  I owe much to Cogwheel, the author of these (and many other) articles.
 
 Good luck, and feel free to ping me with questions.
