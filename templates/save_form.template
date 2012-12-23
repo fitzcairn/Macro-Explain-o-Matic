@@ -1,0 +1,178 @@
+      <div id="save_form_container"><div id="save_form_div">
+        <div class="box_title">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td align="left" valign="top">
+                <h1>Save and Share This Macro</h1>
+              </td>
+              <td align="right" valign="middle">
+                <code>Current WoW version is {{ curr_version }}</code>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <form id="save_form" name="save_form" action="{{ link_process }}" method="post">
+        <p>
+          <input type="hidden" name="{{ macro_input_form }}" value="{{ macro_esc }}"></input>
+          <input type="hidden" name="{{ macro_is_esc }}" value="1"></input>
+          {% for class in class_list %}
+          <input type="hidden" name="{{ class.i }}" id="{{ class.i }}" value="{{ class.v }}">
+          {% endfor %}
+        </p>
+        <!-- Table width is a hack to get IE5/6 to display right. -->
+        <table class="save_table" width="786" cellpadding="0" cellspacing="4" align="center">
+          <tr>
+            <td width="50%" align="left" valign="top">
+              <fieldset>
+              <legend><em>*</em><font>Useful For...</font> [<a href="#none" onclick="select_all_img();">Select All</a>] [<a href="#none" onclick="clear_all_img();">Clear</a>]</legend>
+              {% if class_error %}<strong>{{ class_error }}</strong>{% endif %}
+              <table width="100%" height="60" cellpadding="0" cellspacing="1" class="inner_save_table" align="left">
+                <tr>
+                  {% for class in class_list %}
+                    <td width="40" height="50" align="center" valign="middle">
+                      <img class="class_img" id="{{ class.i }}_i" alt="{{ class.i }}" src="{{ static }}/{{ class.i }}{{ class.src }}.png"> 
+                    </td>
+                  {% endfor %}
+                </tr>
+              </table>
+              </fieldset>
+            </td>
+            <td width="50%" align="left" valign="top">
+              <fieldset>
+              <legend><em>*</em><font>Macro Tags</font> <code>Comma separated, spaces in tag are ok.</code></legend>
+              {% if tag_error %}<strong>{{ tag_error|escape }}</strong>{% endif %}
+              <table width="100%" height="60" cellpadding="0" cellspacing="0" class="inner_save_table" align="left">
+                <tr>
+                  <td width="90%" align="left" valign="top">
+                    <input class="input" size="12" maxlength="128" name="{{ tags }}" id="{{ tags }}" value="{{ tag_list|escape }}" type="text">
+                  </td>
+                  <td width="10%" align="right" valign="top">
+                    <input class="button" type="button" value="Clear" onclick="clear_field('{{ tags }}');"></input>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="100%" align="left" valign="top" colspan="2">
+                    <code>Examples (click to add):</code>
+                    {% for tag in tag_def_list %}
+                      {% if not forloop.first %}, {% endif %}<a href="#none" onclick="add_tag('{{ tags }}', '{{ tag }}');">{{ tag }}</a>
+                    {% endfor %}
+                  </td>
+                </tr>
+              </table>
+              </fieldset>
+            </td>
+          </tr>
+          <tr>
+            <td width="50%" class="optional" align="left" valign="top">
+              <div id="title_hide" style="display: {{ title_hide }};">
+                <fieldset>
+                <legend><font>Macro Title and Author</font> [<a href="#none" onclick="show_opt('title_show', 'title_hide');"><code>Optional, click to add</code></a>] </legend>
+                </fieldset>
+              </div>
+              <div id="title_show" style="display: {{ title_show }};">
+                <fieldset>
+                <legend><font>Macro Title and Author</font> [<a href="#none" onclick="hide_opt('title_show', 'title_hide');">Hide</a>] </legend>
+                <table cellpadding="0" height="90" cellspacing="0" class="inner_save_table" align="left">
+                  <tr>
+                    <td colspan="2">
+                      <code>Macro Title:</code>
+                      <input class="input" type="text" size="40" maxlength="40" name="{{ title }}" value="{{ title_data|escape }}"></input>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="left" valign="bottom">
+                      <code>Author:</code>
+                      <input class="input" type="text" size="12" maxlength="12" name="{{ name }}" value="{{ name_data|escape }}"></input>
+                    </td>
+                    <td width="10%" align="left" valign="bottom">
+                      <code>Server:</code>
+                      <select class="select" name="{{ server }}">
+                        {{ server_list }}
+                      </select>
+                    </td>
+                  </tr>
+                </table>
+                </fieldset>
+              </div>
+            </td>
+            <td width="50%" class="optional" align="left" valign="top">
+              <div id="notes_hide" style="display: {{ notes_hide }};">
+                <fieldset>
+                <legend><font>Macro Description</font> [<a href="#none" onclick="show_opt('notes_show', 'notes_hide');"><code>Optional, click to add</code></a>]</legend>
+                </fieldset>
+              </div>
+              <div id="notes_show" style="display: {{ notes_show }};">
+                <fieldset>
+                <legend><font>Macro Description</font> [<a href="#none" onclick="hide_opt('notes_show', 'notes_hide');">Hide</a>] </legend>
+                <table cellpadding="0" height="90" cellspacing="0" class="inner_save_table" align="left">
+                  <tr>
+                    <td align="center">
+                      <textarea class="texta" name="{{ notes }}" id="{{ notes }}" rows="3" cols="30" onload="count_chars(this.form.{{ notes }}, document.getElementById('count_notes'), {{ note_limit }});" onkeyup="count_chars(this.form.{{ notes }}, document.getElementById('count_desc'), {{ note_limit }});">{{ macro_notes }}</textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align="center">
+                      <span id='notes_count'></span>
+                    </td>
+                  </tr>
+                </table>
+                </fieldset>
+              </div>
+            </td>
+          <tr>
+            <td class="save" align="center" valign="middle" colspan="2">
+              {% if spam %}<strong>{{ spam }}</strong>{% endif %}
+              <input class="button" type="submit" value="Save Macro and Explanation"></input>
+            </td>
+          </tr>
+        </table>
+        </form>
+      </div></div>
+
+      <!-- Load form hander library, and set form state on errors. -->
+      <script type="text/javascript" defer="defer">
+        <!-- Begin
+        // If possible, init the save form lib.
+        if (self.save_lib) {
+          save_lib.init("save_form", "class_img", "{{ notes }}", "notes_count", {{ note_limit }});
+        }        
+
+        // Prevent JS errors if we can't load the library.
+        // Also for IE5/6 compatibility.
+        function select_all_img() {
+          if (self.save_lib) save_lib.select_all_img();
+        }       
+        function clear_all_img() {
+          if (self.save_lib) save_lib.clear_all_img();
+        }       
+        function clear_field(field) {
+          if (self.save_lib) save_lib.clear_field(field);
+        }
+        function add_tag(field, tag) {
+          if (self.save_lib) save_lib.add_tag(field, tag);
+        } 
+        function show_opt(show, hide) {
+          if (self.save_lib) save_lib.show_opt(show, hide);
+        } 
+        function hide_opt(show, hide) {
+          if (self.save_lib) save_lib.hide_opt(show, hide);
+        } 
+
+        // Select previous server if there is one.
+        if ("{{ selected_server }}".length > 0) {
+          document.getElementById("{{ selected_server }}").selected = true;
+        }
+
+        // Jump to the error if there was one.
+        function jump_to_error() {
+          window.scrollTo(0, get_el_pos(document.getElementById('save_form_container')).y);
+          return;
+        }
+
+        {% if class_error or tag_error %}
+        add_onload_event(jump_to_error);
+        {% endif %}
+      // End -->
+      </script>
+
+

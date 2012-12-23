@@ -1,0 +1,35 @@
+
+      <div id="interpret_form_container"><div id="interpret_form">
+        <form id="m_e" name="m_e" action="{{ macro_process }}" method="post">
+          <p>
+            <textarea class="texta" id="{{ macro_input_form }}" name="{{ macro_input_form }}" rows="3" cols="3">{{ macro }}</textarea> 
+          </p>
+          <p class="changed">
+           {{ changed }}
+          </p>
+          <p>
+            <span id='count'></span>
+          </p>
+          <p>
+            <span id='msg'></span>
+          </p>
+          <p align="center">
+            <input type="submit" value="Explain This Macro!"></input>   
+          </p>
+        </form>
+
+        <script type="text/javascript" defer="defer">
+          // <!--
+          // Enable some javascript features if supported.
+          if (self.in_lib) {
+            in_lib.init("m_e", "{{ macro_input_form }}", "msg", "count");
+          }
+          // -->
+        </script>
+
+	  </div></div>
+
+{{ processed_macro_html }}
+
+{{ macro_link_html }}
+

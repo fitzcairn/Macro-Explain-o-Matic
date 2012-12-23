@@ -1,0 +1,199 @@
+/* CSS Statements for the blog */
+
+/* Divide up the page divs
+----------------------------------------------- */
+
+#main {
+  margin-top:10px;
+  padding:0px 4px 0px 4px;
+  width:558px;
+  float:left;
+  overflow: hidden;
+}
+#sidebar {
+  margin-top:10px;
+  width:230px;
+  float:right;
+  display: block;
+  overflow:hidden;
+}
+
+/* Headings
+----------------------------------------------- */
+h2 {
+  margin:1.5em 0 .75em;
+  font:bold 78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  }
+
+
+/* Box classes
+----------------------------------------------- */
+.box {
+  padding:2px;
+  display: block;
+  border: 1px solid #282d2f;
+  background-color:#2d3234;
+  overflow:hidden;
+  margin:10px 4px 10px 0px;
+}
+
+.box-title {
+  width:100%;
+  text-align: left;
+  display: block;
+  position: relative;
+  background-color: #212527;
+}
+
+
+/* Posts
+----------------------------------------------- */
+.date-header {
+  margin:1.5em 0 .5em;
+}
+
+.post {
+  margin:10px 0px 10px 0px;
+  padding:2px;
+  float: left;
+  display: block;
+  border: 1px solid #282d2f;
+  background-color:#2d3234;
+  overflow:hidden;
+  width: 550px;
+}
+
+.post-title {
+  text-align: left;
+  display: block;
+  position: relative;
+  background-color: #212527;
+}
+
+.post-title a {
+  text-decoration:none;
+  }
+
+.post-title a:hover {
+  }
+
+.post-title h1 {
+  padding: 0px 0px 0px 0px;
+}
+
+.post div {
+  margin:0 0 .75em;
+  line-height:1.6em;
+  }
+p.post-footer {
+  margin:-.25em 0 0;
+  color:#333;
+  }
+.post-footer em, .comment-link {
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+.post-footer em {
+  font-style:normal;
+  color:#777;
+  margin-right:.6em;
+  }
+.comment-link {
+  margin-left:.6em;
+  }
+.post img {
+  padding:4px;
+  border:1px solid #222;
+  }
+.post blockquote {
+  margin:1em 20px;
+  }
+.post blockquote p {
+  margin:.75em 0;
+  }
+
+
+/* Comments
+----------------------------------------------- */
+
+/* Ensure the comments are wide enough */
+#comments .box {
+  padding:2px;
+  float: left;
+  width: 550px;
+  margin:5px 0px 5px 0px;
+}
+
+#comments h4 {
+  margin:1em 0;
+  font:bold 78%/1.6em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  color:#999;
+  }
+#comments h4 strong {
+  font-size:130%;
+  }
+#comments-block {
+  margin:1em 0 1.5em;
+  line-height:1.6em;
+  }
+#comments-block dt {
+  margin:.5em 0;
+  }
+#comments-block dd {
+  margin:.25em 0 0;
+  }
+#comments-block dd.comment-timestamp {
+  margin:-.25em 0 2em;
+  font:78%/1.4em "Trebuchet MS",Trebuchet,Arial,Verdana,Sans-serif;
+  text-transform:uppercase;
+  letter-spacing:.1em;
+  }
+#comments-block dd p {
+  margin:0 0 .75em;
+  }
+.deleted-comment {
+  font-style:italic;
+  color:gray;
+  }
+.paging-control-container {
+  float: right;
+  margin: 0px 6px 0px 0px;
+  font-size: 80%;
+}
+.unneeded-paging-control {
+  visibility: hidden;
+}
+
+
+/* Sidebar Content
+----------------------------------------------- */
+
+/* Alignment */
+#sidebar .box {
+  float: right;
+  width: 220px;
+}
+
+#sidebar .box-title {
+  width:218px;
+}
+
+#sidebar h1 {
+  padding: 0px 0px 0px 2px;
+}
+
+#sidebar ul {
+  list-style:none;
+}
+#sidebar li {
+  margin:10px 0px 10px 0px;
+}
+#sidebar p {
+  margin:10px 0px 10px 0px;
+  line-height:1.5em;
+}

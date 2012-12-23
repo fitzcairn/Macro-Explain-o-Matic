@@ -1,0 +1,35 @@
+   	  <div class="full_container"><div class="full_inner">
+        <!-- Table width is a hack to get IE5/6 to display right. -->
+        <table width="786" cellpadding="0" cellspacing="0" align="left">
+          <tr>
+            <td>
+              <div class="box_title"><h1>Whoops!</h1></div>
+            </td>
+          </tr>
+          <tr>
+            <td class="error">
+{% if input %}              
+              While processing your input:
+              <br><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<font><i>{{ input|escape }}</i></font>
+              <br><br>
+{% endif %}
+{% if error %}              
+              The following error ocurred:
+              <br><br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<font><b>{{ error|escape }}</b></font>
+              <br><br>
+{% else %}
+              Caused an unknown error.
+              <br><br>
+{% endif %}
+              This error has been logged for future investigation by
+              our team of dedicated Gnome engineers.  If you have
+              specific feedback, please leave a note on the developer
+              blog <a href="http://blog.macroexplain.com/">here</a>.
+              Thanks!
+            </td>
+          </tr>
+        </table>
+      </div></div>
+

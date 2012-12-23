@@ -1,0 +1,239 @@
+/* Styles for forms. */
+
+
+/* Generic form control styles. --> */
+.texta {
+  font-family: Courier, sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  background-color: #6e777a;
+  color: #2d3234;
+  border: 1px solid #282d2f;
+}
+.select {
+  font-family: Courier, sans-serif;
+  display: block;
+  font-size: 12px;
+  background-color: #6e777a;
+  color: #2d3234;
+  border: 1px solid #282d2f;
+}
+
+.check { 
+  background-color: #6e777a;
+  color: #2d3234;
+  border: 1px solid #282d2f;
+}
+
+.input {
+  font-family: Courier, sans-serif;
+  display: block;
+  font-size: 12px;
+  background-color: #6e777a;
+  color: #2d3234;
+  border: 1px solid #282d2f;
+}
+
+.button {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  background-color: #212527;
+  color: #FFFFFF;
+  border: 1px solid #6e777a;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+.button:hover {
+  background-color: #6e777a;
+}
+
+/* Interpret form -----> */
+#interpret_form_container { 
+  padding:10px 4px 10px 4px;
+  display: block;
+  float: none;
+  margin:0 auto;
+  overflow:hidden;
+}
+
+#interpret_form { 
+  text-align: center;
+  padding:4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #282d2f;
+  background-color:#2d3234;
+  overflow:hidden;
+  padding:2px 0px 2px 0px;
+}
+
+#interpret_form .texta { 
+  width:780px;
+  height:80px;
+}
+
+#interpret_form input { 
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  background-color: #212527;
+  color: #FFFFFF;
+  border: 1px solid #6e777a;
+  display: block;
+  padding: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+#interpret_form .changed { 
+  font-size: 10px;
+  margin-top: 2px;
+  margin-bottom: 4px;
+  color: #4f585b;
+}
+
+
+/* Save Form ------> */
+#save_form_container {
+  font-size: 12px;
+  width: 100%;
+  padding:10px 4px 10px 4px;
+  display: block;
+  float: left;
+  margin:0px auto;
+  overflow:hidden;
+}
+
+#save_form_div { 
+  font-size: 12px;
+  padding:2px;
+  float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #282d2f;
+  background-color:#2d3234;
+  overflow:hidden;
+}
+
+/* Override existing styles */
+#save_form_div .texta { 
+  width:100%;
+}
+#save_form_div .input {
+  height: 13pt;
+  width:100%;
+}
+#save_form_div .button {
+  margin-bottom: 1px;
+}
+
+/* Kludge for niceness. */
+#save_form_div .check { 
+  display: inline;
+  margin-right:3px;
+  margin-left:0px;
+}
+
+/* Form error fonts. */
+
+
+/* Lists for checkboxes. */
+#save_form_div ul li {
+  padding:2px 0px 2px 0px;
+  display:block;
+  list-style-type:none;
+}
+#save_form_div li { 
+  display:block;
+}
+#save_form_div p { 
+  display:inline;
+}
+
+.save_table { 
+  font-size: 12px;
+  margin-left: 0px;
+  margin-right: auto;
+  text-align: left;
+  display: block;
+  border: 0px;
+  padding:0px 0px 0px 0px;
+  margin-top: 4px;
+}
+.save_table img {
+  display:inline;
+}
+.save_table td { 
+  font-size: 12px;
+  padding:2px;
+}
+.save_table h3 {
+  display:inline;
+}
+.save_table a {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 9px;
+}
+
+#save_form_div .save_table input { 
+  padding: 0px;
+}
+
+/* Element-specific table style */
+.inner_save_table {
+  font-size: 12px;
+  text-align: left; 
+  display: inline;
+  border: 0px;
+  padding:0px 0px 0px 0px;
+  color:#868f92;
+}
+.save_table em {
+  font-size: 10px;
+  margin: 0px 2px 0px 4px; 
+  color: #c1c1c1;
+  display: inline;
+}
+.inner_save_table a:hover {
+  text-decoration:underline;
+}
+.inner_save_table td { 
+  border-width: 0px;
+}
+
+/* Submit button and surrounding cell */
+div#save_form_div .save_table .save { 
+  border: 0px;
+  padding: 2px;
+}
+div#save_form_div .save_table .save .button { 
+  display: block;
+  margin-top: 6px;
+  margin-bottom: 2px;
+  padding: 2px;
+}
+
+/* For optional titles, gray out */
+#title_hide fieldset {
+  border-color: #383e41;
+}
+#title_hide legend font { 
+  color:#6e777a;
+}
+#notes_hide fieldset {
+  border-color: #383e41;
+}
+#notes_hide legend font { 
+  color:#6e777a;
+}
+#notes_show .texta { 
+  width: 367px;
+
+}

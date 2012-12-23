@@ -1,0 +1,244 @@
+
+      <!-- About -->
+   	  <div class="full_container"><div class="full_inner">
+        <!-- Table width is a hack to get IE5/6 to display right. -->
+        <table width="786" cellpadding="0" cellspacing="0" align="left">
+          <tr>
+            <td colspan="2">
+              <div class="box_title">
+                <table width="782" border="0" cellpadding="0" cellspacing="0" align="left">
+                  <tr>
+                    <td align="left">
+                      <h1>
+                      {% if title %}
+                        {% if author %}
+                          {{ title|escape }}, by {{ author }}
+                        {% else %}
+                          {{ title|escape }}
+                        {% endif %}
+                      {% else %}
+                        {% if author %}
+                          Macro by {{ author }}
+                        {% else %}
+                          About
+                        {% endif %}
+                      {% endif %}
+                      </h1>
+                    </td>
+                    <td align="right">
+                      <code>Rated </code><div class="stars" id="rating">
+                        {% for star in rating %}
+                          {% if star.on %}
+                            <img src="{{ static }}/star_on.gif" id="rating_star_{{ star.id }}">
+                          {% endif %}
+                          {% if star.half %}
+                            <img src="{{ static }}/star_half.gif" id="rating_star_{{ star.id }}">
+                          {% endif %}
+                          {% if star.off %}
+                            <img src="{{ static }}/star_off.gif" id="rating_star_{{ star.id }}">
+                          {% endif %}
+                        {% endfor %}
+                        </div><code> by {{ views|escape }} viewers</code>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+         {% if notes %}
+          <tr>
+            <td colspan="2" width="100%" valign="top">
+              <table width="100%" class="view" border="0" cellpadding="0" cellspacing="4" align="left">
+                <tr>
+                  <td colspan="2">
+                    <fieldset>
+                    <legend><font>Macro Description:</font></legend>
+                    <div class="row">{{ notes|escape }}</div>
+                    </fieldset>   
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          {% endif %}
+          <tr>
+            <td width="393" height="100%" valign="top" align="center">
+              <table width="100%" height="100%" class="view" border="0" cellpadding="0" cellspacing="4" align="left">
+                <tr>
+                  <td>
+                    <fieldset>
+                    <legend><font>Useful For:</font></legend>
+                    <div class="row">
+                    <center>
+                    {% for class in class_list %}
+                      <img alt="{{ class.i }}" src="{{ static }}/{{ class.i }}.png">
+                    {% endfor %}
+                    </center>
+                    </div>
+                    </fieldset>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td width="393" height="100%" valign="top" align="left">
+              <table class="view" border="0" cellpadding="0" cellspacing="4" align="left">
+                <tr>
+                  <td align="left">
+                    <fieldset>
+                    <legend><font>Tagged For:</font></legend>
+                    <div class="row">
+                      <div class="tags">{{ tags|escape }}</div>
+                    </div>
+                    </fieldset>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div></div>
+
+
+      <!-- Macro Interpretation-->
+      {{ processed_macro_html }}
+
+
+      <!-- Load the document with errors off initially -->
+      <!-- This must come after the processed macro html -->
+      <script type="text/javascript" defer="defer">
+        <!--
+        remove_sup();
+        // -->
+      </script>
+      <!-- End Macro Interpretation-->
+
+
+
+      <!-- Share/Rate Macro -->
+
+   	  <div class="full_container"><div class="full_inner">
+        <!-- Table width is a hack to get IE5/6 to display right. -->
+        <table width="786" cellpadding="0" cellspacing="0" align="left">
+          <tr>
+            <td width="100%" valign="middle" colspan="3">
+              <div class="box_title">
+                <table width="782" border="0" cellpadding="0" cellspacing="0" align="left">
+                  <tr>
+                    <td align="left">
+                      <h1>Next Steps</h1>
+                    </td>
+                    {% ifnotequal version curr_version %}
+                      <td align="right">
+                        <code>Current WoW version is {{ curr_version|escape }}. Macro saved for {{ version|escape }}.</code>
+                      </td>
+                    {% else %}
+                      <td align="right">
+                        <code>Macro saved for WoW version {{ curr_version|escape }}.</code>
+                      </td>
+                    {% endifnotequal %}
+                  </tr>
+                </table>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td width="113" height="100%" valign="top">
+              <table width="100%" height="100%" class="view" border="0" cellpadding="0" cellspacing="4" align="left">
+                <tr>
+                  <td>
+                    <fieldset>
+                    <legend><font>Rate Macro</font></legend>
+                      <div class="stars" id="rater">
+                        {% for star in stars %}
+                          <img src="{{ static }}/star_off.gif" id="rater_star_{{ star|escape }}">
+                        {% endfor %}
+                      </div>
+                    </fieldset>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td width="280" height="100%" valign="top">
+              <form>
+              <table width="100%" height="100%" class="view" border="0" cellpadding="0" cellspacing="4" align="left">
+                <tr>
+                  <td>
+                    <fieldset>
+                    <legend><font>Copy Macro Link</font> [<a href="#none" onClick="select_text('link');">Click to Select Link</a>] </legend>
+                    <div class="row">
+                      <div id="link" class="link">{{ macro_link|escape }}</div>
+                    </div>
+                    </fieldset>
+                  </td>
+                </tr>
+              </table>
+              </form> 
+            </td>
+            <td width="393" height="100%" valign="top">
+              <table width="100%" height="100%" class="view" border="0" cellpadding="0" cellspacing="4" align="left">
+                <tr>
+                  <td>
+                    <fieldset>
+                    <legend><font>Email This Macro</font> <code>Valid email required, your name optional.</code></legend>
+                    <div class="row">
+                      {% if msg %}<strong>{{ msg|escape }}</strong>{% endif %}
+                      <form name="{{ send_input_form|escape }}" action="{{ macro_link|escape }}" method="post">
+                      <input type="hidden" class="hidden" name="{{ send_email|escape }}" value="1"></input>
+                      <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                          <td align="left" valign="middle" width="40%">
+                            <code>*Email To: </code><input class="input" size="10" maxlength="255" name="{{ to|escape }}"  value="{{ to_addr|escape }}" type="text">
+                          </td>
+                          <td align="center" valign="middle" width="40%">
+                            <code>Your Name: </code><input class="input" size="10" maxlength="255" name="{{ from|escape }}"  value="{{ from_name|escape }}" type="text">
+                          </td>
+                          <td align="right" valign="middle" width="20%">
+                            <input type="submit" class="button" value="Send">
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                    </form> 
+                    </fieldset>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="3" width="100%" valign="top">
+              <table width="100%" class="view" border="0" cellpadding="0" cellspacing="4" align="left">
+                <tr>
+                  <td class="form" valign="top" align="center">
+                    <fieldset>
+                    <legend><font>Copy Macro</font> [<a href="#none" onClick="select_text('code');">Click to Select Macro</a>] </legend>
+                    <div id="code" class="code">{{ copy_paste }}</div>
+                    <form>
+                      <input type="button" class="button" onClick="window.location.href='{{ macro_edit|escape }}'" value="Modify Macro">
+                    </form>
+                    </fieldset>
+                  </td>
+                </tr>
+                <tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Init the rating library -->
+        <script type="text/javascript" defer="defer">
+          <!--
+          // Init the rating library
+          if (self.rate_lib) {
+            rate_lib.init("{{ macro_id }}", "rater", "rater_star_", "rating_star_");
+          }
+          // -->
+        </script>
+
+
+      </div></div>
+      <!-- End Share Macro -->
+
+      
+
+

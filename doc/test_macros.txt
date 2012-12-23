@@ -1,0 +1,12 @@
+/cast Shit
+/userandom [nobutton:2, flyable, nomounted] Ebon Gryphon; [nomounted] Black Battlestrider, Swift Green Mechanostrider
+/dismount [noflying] [button:2]
+#show [equipped:Shields] Shield Bash; Pummel
+ /cast [equipped:Shields,stance:1/2] Shield Bash; [equipped:Shields] Defensive Stance; [stance:3] Pummel; Berserker Stance
+
+
+
+/cast Shit
+/userandom [nobutton:2, flyable, nomounted] Ebon Gryphon; [nomounted] Black Battlestrider, Swift Green Mechanostrider
+/dismount [noflying] [button:2]
+

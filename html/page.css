@@ -1,0 +1,648 @@
+/* Primary style sheet. */
+
+* {margin:0px; padding:0px}
+
+/* Page body */
+body {
+  margin:0px;
+  padding:0px; 
+  background:#000000;
+  position:relative;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-align:center;
+}
+
+
+/* Tag defaults
+----------------------------------------------- */
+a {
+  padding: 0px;
+  color: #99b6c4;
+  text-decoration:none;
+}
+a:active {
+  border:0px;
+}
+a:hover {
+  text-decoration:underline;
+}
+a img {
+  border-width:0;
+}
+img {
+  display:block;
+  border:0px
+}
+h1 { 
+  font-family: "Trebuchet MS";
+  font-size:20px;
+  font-weight:bold;
+  padding: 0px 0px 0px 4px;
+  color:#c1c1c1;
+}
+h2 { 
+  font-family: "Trebuchet MS";
+  font-size:16px;
+  font-weight:bold;
+  color:#c1c1c1;
+}
+h3 { 
+  font-variant: small-caps;
+  margin: 0px;
+  font-family: "Trebuchet MS";
+  font-size:14px;
+  font-weight:bold;
+  color:#c1c1c1;
+}
+strong { 
+  display: inline;
+  font-size: 10px;
+  color: #FF9900;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 2px;
+  margin-left: 4px;
+  margin-right: 2px;
+  margin-top: 0px;
+}
+fieldset {
+  height: 100%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #212527;
+}
+code { 
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  display: inline;
+}
+legend { 
+  margin-left: 4px;
+  background-color:#2d3234;
+}
+legend font { 
+  padding: 0px 0px 0px 4px;
+  font-variant: small-caps;
+  font-family: "Trebuchet MS";
+  font-size:14px;
+  font-weight:bold;
+  color:#c1c1c1;
+  display: inline;
+  text-align:left;
+}
+legend a {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 9px;
+  margin: 0px 2px 0px 2px;
+} 
+legend code {
+  color:#868f92; 
+  margin: 0px 3px 0px 0px;
+} 
+strike { 
+  text-decoration:none;
+}
+
+
+/* Base elements
+----------------------------------------------- */
+
+/* Container for the entire page. */
+#all {
+  background-color:#383e41;
+  color:#868f92;
+  position:relative;
+  margin:0 auto;
+  width:800px;
+  overflow:visible;
+}
+
+/* Title container. TODO: fix fonts */
+#top {
+  text-align:left;
+}
+#top h1 {
+  padding:50px 0px 30px 4px;
+  font-size:25px;
+  font-weight:normal;
+  color:#c1c1c1;
+  text-transform:none;
+}
+#top a {
+  text-decoration:none;
+}
+#top a:hover {
+  text-decoration:none;
+}
+
+/* Used for "Beta" label */
+#top em { 
+  display: inline;
+  margin: 0px 2px 0px 2px;
+  font-size: 12px;
+  vertical-align: top;
+  color: #FFC300;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* For "NEW" etc */
+em { 
+  display: inline;
+  margin: 0px 2px 0px 2px;
+  font-size: 12px;
+  vertical-align: super;
+  color: #FFC300;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Container for all content under the title, inc. menu*/
+#content {
+  position:relative;
+  margin:0px 0px 10px 0px;
+  text-align:left;
+  width:800px;
+  overflow:visible;
+  float: left;
+}
+
+
+/* Container for main content area. */
+#main {
+  width:800px;
+  overflow: visible;
+  padding-top:10px;
+}
+
+
+/* Container for the footer. */
+#footer {
+  width: 800px;
+  color:#6e777a;
+  text-align:center;
+  font-size:11px;
+}
+#footer a {
+  text-decoration:underline;
+}
+#footer a:hover {
+  text-decoration:none;
+}
+#footer p { 
+  padding: 0px 0px 10px 0px;
+}
+
+
+/* Menu
+----------------------------------------------*/
+/* Container for the menu. */
+#menubar {
+}
+/* Menu style. */
+#menu {
+  background:url(http://static.macroexplain.com/menu_bg.gif);
+  list-style:none;
+  position:relative;
+  width:800px;
+  height:32px;
+}
+#menu ul li {
+  padding:2px 21px 2px 10px;
+  position:relative;
+  top:5px;
+  display:block;
+  float:left;
+  font-size:14px;
+  font-weight:normal;
+  color:#C0C0C0;
+}
+#menu ul li a {
+  color:#FFFFFF;
+}
+#menu ul li a:hover {
+  text-decoration:underline
+}
+#menu input { 
+  display: inline;
+}
+
+/* For "NEW" etc */
+#menu em { 
+  font-size: 11px;
+  margin: 0px;
+  vertical-align: top;
+  color: #FFC300;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* Search form
+----------------------------------------------*/
+#menu ul li #search {
+  padding:2px 0px 2px 50px;
+}
+#menu div { 
+  display: block;
+  /* Should match width of div.suggestions */
+  width: 262px;
+}
+#menu .button { 
+  width: 50px;
+  float:right;
+  height: 19px;
+  padding: 0px 0px 1px 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+#menu .input { 
+  border: 1px solid #383e41;
+  width: 208px;
+  height: 16px;
+  margin-top: 1px;
+  float:left;
+}
+
+
+/* Search suggestion dropdown
+----------------------------------------------*/
+div.suggestions {
+  font-family: Courier, sans-serif;
+  display: block;
+  font-size: 12px;
+
+  background-color: #6e777a;
+  color: #2d3234;
+  border: 1px solid #282d2f;
+  position: absolute;
+
+  /* Should match width of #menu div */
+  width: 262px;
+  text-align:left;
+}
+div.suggestions div {
+  cursor: default;
+  padding: 2px;
+}
+div.suggestions div.current {
+  background-color: #99b6c4;
+  color: white;
+}    
+
+
+/* Send Macro Bar (experimental)
+----------------------------------------------*/
+/* Container. */
+#sendbar {
+}
+/* Sendbar style. */
+#send {
+  background-color: #2d3234;
+  list-style:none;
+  position:relative;
+  width:800px;
+  height:30px;
+}
+#send h1 {
+  padding:2px 64px 2px 10px;
+  position:relative;
+  float:left;
+}
+
+
+/* Input form messaging
+----------------------------------------------- */
+span#count { 
+  font-style: italic;
+}
+span#msg { 
+  color: #FF9900;
+  font-style: italic;
+}
+
+
+/* Multi-purpose classes 
+----------------------------------------------- */
+/* Some main-page div classes. */
+/* Generic centering class for padded divs. */
+.full_container {
+  width: 100%;
+  padding:10px 4px 10px 4px;
+  display: block;
+  margin:0px auto;
+  overflow:hidden;
+}
+
+/* Inner div for boxes. */
+.full_inner {
+  padding:2px;
+  float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #282d2f;
+  background-color:#2d3234;
+  font-size: 12px;
+  overflow:hidden;
+}
+.full_inner p { 
+  margin: 4px 0px 10px 0px;
+}
+.full_inner input { 
+  padding: 2px;
+  margin: 0px 3px 0px 3px;
+  display: inline;
+}
+.full_inner .error {
+  color: #FF9900;
+  padding: 10px;
+}
+.full_inner td { 
+  font-size: 12px;
+}
+
+
+
+/* Box titles. */
+.box_title { 
+  text-align: left;
+  vertical-align: middle;
+  display: block;
+  position: relative;
+  width: 786px;
+  height: 26px;
+  background-color: #212527;
+}
+.box_title h1 { 
+  display: inline;
+}
+.box_title form { 
+  display: inline;
+}
+.box_title input {
+  vertical-align: top;
+  padding: 0px;
+  margin: 4px 0px 0px 0px;
+}
+.box_title code { 
+  color:#868f92; 
+  margin-right: 4px;
+}
+
+
+/* View page CSS
+----------------------------------------------- */
+.box_title td .stars { 
+  display:inline;
+  height: 20px;
+  width: 80px;
+  padding: 0px;
+  text-align: left;
+  vertical-align: bottom;
+}
+.box_title td .stars img {
+  margin-bottom: 2px;
+  padding: 0px;
+  width:12px;
+  height: 12px;
+  vertical-align: top;
+  display:inline;
+}
+.view td .stars { 
+  cursor:pointer;cursor:hand;
+  height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  display:block;
+  height: 28px;
+  width: 100px;
+  padding: 0px;
+}
+.view td .stars img {
+  margin: 0px 2px 0px 2px;
+  width:12px;
+  height: 12px;
+  text-align: center;
+  vertical-align: middle;
+  display:inline;
+}
+.view {
+  height: 100%;
+  width: 100%;
+}
+.view td { 
+  height: 100%;
+  width: 50%;
+}
+.view td .row {
+  padding: 2px;
+  color:#868f92;
+}
+.view td .row .tags { 
+  display: block;
+  min-height:28px
+}
+.view td .row code { 
+  color:#868f92; 
+}
+.view td .row .button { 
+  padding: 0px 0px 1px 0px;
+  height: 20px;
+}
+.view td .row img { 
+  height: 28px;
+  display: inline;
+  margin: 0px 2px 0px 2px;
+  vertical-align:middle;
+  text-align: center;
+}
+
+.view .right { 
+  margin: 6px 0px 2px 0px;
+  padding: 2px;
+}
+.view .link {
+  text-align:left;
+  font-family: Courier, sans-serif;
+  display: block;
+  font-size: 12px;
+  background-color: #6e777a;
+  color: #2d3234;
+  border: 1px solid #282d2f;
+  padding: 2px;
+  height: 16px;
+  margin-bottom:2px;
+}
+.view .code {
+  width: 750px;
+  overflow: auto;
+  text-align:left;
+  font-family: Courier, sans-serif;
+  display: block;
+  font-size: 12px;
+  background-color: #6e777a;
+  color: #2d3234;
+  border: 1px solid #282d2f;
+  padding: 2px;
+  margin-bottom:2px;
+}
+.view form { 
+  display: inline;
+  margin-bottom: 0px;
+}
+.view .form .button { 
+  display: inline;
+  margin: 4px;
+}
+.view .input { 
+  margin-bottom: 2px;
+  height: 16px;
+}
+.view .hidden { 
+  display:none;
+}
+
+
+/* About, tools, and link page CSS  */
+/* Divide up the page divs
+----------------------------------------------- */
+
+#about_main {
+  padding:0px 4px 0px 4px;
+  width:558px;
+  float:left;
+  overflow: hidden;
+}
+#about_menu {
+  width:230px;
+  float:right;
+  display: block;
+  overflow:hidden;
+}
+
+/* About_main classes
+----------------------------------------------- */
+#about_main .about {
+  margin:10px 0px 10px 0px;
+  padding:2px;
+  float: left;
+  display: block;
+  border: 1px solid #282d2f;
+  background-color:#2d3234;
+  overflow:hidden;
+  width: 550px;
+}
+
+#about_main .about-body pre {
+  margin:10px;
+  padding:2px;
+  display: block;
+  background-color:#000000;
+}
+
+#about_main .about-body .button {
+  display: inline;
+}
+#about_main .about-body .token  { 
+
+}
+#about_main .about-body .token_error  { 
+  background-color: #FFF000;
+}
+#about_main .about-body .wowhead { 
+  color:#86adbf;
+  font-weight: bold;
+}
+#about_main .about-body h3 {
+  margin:20px 0px 0px 0px;
+}
+#about_main .about-body p {
+  margin:10px 0px 10px 0px;
+  display: block;
+}
+#about_main .link-body p {
+  margin:0px 0px 10px 0px;
+  display: block;
+}
+#about_main .link-body a {
+  margin:10px 0px 0px 0px;
+  display: block;
+}
+#about_main .about-title {
+  text-align: left;
+  display: block;
+  position: relative;
+  background-color: #212527;
+}
+
+#about_main .about-title a {
+  text-decoration:none;
+}
+
+#about_main .about-title em {
+  padding-left:2px;
+}
+
+#about_main .about-title a:hover {
+  color:#fff;
+  }
+
+#about_main .about-title h1 {
+  padding: 0px 0px 0px 0px;
+}
+
+#about_main .about div {
+  margin:0 0 .75em;
+  line-height:1.4em;
+  }
+
+
+/* About_menu classes
+----------------------------------------------- */
+#about_menu .box {
+  float: right;
+  width: 220px;
+  padding:2px;
+  display: block;
+  border: 1px solid #282d2f;
+  background-color:#2d3234;
+  overflow:hidden;
+  margin:10px 4px 10px 0px;
+}
+
+#about_menu .box-title {
+  width:218px;
+  text-align: left;
+  display: block;
+  position: relative;
+  background-color: #212527;
+}
+
+
+#about_menu h1 {
+  padding: 0px 0px 0px 2px;
+}
+
+#about_menu ul {
+  list-style:none;
+}
+#about_menu li {
+  margin:10px 0px 10px 0px;
+  }
+#about_menu p {
+  margin:10px 0px 10px 0px;
+  line-height:1.5em;
+  }
+
+/* For "NEW" etc */
+#about_menu em { 
+  display: inline;
+  font-size: 11px;
+  vertical-align: super;
+  color: #FFC300;
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,278 @@
+/* Style sheet for interpretation. */
+
+/* Container for interpret table. */
+#interpret_container {
+  z-index: 0;
+  font-size: 12px; 
+  padding:10px 4px 10px 4px;
+  display: block;
+  float: none;
+  margin:0 auto;
+  overflow:hidden;
+  background-color:transparent;
+}
+
+/* Style for the interpretation table. */
+.interpret_table {
+  font-size: 12px; 
+  border: 0px;
+  padding:0px 0px 0px 0px;
+  background-color:transparent;
+}
+
+.interpret_table td { 
+  font-size: 12px;
+  padding: 2px;
+  border-color: #282d2f;
+  border-style: solid;
+  color:#868f92;
+}
+
+.interpret_table .data { 
+  overflow: auto;
+  width: 384px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+.interpret_table .space_mid {
+  background-color:transparent;
+}
+
+.interpret_table .title {
+  width: 50%;
+  vertical-align: top;
+  border-width: 1px 1px 0px 1px;
+  background-color:#2d3234;
+}
+.interpret_table .title h1 {
+  display: inline;
+}
+.interpret_table .title table {
+  width: 100%;
+  border: 0px;
+}
+.interpret_table .title input {
+  display: inline;
+}
+.interpret_table .title td {
+  background-color:#212527; 
+  padding: 0px 2px 0px 2px;
+  width: 50%;
+  border: 0px;
+  font-size: 11px;
+}
+#error_on { 
+  display: inline;
+  padding: 0px;
+}
+#error_off { 
+  display: none;
+  padding: 0px;
+}
+.interpret_table .mid_first { 
+  padding: 10px 2px 10px 2px;
+  height: 4em;
+  width: 50%;
+  border-width: 0px 1px 0px 1px;
+  border-style: solid solid dashed solid;
+  border-color: #282d2f #282d2f #383e41 #282d2f;
+  background-color:#2d3234;
+  vertical-align: middle;
+}
+.interpret_table .mid { 
+  padding: 10px 2px 10px 2px;
+  height: 4em;
+  width: 50%;
+  border-width: 1px 1px 0px 1px;
+  border-style: dashed solid dashed solid;
+  border-color: #383e41 #282d2f #282d2f #282d2f;
+  background-color:#2d3234;
+  vertical-align: middle;
+}
+
+/* For errors, highlight stuff. */
+.interpret_table b { 
+  color: #FF9900;
+}
+
+.interpret_table .bottom { 
+  width: 50%;
+  height: 0px;
+  border-width: 0px 1px 1px 1px;
+  border-color: #282d2f;
+  background-color:#2d3234;
+}
+
+/* Give the token spans a default style. */
+.interpret_table span  { 
+
+}
+
+
+.space_mid {
+  background-color:#383e41;
+  padding: 0px;
+  width: 1px;
+  border: 0px;
+}
+
+.spacer { 
+  padding: 0px;
+  border: 0px;
+  width: 4px;
+}
+
+
+/* Init errors */
+font.error { 
+  color: #FF9900;
+}
+
+/* wowhead hovers */
+a.wowhead{
+  color:#86adbf;
+  font-weight: bold;
+}
+
+/* Title bar links */
+td.title a { 
+  width:75px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  background-color: #212527;
+  color: #FFFFFF;
+  border: 1px solid #6e777a;
+  display: inline;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 1px;
+  text-align: center;
+}
+td.title a:hover {
+  background-color: #6e777a;
+  text-decoration:none;  
+}
+td.title a:active {
+  border: 1px solid #6e777a;
+}
+
+
+
+/* Error indicator */
+sup.error {
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 16px;
+  color: red;
+  font-weight: bolder;
+  padding: 1px 3px 1px 3px;
+} 
+sup.error:hover {
+  text-decoration:none;  
+  padding: 0px 2px 0px 2px;
+  border:1px solid red;
+}
+
+/* Warning indicator */
+sup.warn {
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 16px;
+  color: #FF9900;
+  font-weight: bolder;
+  padding: 1px;
+} 
+sup.warn:hover {
+  
+  text-decoration:none;  
+  padding: 0px;
+  border:1px solid #FF9900;
+} 
+
+
+/* Help hover */
+div#interpret_container a.help {
+  color:#FFFFFF;
+  text-decoration:none
+}
+
+div#interpret_container a.help:hover {
+}
+
+div#interpret_container a.help span {
+  display: none
+}
+
+
+
+/*
+ Style the error div (background).
+*/
+.error-hover { 
+  position:absolute;
+  width:180px;
+  border:1px solid #CC3300;
+  background-color:#FF3300;
+  color:#000000;
+  text-align: center;
+  padding: 2px 2px 2px 2px;
+  margin: 10px 0px 0px 5px;
+  z-index:65000;
+}
+
+
+/*
+ Style the warn div (background).
+*/
+.warn-hover { 
+  position:absolute;
+  width:180px;
+  border:1px solid #FF9900;
+  background-color:#FFCC33;
+  color:#000000;
+  text-align: center;
+  padding: 2px 2px 2px 2px;
+  margin: 10px 0px 0px 5px;
+  z-index:65000;
+}
+
+
+/*
+ Style the help div (background).
+*/
+#help-html { 
+  visibility: hidden;
+  display: none;
+}
+
+.help-hover { 
+  position:absolute;
+  width:220px;
+  border:1px solid #282d2f;
+  background-color:#6e777a;
+  color:#000000;
+  text-align: left;
+  padding: 2px 2px 2px 2px;
+  margin: 15px 0px 0px 0px;
+  z-index:65000;
+  list-style:none;
+}
+.help-hover li { 
+  display: block;
+  line-height: 1.4em;
+  margin: 6px 2px 6px 2px;
+}
+
+/* Class for help links. */
+td.title a.i_help {
+  width:20px;
+}
+
+/* Class for error links. */
+a.i_error:hover {
+  text-decoration:none;  
+}
+
+/* Class for warn links. */
+a.i_warn:hover {
+  text-decoration:none;  
+}

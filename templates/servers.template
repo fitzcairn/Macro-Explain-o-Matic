@@ -1,0 +1,894 @@
+<option value="" id=""></option>
+<option value="US-Aegwynn" id="US-Aegwynn">US-Aegwynn</option>
+<option value="US-Aerie Peak" id="US-Aerie Peak">US-Aerie Peak</option>
+<option value="US-Agamaggan" id="US-Agamaggan">US-Agamaggan</option>
+<option value="US-Aggramar" id="US-Aggramar">US-Aggramar</option>
+<option value="US-Akama" id="US-Akama">US-Akama</option>
+<option value="US-Alexstrasza" id="US-Alexstrasza">US-Alexstrasza</option>
+<option value="US-Alleria" id="US-Alleria">US-Alleria</option>
+<option value="US-Altar of Storms" id="US-Altar of Storms">US-Altar of Storms</option>
+<option value="US-Alterac Mountains" id="US-Alterac Mountains">US-Alterac Mountains</option>
+<option value="US-Aman'Thul" id="US-Aman'Thul">US-Aman'Thul</option>
+<option value="US-Andorhal" id="US-Andorhal">US-Andorhal</option>
+<option value="US-Anetheron" id="US-Anetheron">US-Anetheron</option>
+<option value="US-Antonidas" id="US-Antonidas">US-Antonidas</option>
+<option value="US-Anub'arak" id="US-Anub'arak">US-Anub'arak</option>
+<option value="US-Anvilmar" id="US-Anvilmar">US-Anvilmar</option>
+<option value="US-Arathor" id="US-Arathor">US-Arathor</option>
+<option value="US-Archimonde" id="US-Archimonde">US-Archimonde</option>
+<option value="US-Area 52" id="US-Area 52">US-Area 52</option>
+<option value="US-Argent Dawn" id="US-Argent Dawn">US-Argent Dawn</option>
+<option value="US-Arthas" id="US-Arthas">US-Arthas</option>
+<option value="US-Arygos" id="US-Arygos">US-Arygos</option>
+<option value="US-Auchindoun" id="US-Auchindoun">US-Auchindoun</option>
+<option value="US-Azgalor" id="US-Azgalor">US-Azgalor</option>
+<option value="US-Azjol-Nerub" id="US-Azjol-Nerub">US-Azjol-Nerub</option>
+<option value="US-Azshara" id="US-Azshara">US-Azshara</option>
+<option value="US-Azuremyst" id="US-Azuremyst">US-Azuremyst</option>
+<option value="US-Baelgun" id="US-Baelgun">US-Baelgun</option>
+<option value="US-Balnazzar" id="US-Balnazzar">US-Balnazzar</option>
+<option value="US-Barthilas" id="US-Barthilas">US-Barthilas</option>
+<option value="US-Black Dragonflight" id="US-Black Dragonflight">US-Black Dragonflight</option>
+<option value="US-Blackhand" id="US-Blackhand">US-Blackhand</option>
+<option value="US-Blackrock" id="US-Blackrock">US-Blackrock</option>
+<option value="US-Blackwater Raiders" id="US-Blackwater Raiders">US-Blackwater Raiders</option>
+<option value="US-Blackwing Lair" id="US-Blackwing Lair">US-Blackwing Lair</option>
+<option value="US-Blade's Edge" id="US-Blade's Edge">US-Blade's Edge</option>
+<option value="US-Bladefist" id="US-Bladefist">US-Bladefist</option>
+<option value="US-Bleeding Hollow" id="US-Bleeding Hollow">US-Bleeding Hollow</option>
+<option value="US-Blood Furnace" id="US-Blood Furnace">US-Blood Furnace</option>
+<option value="US-Bloodhoof" id="US-Bloodhoof">US-Bloodhoof</option>
+<option value="US-Bloodscalp" id="US-Bloodscalp">US-Bloodscalp</option>
+<option value="US-Bonechewer" id="US-Bonechewer">US-Bonechewer</option>
+<option value="US-Borean Tundra" id="US-Borean Tundra">US-Borean Tundra</option>
+<option value="US-Boulderfist" id="US-Boulderfist">US-Boulderfist</option>
+<option value="US-Bronzebeard" id="US-Bronzebeard">US-Bronzebeard</option>
+<option value="US-Burning Blade" id="US-Burning Blade">US-Burning Blade</option>
+<option value="US-Burning Legion" id="US-Burning Legion">US-Burning Legion</option>
+<option value="US-Caelestrasz" id="US-Caelestrasz">US-Caelestrasz</option>
+<option value="US-Cairne" id="US-Cairne">US-Cairne</option>
+<option value="US-Cenarion Circle" id="US-Cenarion Circle">US-Cenarion Circle</option>
+<option value="US-Cenarius" id="US-Cenarius">US-Cenarius</option>
+<option value="US-Cho'gall" id="US-Cho'gall">US-Cho'gall</option>
+<option value="US-Chromaggus" id="US-Chromaggus">US-Chromaggus</option>
+<option value="US-Coilfang" id="US-Coilfang">US-Coilfang</option>
+<option value="US-Crushridge" id="US-Crushridge">US-Crushridge</option>
+<option value="US-Daggerspine" id="US-Daggerspine">US-Daggerspine</option>
+<option value="US-Dalaran" id="US-Dalaran">US-Dalaran</option>
+<option value="US-Dalvengyr" id="US-Dalvengyr">US-Dalvengyr</option>
+<option value="US-Dark Iron" id="US-Dark Iron">US-Dark Iron</option>
+<option value="US-Darkspear" id="US-Darkspear">US-Darkspear</option>
+<option value="US-Darrowmere" id="US-Darrowmere">US-Darrowmere</option>
+<option value="US-Dath'Remar" id="US-Dath'Remar">US-Dath'Remar</option>
+<option value="US-Dawnbringer" id="US-Dawnbringer">US-Dawnbringer</option>
+<option value="US-Deathwing" id="US-Deathwing">US-Deathwing</option>
+<option value="US-Demon Soul" id="US-Demon Soul">US-Demon Soul</option>
+<option value="US-Dentarg" id="US-Dentarg">US-Dentarg</option>
+<option value="US-Destromath" id="US-Destromath">US-Destromath</option>
+<option value="US-Dethecus" id="US-Dethecus">US-Dethecus</option>
+<option value="US-Detheroc" id="US-Detheroc">US-Detheroc</option>
+<option value="US-Doomhammer" id="US-Doomhammer">US-Doomhammer</option>
+<option value="US-Draenor" id="US-Draenor">US-Draenor</option>
+<option value="US-Dragonblight" id="US-Dragonblight">US-Dragonblight</option>
+<option value="US-Dragonmaw" id="US-Dragonmaw">US-Dragonmaw</option>
+<option value="US-Drak'thul" id="US-Drak'thul">US-Drak'thul</option>
+<option value="US-Drak'Tharon" id="US-Drak'Tharon">US-Drak'Tharon</option>
+<option value="US-Draka" id="US-Draka">US-Draka</option>
+<option value="US-Dreadmaul" id="US-Dreadmaul">US-Dreadmaul</option>
+<option value="US-Drenden" id="US-Drenden">US-Drenden</option>
+<option value="US-Dunemaul" id="US-Dunemaul">US-Dunemaul</option>
+<option value="US-Durotan" id="US-Durotan">US-Durotan</option>
+<option value="US-Duskwood" id="US-Duskwood">US-Duskwood</option>
+<option value="US-Earthen Ring" id="US-Earthen Ring">US-Earthen Ring</option>
+<option value="US-Echo Isles" id="US-Echo Isles">US-Echo Isles</option>
+<option value="US-Eitrigg" id="US-Eitrigg">US-Eitrigg</option>
+<option value="US-Eldre'Thalas" id="US-Eldre'Thalas">US-Eldre'Thalas</option>
+<option value="US-Elune" id="US-Elune">US-Elune</option>
+<option value="US-Emerald Dream" id="US-Emerald Dream">US-Emerald Dream</option>
+<option value="US-Eonar" id="US-Eonar">US-Eonar</option>
+<option value="US-Eredar" id="US-Eredar">US-Eredar</option>
+<option value="US-Executus" id="US-Executus">US-Executus</option>
+<option value="US-Exodar" id="US-Exodar">US-Exodar</option>
+<option value="US-Farstriders" id="US-Farstriders">US-Farstriders</option>
+<option value="US-Feathermoon" id="US-Feathermoon">US-Feathermoon</option>
+<option value="US-Fenris" id="US-Fenris">US-Fenris</option>
+<option value="US-Firetree" id="US-Firetree">US-Firetree</option>
+<option value="US-Fizzcrank" id="US-Fizzcrank">US-Fizzcrank</option>
+<option value="US-Frostmane" id="US-Frostmane">US-Frostmane</option>
+<option value="US-Frostmourne" id="US-Frostmourne">US-Frostmourne</option>
+<option value="US-Frostwolf" id="US-Frostwolf">US-Frostwolf</option>
+<option value="US-Galakrond" id="US-Galakrond">US-Galakrond</option>
+<option value="US-Garithos" id="US-Garithos">US-Garithos</option>
+<option value="US-Garona" id="US-Garona">US-Garona</option>
+<option value="US-Garrosh" id="US-Garrosh">US-Garrosh</option>
+<option value="US-Ghostlands" id="US-Ghostlands">US-Ghostlands</option>
+<option value="US-Gilneas" id="US-Gilneas">US-Gilneas</option>
+<option value="US-Gnomeregan" id="US-Gnomeregan">US-Gnomeregan</option>
+<option value="US-Gorefiend" id="US-Gorefiend">US-Gorefiend</option>
+<option value="US-Gorgonnash" id="US-Gorgonnash">US-Gorgonnash</option>
+<option value="US-Greymane" id="US-Greymane">US-Greymane</option>
+<option value="US-Grizzly Hills" id="US-Grizzly Hills">US-Grizzly Hills</option>
+<option value="US-Gul'dan" id="US-Gul'dan">US-Gul'dan</option>
+<option value="US-Gundrak" id="US-Gundrak">US-Gundrak</option>
+<option value="US-Gurubashi" id="US-Gurubashi">US-Gurubashi</option>
+<option value="US-Hakkar" id="US-Hakkar">US-Hakkar</option>
+<option value="US-Haomarush" id="US-Haomarush">US-Haomarush</option>
+<option value="US-Hellscream" id="US-Hellscream">US-Hellscream</option>
+<option value="US-Hydraxis" id="US-Hydraxis">US-Hydraxis</option>
+<option value="US-Hyjal" id="US-Hyjal">US-Hyjal</option>
+<option value="US-Icecrown" id="US-Icecrown">US-Icecrown</option>
+<option value="US-Illidan" id="US-Illidan">US-Illidan</option>
+<option value="US-Jaedenar" id="US-Jaedenar">US-Jaedenar</option>
+<option value="US-Jubei'Thos" id="US-Jubei'Thos">US-Jubei'Thos</option>
+<option value="US-Kael'thas" id="US-Kael'thas">US-Kael'thas</option>
+<option value="US-Kalecgos" id="US-Kalecgos">US-Kalecgos</option>
+<option value="US-Kargath" id="US-Kargath">US-Kargath</option>
+<option value="US-Kel'Thuzad" id="US-Kel'Thuzad">US-Kel'Thuzad</option>
+<option value="US-Khadgar" id="US-Khadgar">US-Khadgar</option>
+<option value="US-Khaz Modan" id="US-Khaz Modan">US-Khaz Modan</option>
+<option value="US-Khaz'goroth" id="US-Khaz'goroth">US-Khaz'goroth</option>
+<option value="US-Kil'jaeden" id="US-Kil'jaeden">US-Kil'jaeden</option>
+<option value="US-Kilrogg" id="US-Kilrogg">US-Kilrogg</option>
+<option value="US-Kirin Tor" id="US-Kirin Tor">US-Kirin Tor</option>
+<option value="US-Korgath" id="US-Korgath">US-Korgath</option>
+<option value="US-Korialstrasz" id="US-Korialstrasz">US-Korialstrasz</option>
+<option value="US-Kul Tiras" id="US-Kul Tiras">US-Kul Tiras</option>
+<option value="US-Laughing Skull" id="US-Laughing Skull">US-Laughing Skull</option>
+<option value="US-Lethon" id="US-Lethon">US-Lethon</option>
+<option value="US-Lightbringer" id="US-Lightbringer">US-Lightbringer</option>
+<option value="US-Lightning's Blade" id="US-Lightning's Blade">US-Lightning's Blade</option>
+<option value="US-Lightninghoof" id="US-Lightninghoof">US-Lightninghoof</option>
+<option value="US-Llane" id="US-Llane">US-Llane</option>
+<option value="US-Lothar" id="US-Lothar">US-Lothar</option>
+<option value="US-Madoran" id="US-Madoran">US-Madoran</option>
+<option value="US-Maelstrom" id="US-Maelstrom">US-Maelstrom</option>
+<option value="US-Magtheridon" id="US-Magtheridon">US-Magtheridon</option>
+<option value="US-Maiev" id="US-Maiev">US-Maiev</option>
+<option value="US-Mal'Ganis" id="US-Mal'Ganis">US-Mal'Ganis</option>
+<option value="US-Malfurion" id="US-Malfurion">US-Malfurion</option>
+<option value="US-Malorne" id="US-Malorne">US-Malorne</option>
+<option value="US-Malygos" id="US-Malygos">US-Malygos</option>
+<option value="US-Mannoroth" id="US-Mannoroth">US-Mannoroth</option>
+<option value="US-Medivh" id="US-Medivh">US-Medivh</option>
+<option value="US-Misha" id="US-Misha">US-Misha</option>
+<option value="US-Mok'Nathal" id="US-Mok'Nathal">US-Mok'Nathal</option>
+<option value="US-Moon Guard" id="US-Moon Guard">US-Moon Guard</option>
+<option value="US-Moonrunner" id="US-Moonrunner">US-Moonrunner</option>
+<option value="US-Mug'thol" id="US-Mug'thol">US-Mug'thol</option>
+<option value="US-Muradin" id="US-Muradin">US-Muradin</option>
+<option value="US-Nagrand" id="US-Nagrand">US-Nagrand</option>
+<option value="US-Nathrezim" id="US-Nathrezim">US-Nathrezim</option>
+<option value="US-Nazgrel" id="US-Nazgrel">US-Nazgrel</option>
+<option value="US-Nazjatar" id="US-Nazjatar">US-Nazjatar</option>
+<option value="US-Ner'zhul" id="US-Ner'zhul">US-Ner'zhul</option>
+<option value="US-Nesingwary" id="US-Nesingwary">US-Nesingwary</option>
+<option value="US-Nordrassil" id="US-Nordrassil">US-Nordrassil</option>
+<option value="US-Norgannon" id="US-Norgannon">US-Norgannon</option>
+<option value="US-Onyxia" id="US-Onyxia">US-Onyxia</option>
+<option value="US-Perenolde" id="US-Perenolde">US-Perenolde</option>
+<option value="US-Proudmoore" id="US-Proudmoore">US-Proudmoore</option>
+<option value="US-Quel'dorei" id="US-Quel'dorei">US-Quel'dorei</option>
+<option value="US-Ravencrest" id="US-Ravencrest">US-Ravencrest</option>
+<option value="US-Ravenholdt" id="US-Ravenholdt">US-Ravenholdt</option>
+<option value="US-Rexxar" id="US-Rexxar">US-Rexxar</option>
+<option value="US-Rivendare" id="US-Rivendare">US-Rivendare</option>
+<option value="US-Runetotem" id="US-Runetotem">US-Runetotem</option>
+<option value="US-Sargeras" id="US-Sargeras">US-Sargeras</option>
+<option value="US-Saurfang" id="US-Saurfang">US-Saurfang</option>
+<option value="US-Scarlet Crusade" id="US-Scarlet Crusade">US-Scarlet Crusade</option>
+<option value="US-Scilla" id="US-Scilla">US-Scilla</option>
+<option value="US-Sen'jin" id="US-Sen'jin">US-Sen'jin</option>
+<option value="US-Sentinels" id="US-Sentinels">US-Sentinels</option>
+<option value="US-Shadow Council" id="US-Shadow Council">US-Shadow Council</option>
+<option value="US-Shadowmoon" id="US-Shadowmoon">US-Shadowmoon</option>
+<option value="US-Shadowsong" id="US-Shadowsong">US-Shadowsong</option>
+<option value="US-Shandris" id="US-Shandris">US-Shandris</option>
+<option value="US-Shattered Halls" id="US-Shattered Halls">US-Shattered Halls</option>
+<option value="US-Shattered Hand" id="US-Shattered Hand">US-Shattered Hand</option>
+<option value="US-Shu'halo" id="US-Shu'halo">US-Shu'halo</option>
+<option value="US-Silver Hand" id="US-Silver Hand">US-Silver Hand</option>
+<option value="US-Silvermoon" id="US-Silvermoon">US-Silvermoon</option>
+<option value="US-Sisters of Elune" id="US-Sisters of Elune">US-Sisters of Elune</option>
+<option value="US-Skullcrusher" id="US-Skullcrusher">US-Skullcrusher</option>
+<option value="US-Skywall" id="US-Skywall">US-Skywall</option>
+<option value="US-Smolderthorn" id="US-Smolderthorn">US-Smolderthorn</option>
+<option value="US-Spinebreaker" id="US-Spinebreaker">US-Spinebreaker</option>
+<option value="US-Spirestone" id="US-Spirestone">US-Spirestone</option>
+<option value="US-Staghelm" id="US-Staghelm">US-Staghelm</option>
+<option value="US-Steamwheedle Cartel" id="US-Steamwheedle Cartel">US-Steamwheedle Cartel</option>
+<option value="US-Stonemaul" id="US-Stonemaul">US-Stonemaul</option>
+<option value="US-Stormrage" id="US-Stormrage">US-Stormrage</option>
+<option value="US-Stormreaver" id="US-Stormreaver">US-Stormreaver</option>
+<option value="US-Stormscale" id="US-Stormscale">US-Stormscale</option>
+<option value="US-Suramar" id="US-Suramar">US-Suramar</option>
+<option value="US-Tanaris" id="US-Tanaris">US-Tanaris</option>
+<option value="US-Terenas" id="US-Terenas">US-Terenas</option>
+<option value="US-Terokkar" id="US-Terokkar">US-Terokkar</option>
+<option value="US-Thaurissan" id="US-Thaurissan">US-Thaurissan</option>
+<option value="US-The Forgotten Coast" id="US-The Forgotten Coast">US-The Forgotten Coast</option>
+<option value="US-The Scryers" id="US-The Scryers">US-The Scryers</option>
+<option value="US-The Underbog" id="US-The Underbog">US-The Underbog</option>
+<option value="US-The Venture Co" id="US-The Venture Co">US-The Venture Co</option>
+<option value="US-Thorium Brotherhood" id="US-Thorium Brotherhood">US-Thorium Brotherhood</option>
+<option value="US-Thrall" id="US-Thrall">US-Thrall</option>
+<option value="US-Thunderhorn" id="US-Thunderhorn">US-Thunderhorn</option>
+<option value="US-Thunderlord" id="US-Thunderlord">US-Thunderlord</option>
+<option value="US-Tichondrius" id="US-Tichondrius">US-Tichondrius</option>
+<option value="US-Tortheldrin" id="US-Tortheldrin">US-Tortheldrin</option>
+<option value="US-Trollbane" id="US-Trollbane">US-Trollbane</option>
+<option value="US-Turalyon" id="US-Turalyon">US-Turalyon</option>
+<option value="US-Twisting Nether" id="US-Twisting Nether">US-Twisting Nether</option>
+<option value="US-Uldaman" id="US-Uldaman">US-Uldaman</option>
+<option value="US-Uldum" id="US-Uldum">US-Uldum</option>
+<option value="US-Undermine" id="US-Undermine">US-Undermine</option>
+<option value="US-Ursin" id="US-Ursin">US-Ursin</option>
+<option value="US-Uther" id="US-Uther">US-Uther</option>
+<option value="US-Vashj" id="US-Vashj">US-Vashj</option>
+<option value="US-Vek'nilash" id="US-Vek'nilash">US-Vek'nilash</option>
+<option value="US-Velen" id="US-Velen">US-Velen</option>
+<option value="US-Warsong" id="US-Warsong">US-Warsong</option>
+<option value="US-Whisperwind" id="US-Whisperwind">US-Whisperwind</option>
+<option value="US-Wildhammer" id="US-Wildhammer">US-Wildhammer</option>
+<option value="US-Windrunner" id="US-Windrunner">US-Windrunner</option>
+<option value="US-Winterhoof" id="US-Winterhoof">US-Winterhoof</option>
+<option value="US-Wyrmrest Accord" id="US-Wyrmrest Accord">US-Wyrmrest Accord</option>
+<option value="US-Ysera" id="US-Ysera">US-Ysera</option>
+<option value="US-Ysondre" id="US-Ysondre">US-Ysondre</option>
+<option value="US-Zangarmarsh" id="US-Zangarmarsh">US-Zangarmarsh</option>
+<option value="US-Zul'jin" id="US-Zul'jin">US-Zul'jin</option>
+<option value="US-Zuluhed" id="US-Zuluhed">US-Zuluhed</option>
+<option value="EU-Aegwynn" id="EU-Aegwynn">EU-Aegwynn</option>
+<option value="EU-Aerie Peak" id="EU-Aerie Peak">EU-Aerie Peak</option>
+<option value="EU-Agamaggan" id="EU-Agamaggan">EU-Agamaggan</option>
+<option value="EU-Aggramar" id="EU-Aggramar">EU-Aggramar</option>
+<option value="EU-Ahn'Qiraj" id="EU-Ahn'Qiraj">EU-Ahn'Qiraj</option>
+<option value="EU-Al'Akir" id="EU-Al'Akir">EU-Al'Akir</option>
+<option value="EU-Alexstrasza" id="EU-Alexstrasza">EU-Alexstrasza</option>
+<option value="EU-Alleria" id="EU-Alleria">EU-Alleria</option>
+<option value="EU-Alonsus" id="EU-Alonsus">EU-Alonsus</option>
+<option value="EU-Aman'Thul" id="EU-Aman'Thul">EU-Aman'Thul</option>
+<option value="EU-Ambossar" id="EU-Ambossar">EU-Ambossar</option>
+<option value="EU-Anachronos" id="EU-Anachronos">EU-Anachronos</option>
+<option value="EU-Anetheron" id="EU-Anetheron">EU-Anetheron</option>
+<option value="EU-Antonidas" id="EU-Antonidas">EU-Antonidas</option>
+<option value="EU-Anub'arak" id="EU-Anub'arak">EU-Anub'arak</option>
+<option value="EU-Arak-arahm" id="EU-Arak-arahm">EU-Arak-arahm</option>
+<option value="EU-Arathi" id="EU-Arathi">EU-Arathi</option>
+<option value="EU-Arathor" id="EU-Arathor">EU-Arathor</option>
+<option value="EU-Archimonde" id="EU-Archimonde">EU-Archimonde</option>
+<option value="EU-Area 52" id="EU-Area 52">EU-Area 52</option>
+<option value="EU-Argent Dawn" id="EU-Argent Dawn">EU-Argent Dawn</option>
+<option value="EU-Arthas" id="EU-Arthas">EU-Arthas</option>
+<option value="EU-Arygos" id="EU-Arygos">EU-Arygos</option>
+<option value="EU-Aszune" id="EU-Aszune">EU-Aszune</option>
+<option value="EU-Auchindoun" id="EU-Auchindoun">EU-Auchindoun</option>
+<option value="EU-Azjol-Nerub" id="EU-Azjol-Nerub">EU-Azjol-Nerub</option>
+<option value="EU-Azshara" id="EU-Azshara">EU-Azshara</option>
+<option value="EU-Baelgun" id="EU-Baelgun">EU-Baelgun</option>
+<option value="EU-Balnazzar" id="EU-Balnazzar">EU-Balnazzar</option>
+<option value="EU-Blackhand" id="EU-Blackhand">EU-Blackhand</option>
+<option value="EU-Blackmoore" id="EU-Blackmoore">EU-Blackmoore</option>
+<option value="EU-Blackrock" id="EU-Blackrock">EU-Blackrock</option>
+<option value="EU-Blade's Edge" id="EU-Blade's Edge">EU-Blade's Edge</option>
+<option value="EU-Bladefist" id="EU-Bladefist">EU-Bladefist</option>
+<option value="EU-Bloodfeather" id="EU-Bloodfeather">EU-Bloodfeather</option>
+<option value="EU-Bloodhoof" id="EU-Bloodhoof">EU-Bloodhoof</option>
+<option value="EU-Bloodscalp" id="EU-Bloodscalp">EU-Bloodscalp</option>
+<option value="EU-Blutkessel" id="EU-Blutkessel">EU-Blutkessel</option>
+<option value="EU-Boulderfist" id="EU-Boulderfist">EU-Boulderfist</option>
+<option value="EU-Bronze Dragonflight" id="EU-Bronze Dragonflight">EU-Bronze Dragonflight</option>
+<option value="EU-Bronzebeard" id="EU-Bronzebeard">EU-Bronzebeard</option>
+<option value="EU-Burning Blade" id="EU-Burning Blade">EU-Burning Blade</option>
+<option value="EU-Burning Legion" id="EU-Burning Legion">EU-Burning Legion</option>
+<option value="EU-Burning Steppes" id="EU-Burning Steppes">EU-Burning Steppes</option>
+<option value="EU-C'Thun" id="EU-C'Thun">EU-C'Thun</option>
+<option value="EU-Chamber of Aspects" id="EU-Chamber of Aspects">EU-Chamber of Aspects</option>
+<option value="EU-Chants éternels" id="EU-Chants éternels">EU-Chants éternels</option>
+<option value="EU-Cho'gall" id="EU-Cho'gall">EU-Cho'gall</option>
+<option value="EU-Chromaggus" id="EU-Chromaggus">EU-Chromaggus</option>
+<option value="EU-Confrérie du Thorium" id="EU-Confrérie du Thorium">EU-Confrérie du Thorium</option>
+<option value="EU-Conseil des Ombres" id="EU-Conseil des Ombres">EU-Conseil des Ombres</option>
+<option value="EU-Crushridge" id="EU-Crushridge">EU-Crushridge</option>
+<option value="EU-Culte de la Rive noire" id="EU-Culte de la Rive noire">EU-Culte de la Rive noire</option>
+<option value="EU-Daggerspine" id="EU-Daggerspine">EU-Daggerspine</option>
+<option value="EU-Dalaran" id="EU-Dalaran">EU-Dalaran</option>
+<option value="EU-Dalvengyr" id="EU-Dalvengyr">EU-Dalvengyr</option>
+<option value="EU-Darkmoon Faire" id="EU-Darkmoon Faire">EU-Darkmoon Faire</option>
+<option value="EU-Darksorrow" id="EU-Darksorrow">EU-Darksorrow</option>
+<option value="EU-Darkspear" id="EU-Darkspear">EU-Darkspear</option>
+<option value="EU-Das Konsortium" id="EU-Das Konsortium">EU-Das Konsortium</option>
+<option value="EU-Das Syndikat" id="EU-Das Syndikat">EU-Das Syndikat</option>
+<option value="EU-Deathwing" id="EU-Deathwing">EU-Deathwing</option>
+<option value="EU-Defias Brotherhood" id="EU-Defias Brotherhood">EU-Defias Brotherhood</option>
+<option value="EU-Dentarg" id="EU-Dentarg">EU-Dentarg</option>
+<option value="EU-Der Mithrilorden" id="EU-Der Mithrilorden">EU-Der Mithrilorden</option>
+<option value="EU-Der Rat von Dalaran" id="EU-Der Rat von Dalaran">EU-Der Rat von Dalaran</option>
+<option value="EU-Der abyssische Rat" id="EU-Der abyssische Rat">EU-Der abyssische Rat</option>
+<option value="EU-Destromath" id="EU-Destromath">EU-Destromath</option>
+<option value="EU-Dethecus" id="EU-Dethecus">EU-Dethecus</option>
+<option value="EU-Die Aldor" id="EU-Die Aldor">EU-Die Aldor</option>
+<option value="EU-Die Arguswacht" id="EU-Die Arguswacht">EU-Die Arguswacht</option>
+<option value="EU-Die Nachtwache" id="EU-Die Nachtwache">EU-Die Nachtwache</option>
+<option value="EU-Die Silberne Hand" id="EU-Die Silberne Hand">EU-Die Silberne Hand</option>
+<option value="EU-Die Todeskrallen" id="EU-Die Todeskrallen">EU-Die Todeskrallen</option>
+<option value="EU-Die ewige Wacht" id="EU-Die ewige Wacht">EU-Die ewige Wacht</option>
+<option value="EU-Doomhammer" id="EU-Doomhammer">EU-Doomhammer</option>
+<option value="EU-Draenor" id="EU-Draenor">EU-Draenor</option>
+<option value="EU-Dragonblight" id="EU-Dragonblight">EU-Dragonblight</option>
+<option value="EU-Dragonmaw" id="EU-Dragonmaw">EU-Dragonmaw</option>
+<option value="EU-Drak'thul" id="EU-Drak'thul">EU-Drak'thul</option>
+<option value="EU-Drek'Thar" id="EU-Drek'Thar">EU-Drek'Thar</option>
+<option value="EU-Dun Modr" id="EU-Dun Modr">EU-Dun Modr</option>
+<option value="EU-Dun Morogh" id="EU-Dun Morogh">EU-Dun Morogh</option>
+<option value="EU-Dunemaul" id="EU-Dunemaul">EU-Dunemaul</option>
+<option value="EU-Durotan" id="EU-Durotan">EU-Durotan</option>
+<option value="EU-Earthen Ring" id="EU-Earthen Ring">EU-Earthen Ring</option>
+<option value="EU-Echsenkessel" id="EU-Echsenkessel">EU-Echsenkessel</option>
+<option value="EU-Eitrigg" id="EU-Eitrigg">EU-Eitrigg</option>
+<option value="EU-Eldre'Thalas" id="EU-Eldre'Thalas">EU-Eldre'Thalas</option>
+<option value="EU-Elune" id="EU-Elune">EU-Elune</option>
+<option value="EU-Emerald Dream" id="EU-Emerald Dream">EU-Emerald Dream</option>
+<option value="EU-Emeriss" id="EU-Emeriss">EU-Emeriss</option>
+<option value="EU-Eonar" id="EU-Eonar">EU-Eonar</option>
+<option value="EU-Eredar" id="EU-Eredar">EU-Eredar</option>
+<option value="EU-Executus" id="EU-Executus">EU-Executus</option>
+<option value="EU-Exodar" id="EU-Exodar">EU-Exodar</option>
+<option value="EU-Festung der Stürme" id="EU-Festung der Stürme">EU-Festung der Stürme</option>
+<option value="EU-Forscherliga" id="EU-Forscherliga">EU-Forscherliga</option>
+<option value="EU-Frostmane" id="EU-Frostmane">EU-Frostmane</option>
+<option value="EU-Frostmourne" id="EU-Frostmourne">EU-Frostmourne</option>
+<option value="EU-Frostwhisper" id="EU-Frostwhisper">EU-Frostwhisper</option>
+<option value="EU-Frostwolf" id="EU-Frostwolf">EU-Frostwolf</option>
+<option value="EU-Garona" id="EU-Garona">EU-Garona</option>
+<option value="EU-Garrosh" id="EU-Garrosh">EU-Garrosh</option>
+<option value="EU-Genjuros" id="EU-Genjuros">EU-Genjuros</option>
+<option value="EU-Ghostlands" id="EU-Ghostlands">EU-Ghostlands</option>
+<option value="EU-Gilneas" id="EU-Gilneas">EU-Gilneas</option>
+<option value="EU-Gorgonnash" id="EU-Gorgonnash">EU-Gorgonnash</option>
+<option value="EU-Grim Batol" id="EU-Grim Batol">EU-Grim Batol</option>
+<option value="EU-Gul'dan" id="EU-Gul'dan">EU-Gul'dan</option>
+<option value="EU-Hakkar" id="EU-Hakkar">EU-Hakkar</option>
+<option value="EU-Haomarush" id="EU-Haomarush">EU-Haomarush</option>
+<option value="EU-Hellfire" id="EU-Hellfire">EU-Hellfire</option>
+<option value="EU-Hellscream" id="EU-Hellscream">EU-Hellscream</option>
+<option value="EU-Hyjal" id="EU-Hyjal">EU-Hyjal</option>
+<option value="EU-Illidan" id="EU-Illidan">EU-Illidan</option>
+<option value="EU-Jaedenar" id="EU-Jaedenar">EU-Jaedenar</option>
+<option value="EU-Kael'thas" id="EU-Kael'thas">EU-Kael'thas</option>
+<option value="EU-Karazhan" id="EU-Karazhan">EU-Karazhan</option>
+<option value="EU-Kargath" id="EU-Kargath">EU-Kargath</option>
+<option value="EU-Kazzak" id="EU-Kazzak">EU-Kazzak</option>
+<option value="EU-Kel'Thuzad" id="EU-Kel'Thuzad">EU-Kel'Thuzad</option>
+<option value="EU-Khadgar" id="EU-Khadgar">EU-Khadgar</option>
+<option value="EU-Khaz Modan" id="EU-Khaz Modan">EU-Khaz Modan</option>
+<option value="EU-Khaz'goroth" id="EU-Khaz'goroth">EU-Khaz'goroth</option>
+<option value="EU-Kil'jaeden" id="EU-Kil'jaeden">EU-Kil'jaeden</option>
+<option value="EU-Kilrogg" id="EU-Kilrogg">EU-Kilrogg</option>
+<option value="EU-Kirin Tor" id="EU-Kirin Tor">EU-Kirin Tor</option>
+<option value="EU-Kor'gall" id="EU-Kor'gall">EU-Kor'gall</option>
+<option value="EU-Krag'jin" id="EU-Krag'jin">EU-Krag'jin</option>
+<option value="EU-Krasus" id="EU-Krasus">EU-Krasus</option>
+<option value="EU-Kul Tiras" id="EU-Kul Tiras">EU-Kul Tiras</option>
+<option value="EU-Kult der Verdammten" id="EU-Kult der Verdammten">EU-Kult der Verdammten</option>
+<option value="EU-La Croisade écarlate" id="EU-La Croisade écarlate">EU-La Croisade écarlate</option>
+<option value="EU-Laughing Skull" id="EU-Laughing Skull">EU-Laughing Skull</option>
+<option value="EU-Les Clairvoyants" id="EU-Les Clairvoyants">EU-Les Clairvoyants</option>
+<option value="EU-Les Sentinelles" id="EU-Les Sentinelles">EU-Les Sentinelles</option>
+<option value="EU-Lightbringer" id="EU-Lightbringer">EU-Lightbringer</option>
+<option value="EU-Lightning's Blade" id="EU-Lightning's Blade">EU-Lightning's Blade</option>
+<option value="EU-Lordaeron" id="EU-Lordaeron">EU-Lordaeron</option>
+<option value="EU-Los Errantes" id="EU-Los Errantes">EU-Los Errantes</option>
+<option value="EU-Lothar" id="EU-Lothar">EU-Lothar</option>
+<option value="EU-Madmortem" id="EU-Madmortem">EU-Madmortem</option>
+<option value="EU-Magtheridon" id="EU-Magtheridon">EU-Magtheridon</option>
+<option value="EU-Mal'Ganis" id="EU-Mal'Ganis">EU-Mal'Ganis</option>
+<option value="EU-Malfurion" id="EU-Malfurion">EU-Malfurion</option>
+<option value="EU-Malygos" id="EU-Malygos">EU-Malygos</option>
+<option value="EU-Mannoroth" id="EU-Mannoroth">EU-Mannoroth</option>
+<option value="EU-Marécage de Zangar" id="EU-Marécage de Zangar">EU-Marécage de Zangar</option>
+<option value="EU-Mazrigos" id="EU-Mazrigos">EU-Mazrigos</option>
+<option value="EU-Medivh" id="EU-Medivh">EU-Medivh</option>
+<option value="EU-Minahonda" id="EU-Minahonda">EU-Minahonda</option>
+<option value="EU-Molten Core" id="EU-Molten Core">EU-Molten Core</option>
+<option value="EU-Moonglade" id="EU-Moonglade">EU-Moonglade</option>
+<option value="EU-Mug'thol" id="EU-Mug'thol">EU-Mug'thol</option>
+<option value="EU-Nagrand" id="EU-Nagrand">EU-Nagrand</option>
+<option value="EU-Nathrezim" id="EU-Nathrezim">EU-Nathrezim</option>
+<option value="EU-Naxxramas" id="EU-Naxxramas">EU-Naxxramas</option>
+<option value="EU-Nazjatar" id="EU-Nazjatar">EU-Nazjatar</option>
+<option value="EU-Nefarian" id="EU-Nefarian">EU-Nefarian</option>
+<option value="EU-Neptulon" id="EU-Neptulon">EU-Neptulon</option>
+<option value="EU-Ner'zhul" id="EU-Ner'zhul">EU-Ner'zhul</option>
+<option value="EU-Nera'thor" id="EU-Nera'thor">EU-Nera'thor</option>
+<option value="EU-Nethersturm" id="EU-Nethersturm">EU-Nethersturm</option>
+<option value="EU-Nordrassil" id="EU-Nordrassil">EU-Nordrassil</option>
+<option value="EU-Norgannon" id="EU-Norgannon">EU-Norgannon</option>
+<option value="EU-Nozdormu" id="EU-Nozdormu">EU-Nozdormu</option>
+<option value="EU-Onyxia" id="EU-Onyxia">EU-Onyxia</option>
+<option value="EU-Outland" id="EU-Outland">EU-Outland</option>
+<option value="EU-Perenolde" id="EU-Perenolde">EU-Perenolde</option>
+<option value="EU-Proudmoore" id="EU-Proudmoore">EU-Proudmoore</option>
+<option value="EU-Quel'Thalas" id="EU-Quel'Thalas">EU-Quel'Thalas</option>
+<option value="EU-Ragnaros" id="EU-Ragnaros">EU-Ragnaros</option>
+<option value="EU-Rajaxx" id="EU-Rajaxx">EU-Rajaxx</option>
+<option value="EU-Rashgarroth" id="EU-Rashgarroth">EU-Rashgarroth</option>
+<option value="EU-Ravencrest" id="EU-Ravencrest">EU-Ravencrest</option>
+<option value="EU-Ravenholdt" id="EU-Ravenholdt">EU-Ravenholdt</option>
+<option value="EU-Rexxar" id="EU-Rexxar">EU-Rexxar</option>
+<option value="EU-Runetotem" id="EU-Runetotem">EU-Runetotem</option>
+<option value="EU-Sanguino" id="EU-Sanguino">EU-Sanguino</option>
+<option value="EU-Sargeras" id="EU-Sargeras">EU-Sargeras</option>
+<option value="EU-Scarshield Legion" id="EU-Scarshield Legion">EU-Scarshield Legion</option>
+<option value="EU-Sen'jin" id="EU-Sen'jin">EU-Sen'jin</option>
+<option value="EU-Shadowmoon" id="EU-Shadowmoon">EU-Shadowmoon</option>
+<option value="EU-Shadowsong" id="EU-Shadowsong">EU-Shadowsong</option>
+<option value="EU-Shattered Halls" id="EU-Shattered Halls">EU-Shattered Halls</option>
+<option value="EU-Shattered Hand" id="EU-Shattered Hand">EU-Shattered Hand</option>
+<option value="EU-Shattrath" id="EU-Shattrath">EU-Shattrath</option>
+<option value="EU-Shen'dralar" id="EU-Shen'dralar">EU-Shen'dralar</option>
+<option value="EU-Silvermoon" id="EU-Silvermoon">EU-Silvermoon</option>
+<option value="EU-Sinstralis" id="EU-Sinstralis">EU-Sinstralis</option>
+<option value="EU-Skullcrusher" id="EU-Skullcrusher">EU-Skullcrusher</option>
+<option value="EU-Spinebreaker" id="EU-Spinebreaker">EU-Spinebreaker</option>
+<option value="EU-Sporeggar" id="EU-Sporeggar">EU-Sporeggar</option>
+<option value="EU-Steamwheedle Cartel" id="EU-Steamwheedle Cartel">EU-Steamwheedle Cartel</option>
+<option value="EU-Stonemaul" id="EU-Stonemaul">EU-Stonemaul</option>
+<option value="EU-Stormrage" id="EU-Stormrage">EU-Stormrage</option>
+<option value="EU-Stormreaver" id="EU-Stormreaver">EU-Stormreaver</option>
+<option value="EU-Stormscale" id="EU-Stormscale">EU-Stormscale</option>
+<option value="EU-Sunstrider" id="EU-Sunstrider">EU-Sunstrider</option>
+<option value="EU-Suramar" id="EU-Suramar">EU-Suramar</option>
+<option value="EU-Sylvanas" id="EU-Sylvanas">EU-Sylvanas</option>
+<option value="EU-Taerar" id="EU-Taerar">EU-Taerar</option>
+<option value="EU-Talnivarr" id="EU-Talnivarr">EU-Talnivarr</option>
+<option value="EU-Tarren Mill" id="EU-Tarren Mill">EU-Tarren Mill</option>
+<option value="EU-Teldrassil" id="EU-Teldrassil">EU-Teldrassil</option>
+<option value="EU-Temple noir" id="EU-Temple noir">EU-Temple noir</option>
+<option value="EU-Terenas" id="EU-Terenas">EU-Terenas</option>
+<option value="EU-Terrordar" id="EU-Terrordar">EU-Terrordar</option>
+<option value="EU-The Maelstrom" id="EU-The Maelstrom">EU-The Maelstrom</option>
+<option value="EU-The Sha'tar" id="EU-The Sha'tar">EU-The Sha'tar</option>
+<option value="EU-The Venture Co" id="EU-The Venture Co">EU-The Venture Co</option>
+<option value="EU-Theradras" id="EU-Theradras">EU-Theradras</option>
+<option value="EU-Thrall" id="EU-Thrall">EU-Thrall</option>
+<option value="EU-Throk'Feroth" id="EU-Throk'Feroth">EU-Throk'Feroth</option>
+<option value="EU-Thunderhorn" id="EU-Thunderhorn">EU-Thunderhorn</option>
+<option value="EU-Tichondrius" id="EU-Tichondrius">EU-Tichondrius</option>
+<option value="EU-Tirion" id="EU-Tirion">EU-Tirion</option>
+<option value="EU-Todeswache" id="EU-Todeswache">EU-Todeswache</option>
+<option value="EU-Trollbane" id="EU-Trollbane">EU-Trollbane</option>
+<option value="EU-Turalyon" id="EU-Turalyon">EU-Turalyon</option>
+<option value="EU-Twilight's Hammer" id="EU-Twilight's Hammer">EU-Twilight's Hammer</option>
+<option value="EU-Twisting Nether" id="EU-Twisting Nether">EU-Twisting Nether</option>
+<option value="EU-Tyrande" id="EU-Tyrande">EU-Tyrande</option>
+<option value="EU-Uldaman" id="EU-Uldaman">EU-Uldaman</option>
+<option value="EU-Uldum" id="EU-Uldum">EU-Uldum</option>
+<option value="EU-Un'Goro" id="EU-Un'Goro">EU-Un'Goro</option>
+<option value="EU-Varimathras" id="EU-Varimathras">EU-Varimathras</option>
+<option value="EU-Vashj" id="EU-Vashj">EU-Vashj</option>
+<option value="EU-Vek'lor" id="EU-Vek'lor">EU-Vek'lor</option>
+<option value="EU-Vek'nilash" id="EU-Vek'nilash">EU-Vek'nilash</option>
+<option value="EU-Vol'jin" id="EU-Vol'jin">EU-Vol'jin</option>
+<option value="EU-Warsong" id="EU-Warsong">EU-Warsong</option>
+<option value="EU-Wildhammer" id="EU-Wildhammer">EU-Wildhammer</option>
+<option value="EU-Wrathbringer" id="EU-Wrathbringer">EU-Wrathbringer</option>
+<option value="EU-Xavius" id="EU-Xavius">EU-Xavius</option>
+<option value="EU-Ysera" id="EU-Ysera">EU-Ysera</option>
+<option value="EU-Ysondre" id="EU-Ysondre">EU-Ysondre</option>
+<option value="EU-Zenedar" id="EU-Zenedar">EU-Zenedar</option>
+<option value="EU-Zirkel des Cenarius" id="EU-Zirkel des Cenarius">EU-Zirkel des Cenarius</option>
+<option value="EU-Zul'jin" id="EU-Zul'jin">EU-Zul'jin</option>
+<option value="EU-Zuluhed" id="EU-Zuluhed">EU-Zuluhed</option>
+<option value="EU-Азурегос" id="EU-Азурегос">EU-Азурегос</option>
+<option value="EU-Дракономор" id="EU-Дракономор">EU-Дракономор</option>
+<option value="EU-Вечная Песня" id="EU-Вечная Песня">EU-Вечная Песня</option>
+<option value="EU-Свежеватель Душ" id="EU-Свежеватель Душ">EU-Свежеватель Душ</option>
+<option value="EU-Седогрив" id="EU-Седогрив">EU-Седогрив</option>
+<option value="EU-Страж Смерти" id="EU-Страж Смерти">EU-Страж Смерти</option>
+<option value="EU-Гордунни" id="EU-Гордунни">EU-Гордунни</option>
+<option value="EU-Пиратская бухта" id="EU-Пиратская бухта">EU-Пиратская бухта</option>
+<option value="EU-Ясеневый лес" id="EU-Ясеневый лес">EU-Ясеневый лес</option>
+<option value="EU-Термоштепсель" id="EU-Термоштепсель">EU-Термоштепсель</option>
+<option value="EU-Гром" id="EU-Гром">EU-Гром</option>
+<option value="EU-Король-лич" id="EU-Король-лич">EU-Король-лич</option>
+<option value="TW-Altar of Storms" id="TW-Altar of Storms">TW-Altar of Storms</option>
+<option value="TW-Arthas" id="TW-Arthas">TW-Arthas</option>
+<option value="TW-Arygos" id="TW-Arygos">TW-Arygos</option>
+<option value="TW-Balnazzar" id="TW-Balnazzar">TW-Balnazzar</option>
+<option value="TW-Bleeding Hollow" id="TW-Bleeding Hollow">TW-Bleeding Hollow</option>
+<option value="TW-Bloodscalp" id="TW-Bloodscalp">TW-Bloodscalp</option>
+<option value="TW-Chillwind Point" id="TW-Chillwind Point">TW-Chillwind Point</option>
+<option value="TW-Crystalpine Stinger" id="TW-Crystalpine Stinger">TW-Crystalpine Stinger</option>
+<option value="TW-Demon Fall Canyon" id="TW-Demon Fall Canyon">TW-Demon Fall Canyon</option>
+<option value="TW-Dragonmaw" id="TW-Dragonmaw">TW-Dragonmaw</option>
+<option value="TW-Dreadmist Peak" id="TW-Dreadmist Peak">TW-Dreadmist Peak</option>
+<option value="TW-Frostmane" id="TW-Frostmane">TW-Frostmane</option>
+<option value="TW-Frostmourne" id="TW-Frostmourne">TW-Frostmourne</option>
+<option value="TW-Gnomeregan" id="TW-Gnomeregan">TW-Gnomeregan</option>
+<option value="TW-Hellscream" id="TW-Hellscream">TW-Hellscream</option>
+<option value="TW-Howling Fjord" id="TW-Howling Fjord">TW-Howling Fjord</option>
+<option value="TW-Icecrown" id="TW-Icecrown">TW-Icecrown</option>
+<option value="TW-Light's Hope" id="TW-Light's Hope">TW-Light's Hope</option>
+<option value="TW-Menethil" id="TW-Menethil">TW-Menethil</option>
+<option value="TW-Nightsong" id="TW-Nightsong">TW-Nightsong</option>
+<option value="TW-Onyxia" id="TW-Onyxia">TW-Onyxia</option>
+<option value="TW-Quel'dorei" id="TW-Quel'dorei">TW-Quel'dorei</option>
+<option value="TW-Shadowmoon" id="TW-Shadowmoon">TW-Shadowmoon</option>
+<option value="TW-Silverwing Hold" id="TW-Silverwing Hold">TW-Silverwing Hold</option>
+<option value="TW-Skywall" id="TW-Skywall">TW-Skywall</option>
+<option value="TW-Spirestone" id="TW-Spirestone">TW-Spirestone</option>
+<option value="TW-Stormscale" id="TW-Stormscale">TW-Stormscale</option>
+<option value="TW-Sundown Marsh" id="TW-Sundown Marsh">TW-Sundown Marsh</option>
+<option value="TW-Warsong" id="TW-Warsong">TW-Warsong</option>
+<option value="TW-Whisperwind" id="TW-Whisperwind">TW-Whisperwind</option>
+<option value="TW-World Tree" id="TW-World Tree">TW-World Tree</option>
+<option value="TW-Wrathbringer" id="TW-Wrathbringer">TW-Wrathbringer</option>
+<option value="TW-Zealot Blade" id="TW-Zealot Blade">TW-Zealot Blade</option>
+<option value="KR-Aegwynn" id="KR-Aegwynn">KR-Aegwynn</option>
+<option value="KR-Al'ar" id="KR-Al'ar">KR-Al'ar</option>
+<option value="KR-Alexstrasza" id="KR-Alexstrasza">KR-Alexstrasza</option>
+<option value="KR-Alleria" id="KR-Alleria">KR-Alleria</option>
+<option value="KR-Azshara" id="KR-Azshara">KR-Azshara</option>
+<option value="KR-Blackmoore" id="KR-Blackmoore">KR-Blackmoore</option>
+<option value="KR-Burning Legion" id="KR-Burning Legion">KR-Burning Legion</option>
+<option value="KR-Cenarius" id="KR-Cenarius">KR-Cenarius</option>
+<option value="KR-Dalaran" id="KR-Dalaran">KR-Dalaran</option>
+<option value="KR-Deathwing" id="KR-Deathwing">KR-Deathwing</option>
+<option value="KR-Durotan" id="KR-Durotan">KR-Durotan</option>
+<option value="KR-Elune" id="KR-Elune">KR-Elune</option>
+<option value="KR-Eonar" id="KR-Eonar">KR-Eonar</option>
+<option value="KR-Eye of the Storm" id="KR-Eye of the Storm">KR-Eye of the Storm</option>
+<option value="KR-Garona" id="KR-Garona">KR-Garona</option>
+<option value="KR-Gul'dan" id="KR-Gul'dan">KR-Gul'dan</option>
+<option value="KR-Hellscream" id="KR-Hellscream">KR-Hellscream</option>
+<option value="KR-Hyjal" id="KR-Hyjal">KR-Hyjal</option>
+<option value="KR-Karazhan" id="KR-Karazhan">KR-Karazhan</option>
+<option value="KR-Kargath" id="KR-Kargath">KR-Kargath</option>
+<option value="KR-Kul Tiras" id="KR-Kul Tiras">KR-Kul Tiras</option>
+<option value="KR-Llane" id="KR-Llane">KR-Llane</option>
+<option value="KR-Malfurion" id="KR-Malfurion">KR-Malfurion</option>
+<option value="KR-Malygos" id="KR-Malygos">KR-Malygos</option>
+<option value="KR-Medivh" id="KR-Medivh">KR-Medivh</option>
+<option value="KR-Norgannon" id="KR-Norgannon">KR-Norgannon</option>
+<option value="KR-Ragnaros" id="KR-Ragnaros">KR-Ragnaros</option>
+<option value="KR-Rexxar" id="KR-Rexxar">KR-Rexxar</option>
+<option value="KR-Stormrage" id="KR-Stormrage">KR-Stormrage</option>
+<option value="KR-Tirion" id="KR-Tirion">KR-Tirion</option>
+<option value="KR-Uther" id="KR-Uther">KR-Uther</option>
+<option value="KR-Wildhammer" id="KR-Wildhammer">KR-Wildhammer</option>
+<option value="KR-Windrunner" id="KR-Windrunner">KR-Windrunner</option>
+<option value="KR-Zul'jin" id="KR-Zul'jin">KR-Zul'jin</option>
+<option value="CN-Abyssal Maw" id="CN-Abyssal Maw">CN-Abyssal Maw</option>
+<option value="CN-Aerie Peak" id="CN-Aerie Peak">CN-Aerie Peak</option>
+<option value="CN-Aessina" id="CN-Aessina">CN-Aessina</option>
+<option value="CN-Agamaggan" id="CN-Agamaggan">CN-Agamaggan</option>
+<option value="CN-Aggramar" id="CN-Aggramar">CN-Aggramar</option>
+<option value="CN-Ahn'Qiraj" id="CN-Ahn'Qiraj">CN-Ahn'Qiraj</option>
+<option value="CN-Akama" id="CN-Akama">CN-Akama</option>
+<option value="CN-Al'Akir" id="CN-Al'Akir">CN-Al'Akir</option>
+<option value="CN-Al'ar" id="CN-Al'ar">CN-Al'ar</option>
+<option value="CN-Alexstrasza" id="CN-Alexstrasza">CN-Alexstrasza</option>
+<option value="CN-Alleria" id="CN-Alleria">CN-Alleria</option>
+<option value="CN-Alonsus" id="CN-Alonsus">CN-Alonsus</option>
+<option value="CN-Altar of Storms" id="CN-Altar of Storms">CN-Altar of Storms</option>
+<option value="CN-Alterac Mountains" id="CN-Alterac Mountains">CN-Alterac Mountains</option>
+<option value="CN-Anachronos" id="CN-Anachronos">CN-Anachronos</option>
+<option value="CN-Andorhal" id="CN-Andorhal">CN-Andorhal</option>
+<option value="CN-Anetheron" id="CN-Anetheron">CN-Anetheron</option>
+<option value="CN-Antonidas" id="CN-Antonidas">CN-Antonidas</option>
+<option value="CN-Anub'arak" id="CN-Anub'arak">CN-Anub'arak</option>
+<option value="CN-Anvilmar" id="CN-Anvilmar">CN-Anvilmar</option>
+<option value="CN-Arathi" id="CN-Arathi">CN-Arathi</option>
+<option value="CN-Arathor" id="CN-Arathor">CN-Arathor</option>
+<option value="CN-Archaedas" id="CN-Archaedas">CN-Archaedas</option>
+<option value="CN-Archimonde" id="CN-Archimonde">CN-Archimonde</option>
+<option value="CN-Argus" id="CN-Argus">CN-Argus</option>
+<option value="CN-Arthas" id="CN-Arthas">CN-Arthas</option>
+<option value="CN-Arygos" id="CN-Arygos">CN-Arygos</option>
+<option value="CN-Ashenvale" id="CN-Ashenvale">CN-Ashenvale</option>
+<option value="CN-Astranaar" id="CN-Astranaar">CN-Astranaar</option>
+<option value="CN-Aszune" id="CN-Aszune">CN-Aszune</option>
+<option value="CN-Aviana" id="CN-Aviana">CN-Aviana</option>
+<option value="CN-Azgalor" id="CN-Azgalor">CN-Azgalor</option>
+<option value="CN-Azjol-Nerub" id="CN-Azjol-Nerub">CN-Azjol-Nerub</option>
+<option value="CN-Azshara" id="CN-Azshara">CN-Azshara</option>
+<option value="CN-Azuregos" id="CN-Azuregos">CN-Azuregos</option>
+<option value="CN-Baelgun" id="CN-Baelgun">CN-Baelgun</option>
+<option value="CN-Balnazzar" id="CN-Balnazzar">CN-Balnazzar</option>
+<option value="CN-Barthilas" id="CN-Barthilas">CN-Barthilas</option>
+<option value="CN-Black Dragonflight" id="CN-Black Dragonflight">CN-Black Dragonflight</option>
+<option value="CN-Blackhand" id="CN-Blackhand">CN-Blackhand</option>
+<option value="CN-Blackmoore" id="CN-Blackmoore">CN-Blackmoore</option>
+<option value="CN-Blackrock" id="CN-Blackrock">CN-Blackrock</option>
+<option value="CN-Blackwing Lair" id="CN-Blackwing Lair">CN-Blackwing Lair</option>
+<option value="CN-Bladefist" id="CN-Bladefist">CN-Bladefist</option>
+<option value="CN-Blanchard" id="CN-Blanchard">CN-Blanchard</option>
+<option value="CN-Bleeding Hollow" id="CN-Bleeding Hollow">CN-Bleeding Hollow</option>
+<option value="CN-Blood Furnace" id="CN-Blood Furnace">CN-Blood Furnace</option>
+<option value="CN-Bloodfeather" id="CN-Bloodfeather">CN-Bloodfeather</option>
+<option value="CN-Bloodhoof" id="CN-Bloodhoof">CN-Bloodhoof</option>
+<option value="CN-Bloodmaul" id="CN-Bloodmaul">CN-Bloodmaul</option>
+<option value="CN-Bloodscalp" id="CN-Bloodscalp">CN-Bloodscalp</option>
+<option value="CN-Blue Dragonflight" id="CN-Blue Dragonflight">CN-Blue Dragonflight</option>
+<option value="CN-Booty Bay" id="CN-Booty Bay">CN-Booty Bay</option>
+<option value="CN-Boulderfist" id="CN-Boulderfist">CN-Boulderfist</option>
+<option value="CN-Brann" id="CN-Brann">CN-Brann</option>
+<option value="CN-Bronze Dragonflight" id="CN-Bronze Dragonflight">CN-Bronze Dragonflight</option>
+<option value="CN-Bronzebeard" id="CN-Bronzebeard">CN-Bronzebeard</option>
+<option value="CN-Burning Blade" id="CN-Burning Blade">CN-Burning Blade</option>
+<option value="CN-Burning Legion" id="CN-Burning Legion">CN-Burning Legion</option>
+<option value="CN-Burning Steppes" id="CN-Burning Steppes">CN-Burning Steppes</option>
+<option value="CN-C'Thun" id="CN-C'Thun">CN-C'Thun</option>
+<option value="CN-Cassandra" id="CN-Cassandra">CN-Cassandra</option>
+<option value="CN-Cenarius" id="CN-Cenarius">CN-Cenarius</option>
+<option value="CN-Chillwind Point" id="CN-Chillwind Point">CN-Chillwind Point</option>
+<option value="CN-Cho'gall" id="CN-Cho'gall">CN-Cho'gall</option>
+<option value="CN-Chromaggus" id="CN-Chromaggus">CN-Chromaggus</option>
+<option value="CN-Claw of the Shadowmancer" id="CN-Claw of the Shadowmancer">CN-Claw of the Shadowmancer</option>
+<option value="CN-Crushridge" id="CN-Crushridge">CN-Crushridge</option>
+<option value="CN-Crystalpine Stinger" id="CN-Crystalpine Stinger">CN-Crystalpine Stinger</option>
+<option value="CN-Daggerspine" id="CN-Daggerspine">CN-Daggerspine</option>
+<option value="CN-Dalvengyr" id="CN-Dalvengyr">CN-Dalvengyr</option>
+<option value="CN-Danath Trollbane" id="CN-Danath Trollbane">CN-Danath Trollbane</option>
+<option value="CN-Dark Iron" id="CN-Dark Iron">CN-Dark Iron</option>
+<option value="CN-Dark Phantom" id="CN-Dark Phantom">CN-Dark Phantom</option>
+<option value="CN-Dark Portal" id="CN-Dark Portal">CN-Dark Portal</option>
+<option value="CN-Darkspear" id="CN-Darkspear">CN-Darkspear</option>
+<option value="CN-Darrowmere" id="CN-Darrowmere">CN-Darrowmere</option>
+<option value="CN-Dath'Remar" id="CN-Dath'Remar">CN-Dath'Remar</option>
+<option value="CN-Death's Door" id="CN-Death's Door">CN-Death's Door</option>
+<option value="CN-Deathforge" id="CN-Deathforge">CN-Deathforge</option>
+<option value="CN-Deathwing" id="CN-Deathwing">CN-Deathwing</option>
+<option value="CN-Deepfury" id="CN-Deepfury">CN-Deepfury</option>
+<option value="CN-Deephome" id="CN-Deephome">CN-Deephome</option>
+<option value="CN-Demon Fall Canyon" id="CN-Demon Fall Canyon">CN-Demon Fall Canyon</option>
+<option value="CN-Demon Soul" id="CN-Demon Soul">CN-Demon Soul</option>
+<option value="CN-Demonslayer" id="CN-Demonslayer">CN-Demonslayer</option>
+<option value="CN-Dentarg" id="CN-Dentarg">CN-Dentarg</option>
+<option value="CN-Destromath" id="CN-Destromath">CN-Destromath</option>
+<option value="CN-Detheroc" id="CN-Detheroc">CN-Detheroc</option>
+<option value="CN-Direwing" id="CN-Direwing">CN-Direwing</option>
+<option value="CN-Doomhammer" id="CN-Doomhammer">CN-Doomhammer</option>
+<option value="CN-Dor'Danil" id="CN-Dor'Danil">CN-Dor'Danil</option>
+<option value="CN-Draenor" id="CN-Draenor">CN-Draenor</option>
+<option value="CN-Dragonblight" id="CN-Dragonblight">CN-Dragonblight</option>
+<option value="CN-Dragonmaw" id="CN-Dragonmaw">CN-Dragonmaw</option>
+<option value="CN-Drakkari" id="CN-Drakkari">CN-Drakkari</option>
+<option value="CN-Dreadmaul" id="CN-Dreadmaul">CN-Dreadmaul</option>
+<option value="CN-Dreadmist Peak" id="CN-Dreadmist Peak">CN-Dreadmist Peak</option>
+<option value="CN-Dream Bough" id="CN-Dream Bough">CN-Dream Bough</option>
+<option value="CN-Dreamwalker" id="CN-Dreamwalker">CN-Dreamwalker</option>
+<option value="CN-Dun Modr" id="CN-Dun Modr">CN-Dun Modr</option>
+<option value="CN-Dunemaul" id="CN-Dunemaul">CN-Dunemaul</option>
+<option value="CN-Durotan" id="CN-Durotan">CN-Durotan</option>
+<option value="CN-Duskwood" id="CN-Duskwood">CN-Duskwood</option>
+<option value="CN-Dustbelcher" id="CN-Dustbelcher">CN-Dustbelcher</option>
+<option value="CN-Dustwind Gulch" id="CN-Dustwind Gulch">CN-Dustwind Gulch</option>
+<option value="CN-Echo Isles" id="CN-Echo Isles">CN-Echo Isles</option>
+<option value="CN-Echo Ridge" id="CN-Echo Ridge">CN-Echo Ridge</option>
+<option value="CN-Eldre'Thalas" id="CN-Eldre'Thalas">CN-Eldre'Thalas</option>
+<option value="CN-Emerald Dream" id="CN-Emerald Dream">CN-Emerald Dream</option>
+<option value="CN-Emeriss" id="CN-Emeriss">CN-Emeriss</option>
+<option value="CN-Eonar" id="CN-Eonar">CN-Eonar</option>
+<option value="CN-Eranikus" id="CN-Eranikus">CN-Eranikus</option>
+<option value="CN-Eredar" id="CN-Eredar">CN-Eredar</option>
+<option value="CN-Executus" id="CN-Executus">CN-Executus</option>
+<option value="CN-Explorer's League" id="CN-Explorer's League">CN-Explorer's League</option>
+<option value="CN-Falathim" id="CN-Falathim">CN-Falathim</option>
+<option value="CN-Feathermoon" id="CN-Feathermoon">CN-Feathermoon</option>
+<option value="CN-Fel Rock" id="CN-Fel Rock">CN-Fel Rock</option>
+<option value="CN-Fenris" id="CN-Fenris">CN-Fenris</option>
+<option value="CN-Feralas" id="CN-Feralas">CN-Feralas</option>
+<option value="CN-Fire Plume Ridge" id="CN-Fire Plume Ridge">CN-Fire Plume Ridge</option>
+<option value="CN-Firegut" id="CN-Firegut">CN-Firegut</option>
+<option value="CN-Firelands" id="CN-Firelands">CN-Firelands</option>
+<option value="CN-Firetree" id="CN-Firetree">CN-Firetree</option>
+<option value="CN-Fist of the Titans" id="CN-Fist of the Titans">CN-Fist of the Titans</option>
+<option value="CN-Flame Crest" id="CN-Flame Crest">CN-Flame Crest</option>
+<option value="CN-Force of Elemental" id="CN-Force of Elemental">CN-Force of Elemental</option>
+<option value="CN-Fray Island" id="CN-Fray Island">CN-Fray Island</option>
+<option value="CN-Freewind" id="CN-Freewind">CN-Freewind</option>
+<option value="CN-Frostmane" id="CN-Frostmane">CN-Frostmane</option>
+<option value="CN-Frostmourne" id="CN-Frostmourne">CN-Frostmourne</option>
+<option value="CN-Frostreaver Crown" id="CN-Frostreaver Crown">CN-Frostreaver Crown</option>
+<option value="CN-Frostwhisper" id="CN-Frostwhisper">CN-Frostwhisper</option>
+<option value="CN-Frostwolf" id="CN-Frostwolf">CN-Frostwolf</option>
+<option value="CN-Gadgetzan" id="CN-Gadgetzan">CN-Gadgetzan</option>
+<option value="CN-Galardell" id="CN-Galardell">CN-Galardell</option>
+<option value="CN-Garithos" id="CN-Garithos">CN-Garithos</option>
+<option value="CN-Garona" id="CN-Garona">CN-Garona</option>
+<option value="CN-Gazlowe" id="CN-Gazlowe">CN-Gazlowe</option>
+<option value="CN-Gnomeregan" id="CN-Gnomeregan">CN-Gnomeregan</option>
+<option value="CN-Gold Road" id="CN-Gold Road">CN-Gold Road</option>
+<option value="CN-Gordunni" id="CN-Gordunni">CN-Gordunni</option>
+<option value="CN-Gorefiend" id="CN-Gorefiend">CN-Gorefiend</option>
+<option value="CN-Gorgonnash" id="CN-Gorgonnash">CN-Gorgonnash</option>
+<option value="CN-Greymane" id="CN-Greymane">CN-Greymane</option>
+<option value="CN-Grim Batol" id="CN-Grim Batol">CN-Grim Batol</option>
+<option value="CN-Grimtotem" id="CN-Grimtotem">CN-Grimtotem</option>
+<option value="CN-Guardian Blade" id="CN-Guardian Blade">CN-Guardian Blade</option>
+<option value="CN-Gul'dan" id="CN-Gul'dan">CN-Gul'dan</option>
+<option value="CN-Gurubashi" id="CN-Gurubashi">CN-Gurubashi</option>
+<option value="CN-Hakkar" id="CN-Hakkar">CN-Hakkar</option>
+<option value="CN-Hectae" id="CN-Hectae">CN-Hectae</option>
+<option value="CN-Hellscream" id="CN-Hellscream">CN-Hellscream</option>
+<option value="CN-Holy Chanter" id="CN-Holy Chanter">CN-Holy Chanter</option>
+<option value="CN-Hydraxis" id="CN-Hydraxis">CN-Hydraxis</option>
+<option value="CN-Hyjal" id="CN-Hyjal">CN-Hyjal</option>
+<option value="CN-Icecrown" id="CN-Icecrown">CN-Icecrown</option>
+<option value="CN-Illidan" id="CN-Illidan">CN-Illidan</option>
+<option value="CN-Immol'thar" id="CN-Immol'thar">CN-Immol'thar</option>
+<option value="CN-Ironaya" id="CN-Ironaya">CN-Ironaya</option>
+<option value="CN-Isillien" id="CN-Isillien">CN-Isillien</option>
+<option value="CN-Itharius" id="CN-Itharius">CN-Itharius</option>
+<option value="CN-Jaedenar" id="CN-Jaedenar">CN-Jaedenar</option>
+<option value="CN-Jammal'an" id="CN-Jammal'an">CN-Jammal'an</option>
+<option value="CN-Jin'do" id="CN-Jin'do">CN-Jin'do</option>
+<option value="CN-Kael'thas" id="CN-Kael'thas">CN-Kael'thas</option>
+<option value="CN-Kaleidoscope Star" id="CN-Kaleidoscope Star">CN-Kaleidoscope Star</option>
+<option value="CN-Karazhan" id="CN-Karazhan">CN-Karazhan</option>
+<option value="CN-Kargath" id="CN-Kargath">CN-Kargath</option>
+<option value="CN-Kel'Thuzad" id="CN-Kel'Thuzad">CN-Kel'Thuzad</option>
+<option value="CN-Khadgar" id="CN-Khadgar">CN-Khadgar</option>
+<option value="CN-Khardros" id="CN-Khardros">CN-Khardros</option>
+<option value="CN-Khaz'goroth" id="CN-Khaz'goroth">CN-Khaz'goroth</option>
+<option value="CN-Kil'jaeden" id="CN-Kil'jaeden">CN-Kil'jaeden</option>
+<option value="CN-Kilrogg" id="CN-Kilrogg">CN-Kilrogg</option>
+<option value="CN-Kul Tiras" id="CN-Kul Tiras">CN-Kul Tiras</option>
+<option value="CN-Kurdran" id="CN-Kurdran">CN-Kurdran</option>
+<option value="CN-Laughing Skull" id="CN-Laughing Skull">CN-Laughing Skull</option>
+<option value="CN-Lethon" id="CN-Lethon">CN-Lethon</option>
+<option value="CN-Lich King" id="CN-Lich King">CN-Lich King</option>
+<option value="CN-Lightning's Blade" id="CN-Lightning's Blade">CN-Lightning's Blade</option>
+<option value="CN-Lord Kazzak" id="CN-Lord Kazzak">CN-Lord Kazzak</option>
+<option value="CN-Lordaeron" id="CN-Lordaeron">CN-Lordaeron</option>
+<option value="CN-Lothar" id="CN-Lothar">CN-Lothar</option>
+<option value="CN-Lushwater Oasis" id="CN-Lushwater Oasis">CN-Lushwater Oasis</option>
+<option value="CN-Madoran" id="CN-Madoran">CN-Madoran</option>
+<option value="CN-Maelstrom" id="CN-Maelstrom">CN-Maelstrom</option>
+<option value="CN-Magatha" id="CN-Magatha">CN-Magatha</option>
+<option value="CN-Magtheridon" id="CN-Magtheridon">CN-Magtheridon</option>
+<option value="CN-Maiev Shadowsong" id="CN-Maiev Shadowsong">CN-Maiev Shadowsong</option>
+<option value="CN-Mal'Ganis" id="CN-Mal'Ganis">CN-Mal'Ganis</option>
+<option value="CN-Malfurion" id="CN-Malfurion">CN-Malfurion</option>
+<option value="CN-Malygos" id="CN-Malygos">CN-Malygos</option>
+<option value="CN-Mannoroth" id="CN-Mannoroth">CN-Mannoroth</option>
+<option value="CN-Medivh" id="CN-Medivh">CN-Medivh</option>
+<option value="CN-Menethil" id="CN-Menethil">CN-Menethil</option>
+<option value="CN-Midnight Scythe" id="CN-Midnight Scythe">CN-Midnight Scythe</option>
+<option value="CN-Modgud" id="CN-Modgud">CN-Modgud</option>
+<option value="CN-Mograine" id="CN-Mograine">CN-Mograine</option>
+<option value="CN-Molten Core" id="CN-Molten Core">CN-Molten Core</option>
+<option value="CN-Moonglade" id="CN-Moonglade">CN-Moonglade</option>
+<option value="CN-Mosh'Ogg" id="CN-Mosh'Ogg">CN-Mosh'Ogg</option>
+<option value="CN-Mossflayer" id="CN-Mossflayer">CN-Mossflayer</option>
+<option value="CN-Mug'thol" id="CN-Mug'thol">CN-Mug'thol</option>
+<option value="CN-Murmur" id="CN-Murmur">CN-Murmur</option>
+<option value="CN-Naxxramas" id="CN-Naxxramas">CN-Naxxramas</option>
+<option value="CN-Nazjatar" id="CN-Nazjatar">CN-Nazjatar</option>
+<option value="CN-Nefarian" id="CN-Nefarian">CN-Nefarian</option>
+<option value="CN-Nekros" id="CN-Nekros">CN-Nekros</option>
+<option value="CN-Neltharion" id="CN-Neltharion">CN-Neltharion</option>
+<option value="CN-Neptulon" id="CN-Neptulon">CN-Neptulon</option>
+<option value="CN-Ner'zhul" id="CN-Ner'zhul">CN-Ner'zhul</option>
+<option value="CN-Nighthaven" id="CN-Nighthaven">CN-Nighthaven</option>
+<option value="CN-Northrend" id="CN-Northrend">CN-Northrend</option>
+<option value="CN-Nozdormu" id="CN-Nozdormu">CN-Nozdormu</option>
+<option value="CN-Onyxia" id="CN-Onyxia">CN-Onyxia</option>
+<option value="CN-Ossirian" id="CN-Ossirian">CN-Ossirian</option>
+<option value="CN-Outland" id="CN-Outland">CN-Outland</option>
+<option value="CN-Pandaren" id="CN-Pandaren">CN-Pandaren</option>
+<option value="CN-Perenolde" id="CN-Perenolde">CN-Perenolde</option>
+<option value="CN-Poison-tipped Bone Spear" id="CN-Poison-tipped Bone Spear">CN-Poison-tipped Bone Spear</option>
+<option value="CN-Prestor" id="CN-Prestor">CN-Prestor</option>
+<option value="CN-Proudmoore" id="CN-Proudmoore">CN-Proudmoore</option>
+<option value="CN-Quel'Thalas" id="CN-Quel'Thalas">CN-Quel'Thalas</option>
+<option value="CN-Ragnaros" id="CN-Ragnaros">CN-Ragnaros</option>
+<option value="CN-Rajaxx" id="CN-Rajaxx">CN-Rajaxx</option>
+<option value="CN-Rangers" id="CN-Rangers">CN-Rangers</option>
+<option value="CN-Ravencrest" id="CN-Ravencrest">CN-Ravencrest</option>
+<option value="CN-Ravenholdt" id="CN-Ravenholdt">CN-Ravenholdt</option>
+<option value="CN-Razorwind Canyon" id="CN-Razorwind Canyon">CN-Razorwind Canyon</option>
+<option value="CN-Red Cloud Mesa" id="CN-Red Cloud Mesa">CN-Red Cloud Mesa</option>
+<option value="CN-Red Dragonflight" id="CN-Red Dragonflight">CN-Red Dragonflight</option>
+<option value="CN-Rend" id="CN-Rend">CN-Rend</option>
+<option value="CN-Rexxar" id="CN-Rexxar">CN-Rexxar</option>
+<option value="CN-Rhonin" id="CN-Rhonin">CN-Rhonin</option>
+<option value="CN-Ring of Trials" id="CN-Ring of Trials">CN-Ring of Trials</option>
+<option value="CN-Rivendare" id="CN-Rivendare">CN-Rivendare</option>
+<option value="CN-River Pride" id="CN-River Pride">CN-River Pride</option>
+<option value="CN-Runetotem" id="CN-Runetotem">CN-Runetotem</option>
+<option value="CN-Sapphiron" id="CN-Sapphiron">CN-Sapphiron</option>
+<option value="CN-Sargeras" id="CN-Sargeras">CN-Sargeras</option>
+<option value="CN-Scarlet Crusade" id="CN-Scarlet Crusade">CN-Scarlet Crusade</option>
+<option value="CN-Scholomance" id="CN-Scholomance">CN-Scholomance</option>
+<option value="CN-Searinox" id="CN-Searinox">CN-Searinox</option>
+<option value="CN-Sen'jin" id="CN-Sen'jin">CN-Sen'jin</option>
+<option value="CN-Sethekk" id="CN-Sethekk">CN-Sethekk</option>
+<option value="CN-Shadow Council" id="CN-Shadow Council">CN-Shadow Council</option>
+<option value="CN-Shadowfang Keep" id="CN-Shadowfang Keep">CN-Shadowfang Keep</option>
+<option value="CN-Shadowmoon" id="CN-Shadowmoon">CN-Shadowmoon</option>
+<option value="CN-Shattered Halls" id="CN-Shattered Halls">CN-Shattered Halls</option>
+<option value="CN-Shattered Hand" id="CN-Shattered Hand">CN-Shattered Hand</option>
+<option value="CN-Shrine of the Dormant Flame" id="CN-Shrine of the Dormant Flame">CN-Shrine of the Dormant Flame</option>
+<option value="CN-Silver Hand" id="CN-Silver Hand">CN-Silver Hand</option>
+<option value="CN-Silvermoon" id="CN-Silvermoon">CN-Silvermoon</option>
+<option value="CN-Silverpine Forest" id="CN-Silverpine Forest">CN-Silverpine Forest</option>
+<option value="CN-Skullcrusher" id="CN-Skullcrusher">CN-Skullcrusher</option>
+<option value="CN-Skywall" id="CN-Skywall">CN-Skywall</option>
+<option value="CN-Smolderthorn" id="CN-Smolderthorn">CN-Smolderthorn</option>
+<option value="CN-Soulflayer" id="CN-Soulflayer">CN-Soulflayer</option>
+<option value="CN-Spirestone" id="CN-Spirestone">CN-Spirestone</option>
+<option value="CN-Splinter Fist" id="CN-Splinter Fist">CN-Splinter Fist</option>
+<option value="CN-Staghelm" id="CN-Staghelm">CN-Staghelm</option>
+<option value="CN-Stonetalon Peak" id="CN-Stonetalon Peak">CN-Stonetalon Peak</option>
+<option value="CN-Storm Eye" id="CN-Storm Eye">CN-Storm Eye</option>
+<option value="CN-Stormrage" id="CN-Stormrage">CN-Stormrage</option>
+<option value="CN-Stormreaver" id="CN-Stormreaver">CN-Stormreaver</option>
+<option value="CN-Stormscale" id="CN-Stormscale">CN-Stormscale</option>
+<option value="CN-Stranglethorn" id="CN-Stranglethorn">CN-Stranglethorn</option>
+<option value="CN-Stratholme" id="CN-Stratholme">CN-Stratholme</option>
+<option value="CN-Stromgarde Keep" id="CN-Stromgarde Keep">CN-Stromgarde Keep</option>
+<option value="CN-Sun Rock Retreat" id="CN-Sun Rock Retreat">CN-Sun Rock Retreat</option>
+<option value="CN-Sundown Marsh" id="CN-Sundown Marsh">CN-Sundown Marsh</option>
+<option value="CN-Sunstrider" id="CN-Sunstrider">CN-Sunstrider</option>
+<option value="CN-Sutarn" id="CN-Sutarn">CN-Sutarn</option>
+<option value="CN-Swiftwind" id="CN-Swiftwind">CN-Swiftwind</option>
+<option value="CN-Sylvanas" id="CN-Sylvanas">CN-Sylvanas</option>
+<option value="CN-Taerar" id="CN-Taerar">CN-Taerar</option>
+<option value="CN-Tanaris" id="CN-Tanaris">CN-Tanaris</option>
+<option value="CN-Tarren Mill" id="CN-Tarren Mill">CN-Tarren Mill</option>
+<option value="CN-Temple of Elune" id="CN-Temple of Elune">CN-Temple of Elune</option>
+<option value="CN-Thaurissan" id="CN-Thaurissan">CN-Thaurissan</option>
+<option value="CN-The Forgotten Coast" id="CN-The Forgotten Coast">CN-The Forgotten Coast</option>
+<option value="CN-The Golden Plains" id="CN-The Golden Plains">CN-The Golden Plains</option>
+<option value="CN-The Great Sea" id="CN-The Great Sea">CN-The Great Sea</option>
+<option value="CN-The Master's Glaive" id="CN-The Master's Glaive">CN-The Master's Glaive</option>
+<option value="CN-The Underbog" id="CN-The Underbog">CN-The Underbog</option>
+<option value="CN-The Veiled Sea" id="CN-The Veiled Sea">CN-The Veiled Sea</option>
+<option value="CN-Theradras" id="CN-Theradras">CN-Theradras</option>
+<option value="CN-Theramore" id="CN-Theramore">CN-Theramore</option>
+<option value="CN-Therazane" id="CN-Therazane">CN-Therazane</option>
+<option value="CN-Thermaplugg" id="CN-Thermaplugg">CN-Thermaplugg</option>
+<option value="CN-Thoradin" id="CN-Thoradin">CN-Thoradin</option>
+<option value="CN-Thousand Needles" id="CN-Thousand Needles">CN-Thousand Needles</option>
+<option value="CN-Thrall" id="CN-Thrall">CN-Thrall</option>
+<option value="CN-Thunder Axe Fortress" id="CN-Thunder Axe Fortress">CN-Thunder Axe Fortress</option>
+<option value="CN-Thunder Bluff" id="CN-Thunder Bluff">CN-Thunder Bluff</option>
+<option value="CN-Thunderaan" id="CN-Thunderaan">CN-Thunderaan</option>
+<option value="CN-Thunderhorn" id="CN-Thunderhorn">CN-Thunderhorn</option>
+<option value="CN-Thunderlord" id="CN-Thunderlord">CN-Thunderlord</option>
+<option value="CN-Tirisfal Glades" id="CN-Tirisfal Glades">CN-Tirisfal Glades</option>
+<option value="CN-Tortheldrin" id="CN-Tortheldrin">CN-Tortheldrin</option>
+<option value="CN-Turalyon" id="CN-Turalyon">CN-Turalyon</option>
+<option value="CN-Twisting Nether" id="CN-Twisting Nether">CN-Twisting Nether</option>
+<option value="CN-Tyr's Hand" id="CN-Tyr's Hand">CN-Tyr's Hand</option>
+<option value="CN-Tyrande" id="CN-Tyrande">CN-Tyrande</option>
+<option value="CN-Uldaman" id="CN-Uldaman">CN-Uldaman</option>
+<option value="CN-Uldum" id="CN-Uldum">CN-Uldum</option>
+<option value="CN-Un'Goro" id="CN-Un'Goro">CN-Un'Goro</option>
+<option value="CN-Vaelastrasz" id="CN-Vaelastrasz">CN-Vaelastrasz</option>
+<option value="CN-Valley of Kings" id="CN-Valley of Kings">CN-Valley of Kings</option>
+<option value="CN-VanCleef" id="CN-VanCleef">CN-VanCleef</option>
+<option value="CN-Varimathras" id="CN-Varimathras">CN-Varimathras</option>
+<option value="CN-Vek'lor" id="CN-Vek'lor">CN-Vek'lor</option>
+<option value="CN-Vek'nilash" id="CN-Vek'nilash">CN-Vek'nilash</option>
+<option value="CN-Vilebranch" id="CN-Vilebranch">CN-Vilebranch</option>
+<option value="CN-Vol'jin" id="CN-Vol'jin">CN-Vol'jin</option>
+<option value="CN-Warsong" id="CN-Warsong">CN-Warsong</option>
+<option value="CN-Well of Eternity" id="CN-Well of Eternity">CN-Well of Eternity</option>
+<option value="CN-Whispering Shore" id="CN-Whispering Shore">CN-Whispering Shore</option>
+<option value="CN-Whisperwind" id="CN-Whisperwind">CN-Whisperwind</option>
+<option value="CN-Whitemane" id="CN-Whitemane">CN-Whitemane</option>
+<option value="CN-Windrunner" id="CN-Windrunner">CN-Windrunner</option>
+<option value="CN-Windshear Crag" id="CN-Windshear Crag">CN-Windshear Crag</option>
+<option value="CN-Wing of the Whelping" id="CN-Wing of the Whelping">CN-Wing of the Whelping</option>
+<option value="CN-Winterspring" id="CN-Winterspring">CN-Winterspring</option>
+<option value="CN-World Tree" id="CN-World Tree">CN-World Tree</option>
+<option value="CN-Xavian" id="CN-Xavian">CN-Xavian</option>
+<option value="CN-Ysera" id="CN-Ysera">CN-Ysera</option>
+<option value="CN-Ysondre" id="CN-Ysondre">CN-Ysondre</option>
+<option value="CN-Zalazane" id="CN-Zalazane">CN-Zalazane</option>
+<option value="CN-Zealot Blade" id="CN-Zealot Blade">CN-Zealot Blade</option>
+<option value="CN-Zul'jin" id="CN-Zul'jin">CN-Zul'jin</option>
+<option value="CN-Zuluhed" id="CN-Zuluhed">CN-Zuluhed</option>

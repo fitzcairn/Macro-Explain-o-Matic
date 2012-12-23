@@ -1,0 +1,555 @@
+
+
+- FOR ADDON:
+  o users copy and paste all of macros into web form and get
+response which is parsed by addon
+  o each addon is updateable individually
+  o users will see interpretations on mouseover in macro frame
+  o also on mouseover on macro bar
+  o users can share macro links to friends with the addon, which
+  will offer copy-to-maro book.
+  o links will also offer explanations when clicked.
+
+  will need special macro URL.
+
+
+- How about making parameters tags automatically?
+  o If found by wowhead, add as tag.
+
+
+!!!- Add a feedback widget on each line for feedback for incorrect macros!!
+
+  Should this be per-line?  Or per explanation?  Gut says
+per-line--it'd be more useful that way.
+
+
+
+
+
+
+- Add a NEWS section that replaces the blog!!
+  o Should go on front page.
+
+
+- Catch repeated conditions with reordered options.
+
+
+
+-- ADD A WHITELIST OF SPELLS TO SCANNER TO ENSURE THE RIGHT ONE IS
+CHOSEN:
+
+/cast Divine Illumination
+
+The tooltip on your website links to the Paladin Tier 10 bonus
+(http://www.wowhead.com/spell=71166) instead of the actual spell
+(http://www.wowhead.com/spell=31842).
+
+-- Add empty rank (like "Spell()") support to spell data.
+
+-- Fix GCD info from my SoE thread--add a whitelist for GCDs to data
+creation process!
+
+-- Add unit tests for front-page rendering routines.
+
+
+
+
+- - - DONE, BUT NOT DEPLOYED - - -
+
+
+- Refactor javascript windowing library to use for TTs and
+errors/warnings/feedback instead of CSS crap.
+
+
+
+
+
+
+
+- - - DEPLOYED - - -
+
+
+XX - SPACING WRONG ON RENDERERD MACRO COMMANDS -- WHY?????  FIX!!!
+
+
+XX - MUST DO: time to add a static files domain and get rid of
+  having all my static files served out of appengine.
+  After all, I pay for hosting for a reason!
+
+XX - Tooltip library.
+
+XX - Added Google analytics
+
+
+
+XX -- Repeated options are not caught correctly.
+
+Example:
+
+/cast [mod:alt, combat, mod:alt] Spell
+
+Should remove the last mod:alt seen.
+
+
+XX --BUG:
+
+/tar [nodead] Val
+/cast Charge
+
+Causes an error!
+
+
+XX -- OPTION KEYS DEFINED IN THE INTERFACE ARE NOT 
+RECOGNIZED CORRECTLY!
+
+
+Example:
+ /cast [mod:FOCUSCAST] SPELL
+
+Casts SPELL on the focus!!
+
+Q: /cast [mod:FOCUSCAST, target=player] SPELL
+Does it work on the focus or on the player? 
+
+A: Works on the player.  Honors target= command over mod.
+
+
+XX-- Bug with targetexact:
+
+/targetexact target-pet
+
+Should NOT parse as parameter as a target.
+
+
+
+XX-- Targeting bug:
+
+Macro: /cast [target=Shadow-target]Cyclone
+Explanation: Cast Cyclone on Shadow-'s currently targeted unit
+
+Macro: /cast [ target = Shadowtarget ] Cyclone
+Explanation: Cast Cyclone on Shadow's currently targeted unit
+
+/cast [target=Donuts-target] Mark of the Wild
+/cast [target=Donutstarget] Mark of the Wild (doesn't work)
+
+
+It used to be you did "<name><unit>" but that got changed a while ago
+as it was causing issues, it's now "<name>-<unit>" and it only works
+for players in your group (or yourself). (verified)
+
+
+-
+Additionally, you can optionally put the dash in between any two
+units. This should be accounted for when displaying the results to the
+user.
+
+target-target results in "target-'s target".  (verified)
+
+
+
+
+XX -- UI issues:
+
+@ http://www.macroexplain.com/m8b 
+
+at the bottom where you give the option to copy the macro, it should
+be the same box functionally as what people use to type macros in when
+they visit the site. Otherwise you end up with <BR> spam
+
+
+XX -- Handle macro line commenting
+
+#show Chain Lightning
+
+--/use 13
+/use 14
+/cast Elemental Mastery
+/cast Chain Lightning
+
+
+XX -- BUG:
+
+#showtooltip [btn:2]Frostbolt;Fireball
+/cast Frostbolt
+/cast Fireball
+
+A macro doesn't know what icon/spell to display until it is clicked if
+[button:x] or [btn:x] are used as the modifiers for the #show /
+#showtooltip line. By then, you've already triggered the macro, and
+it's pointless.
+
+
+Make these into unit tests:
+
+XXX --- ADD COLUMN SORT TO SEARCH RESULTS!!
+
+
+XX - BUG: Try this:
+
+  #showtooltip [mod] 0 16; 17
+  /equipslot 17 0 16
+
+  This needs fixing: with the # commands, you can use a spell name, item
+  name, item id (item:12345), inventory slot, or bag and slot numbers.
+
+XX - BUG: some conditions are meaningless and should be checked for.
+  Essentially, anytime you target yourself, you better know what you're doing.
+  For example:
+    [target=player,exists,help] -- that is ALWAYS going true!
+    [target=player,harm,dead]   -- that is ALWAYS going to be false!
+  SOLUTION: add a warning anytime the player uses "target=player" or "@player"
+
+XX - Add "vehicleui" and "unithasvehicleui" conditionals. (DONE)
+
+XX - Add @target shorthand for target=XXX! 
+
+XX -- NOTE FROM SITE: (now fixed thanks to mmo-champion!)
+
+Just a note, on Silencing Shot (Marksman Hunters
+http://www.wowhead.com/?spell=34490) the marco-matic states that it
+triggers a global cooldown which from my understanding it
+doesn't. Other than that, thanks for the very usefull tool!
+
+
+
+BUGS TO FIX:
+------------
+
+-- Reload item data using the extra parameter I added to store items
+by id as well as by name!
+
+-- Keep going through saved macros, look at each one.
+
+-- Spell data bugs:
+  o If wowhead has a level, prefer that
+  o "Used by" isn't always bad!  Some valid pet spells are shared with
+    NPCs.  Example:
+    http://www.wowhead.com/?spell=6358#comments
+
+- Add '/in' command.
+http://www.macroexplain.com/m9
+
+-- Add better error correction!!!
+  o Good example of need: incorrect equipslot commands (no slot, slot
+in wrong place, etc).
+
+-- Move to an image server, set up subdomain
+
+
+FROM RHAL:
+
+Just a couple thoughts.
+
+ [X]   Where you have if / else moments, I prefer to use the word "if <this>
+then:" and "otherwise:" instead of actually saying "else" in your
+explanation. It's really just a personal opinion about aesthetics. It
+removes some of the nerdiness that comes with certain phrases. (I
+still get a giggle out of people saying fsck instead of fuck)
+
+ [ ]   I would add some error handling for advanced macros. There's some out
+there that don't use /castsequence spell1, spell2, spell3, etc, they
+can either exclude the first or last spell / item name and get some
+different effects if I remember right. I've got to hit the sack in a
+moment or I would double check what exactly it does in that situation
+myself.
+
+ [X]   Thought about WoWHead integration? Like displaying an overlay when
+"/use item:34483" appears to show http://www.wowhead.com/?item=34483
+instead of the text "item:34483".
+    -- NEED TO ADD TESTS FOR THIS.
+    -- FOR SOME REASON /CAST ITEM:XXX MACROS ARE WORKING
+
+
+ [ ]   Add support for the Super Duper Macro addon. As in, include an option
+to remove the total characters limit, and enforce a 1023 character
+line limit.
+
+ [ ]   You might even be able to take it a step further and try to work with
+the developer of SDM to let them use your URLs for macro
+sharing/importing/exporting if you haven't already.
+
+ [ ]   All in all thought, it's rather nice actually. I get the feeling
+you'll get more traffic through macros being shared in game than you
+would the explanations, but that's probably heavily biased from
+knowing most things about macros.
+
+PS: Yes I remember you. :P 
+
+
+
+
+
+
+
+
+
+
+
+
+---------------
+
+All fixed:
+
+IS %t  SUPPOSED TO WORK in this????  YES IT DOES.
+
+Works in /r /reply too--all the chats.
+
+- /tell and /t are not recognized correctly.
+
+   /tell %t
+Does not work.  "%t" is not currently playing.  Therefore require
+A-Za-z for parameter!
+
+  /tell <stuff>
+Does not work.  Requires a target unit.  Therefore first word must be
+te target.
+
+
+- /r and /reply
+Takes NO target--everything is put into the reply.
+
+
+- Serious bugs overall with how emotes are handled.  Should be able to
+take a unit:
+
+    /emote TARGET
+ Emotes at the TARGET, requires A-Za-z
+
+    /emote %t
+ Emotes at the TARGET
+
+    /emote TARGET <anything else>
+ Emotes ignoring everything, including TARGET
+
+No conditions used in a unit.
+
+
+DONE:
+
+http://www.macroexplain.com/m4
+- Get rid of spells with "Used by" in the data
+
+http://www.macroexplain.com/m5
+- Get rid of spells with "Triggered by" in the data
+
+
+
+
+
+
+
+BUG REPORTS:
+----------------------------------------
+
+FROM THREAD:
+
+In keeping with the multiple line interpretation thing, I tried this one.
+
+/equipslot 18 Nesingwary 4000
+/equipslot 0 Blackflight Arrow
+
+Equips a gun to the ranged slot, and arrows to the ammo slot.
+Technically correct, but perhaps a warning that the gun won't work
+with that type of ammo would be incredibly useful, in case people
+change their macros without really looking
+
+
+
+
+FROM RELEASE BLOG:
+Not sure if this is the right place for this comment. You have a bug
+with Rune Strike. It is a "Next Melee" based attack, but I'm thinking
+your database has it stored as an instant attack? The macro parser
+thinks that this ability is causing the GCD, though it should not
+actually cause it.
+
+
+[ FIXED ]
+-- dude, have the current patch in two places in the save box!!  Get
+rid of one!
+
+
+(FROM WOW.COM)
+
+---hmmmmm do this!
+
+
+It looks really frackin cool. I might recommend, for the share
+feature, presetermining which classes it would be useful for based on
+spells cast. For example, if the parser sees "/cast Prayer of
+Mending", that's only going to be useful for priests, whereas right
+now it allows the user to input any class.
+
+
+
+----------------------------------------
+
+(FROM FORUM THREAD)
+
+[ FIXED ]
+
+Do error checking for items when used with slot ids.  right now can
+equip sheilds as neck (Hyperious)
+
+o I have this data already.  Use it, spring an error when the slotid
+doesn't match.
+
+
+---
+
+Hello =) I'm not from SoE, but I read about your site on wowinsider
+and it's really, really cool. ^^ I saw this thread and immediately
+started testing my more complex macros in the hope that I'd have an
+excuse to post here. xD
+
+A couple of things:
+
+The interpreter does not recognize the different types of Polymorphs
+as spells currently (ie, Polymorph(Pig) and Polymorph(Rabbit) ).
+
+The interpreter does not recognize the secondary conditional Raid in
+the conditional [group:raid] or [nogroup:raid].
+
+Slow Fall is interpreted as only castable on the player; though that's
+probably be a WoWhead spell issue.
+
+%t isn't recognized as "the name of your current target" currently, in
+case you want to implement that functionality some day =)
+
+That's all I could find in a half an hour. Thank you so much for
+making this awesome tool, now I can fiddle with macros on computers
+that don't have WoW. ^^ I look forward to the implementation of Lua
+comprehension! 
+
+
+----------------------------------------
+
+(FROM BLOG)
+
+[ FIXED, targeting is now correct ]
+
+http://www.macroexplain.com/m7
+
+line #2's explanation reads: If your pet's currently targeted unit
+does not exist then: Order your pet to attack your pet's currently
+targeted unit.
+
+It should read: If your pet's currently targeted unit does not exist
+then: Order your pet to attack your target.
+
+The subject of the action was wrongly explained.
+
+---
+
+[ FIXED, now recognizes equipset and usetalents ]
+
+Nice site, however, it doesn't recognize /equipset and /usetalents.
+
+http://www.macroexplain.com/mx
+
+
+---
+
+[ TODO: BETTER SCRAPING FROM WOWHEAD ]
+
+
+I just uploaded a macro, but the explanation was wrong when it came to
+the following line:
+
+/cast [target=focus,exists,nodead,noharm,nomodifier] Earth Shield; [target=target,modifier] Earth Shield
+
+The explanation correctly identified everything until it came to the
+actual cast target. In both cases, your explain-o-matic states that it
+will cast Earth Shield on yourself. However, this macro in use will
+cast on the focus target (if it exists, is not dead, and is not an
+enemy if no modifier is held), or it will cast on the current target
+(if a modifier is held). If Auto Self Cast is enabled and if the
+current target is an enemy, it will cast on the caster if a modifier
+is held down, but that is a bonus side effect.
+
+---
+
+[ TODO: BETTER ERROR CORRECTION ]
+
+The macro translation engine crashes when given the following expression
+/cast [target=focus target=target]
+It cannot handle two target= statements within the same brackets.
+
+---
+
+[ TODO: BETTER SCRAPING FROM WOWHEAD ]
+
+I found an error in the explanation of this macro:
+
+http://www.macroexplain.com/m37
+
+When the pet is Succubus, it should read that Seduction is cast on
+taget focus. Instead of this it shows up as "Cast Seduction on
+yourself".
+
+When the pet is felhunter, the macro has been parsed correctly.
+
+-------------------------------------------------
+
+
+
+
+
+
+ o When we don't recognize the button in /click, put up a warning.
+
+
+ o Can we combine gcd and show_gcd somehow in Verb objects?
+
+
+ o Need MUCH better error correction.
+
+
+ o Fix the macro-length reporting problems.  Doing weird shit.
+
+
+ o Support item ids as parameters!
+
+
+
+
+
+
+- OTHER TO-DOS
+ -- Add colored fonts based on macro token type!
+ -- NEW FAVICON!!!!!
+ -- ADD AN "OUT OF QUOTA" HANDLER?
+
+
+Targeting macro notes
+---------------------
+
+
+/targetparty
+/targetraid
+/targetenemy
+/targetenemyplayer
+/targetfriend
+/targetfriendplayer
+
+Parameters:
+
+  - do NOT take named parameters.  Only ints!  Do NOT do lookups.
+  - If int >=1, reverses order of targeting.
+  - there are no key unit restrictions.  Example: 
+        /targetfriend [target=focus,noharm] 
+    Does test focus in the parameter before executing.
+
+/tar
+/target
+/targetexact
+
+Parameters
+
+  - Looks up unit names in the parameters.
+  - Has a key unit of 'target'.  Example:
+       /targetexact [target=focus,harm] NAME
+    Targets the focus.
+
+

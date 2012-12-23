@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" dir="<$BlogLanguageDirection$>">
+<head>
+  <title>Fitzcairn's Macro Explain-o-matic</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="http://static.macroexplain.com/page.css" type="text/css" />
+  <link rel="stylesheet" href="http://static.macroexplain.com/blog.css" type="text/css" />
+<style type="text/css">
+#navbar-iframe {
+   display: none !important;
+}
+</style>
+
+</head>
+<body>
+<div id="all">
+  <div id="top">
+    <div><a href="http://www.macroexplain.com/"><h1>Fitzcairn's Macro Explain-o-matic<em>BETA</em></h1></a></div>
+    <div class="clear"></div>
+  </div>
+  <div id="content">
+
+    <div id="menubar">
+      <div id="menu">
+         <ul>
+           <li><a href="http://www.macroexplain.com">Explain a Macro</a></li>
+           <li><a href="http://www.macroexplain.com/tools">Tools</a><em>New!</em></li>
+           <li><a href="http://www.macroexplain.com/links">Macro Resources</a></li>
+           <li><a href="http://www.macroexplain.com/about">About</a></li>
+           <li><a href="http://blog.macroexplain.com/">Blog</a></li>
+         </ul>
+      </div>
+    </div>
+
+    <div id="main">
+
+      <Blogger>
+
+      <!-- Begin .post -->
+      <div class="post">
+        <a name="<$BlogItemNumber$>"></a>
+        <BlogItemTitle>
+          <h1 class="post-title">
+          <BlogItemUrl><a href="<$BlogItemUrl$>" title="external link"></BlogItemUrl>
+            <$BlogItemTitle$>
+          <BlogItemUrl></a></BlogItemUrl>
+          </h1>
+        </BlogItemTitle>
+  
+        <div class="post-body">
+          <div>
+            <$BlogItemBody$>
+          </div>
+        </div>
+        
+        <p class="post-footer">
+          <em><$I18NPostedByAuthorNickname$> <$I18NAtTimeWithPermalink$></em>
+          <MainOrArchivePage>
+            <BlogItemCommentsEnabled>
+              <a class="comment-link" href="<$BlogItemCommentCreate$>"><span style="text-transform:lowercase"><$I18NNumComments$></span></a>
+            </BlogItemCommentsEnabled>
+            <BlogItemBacklinksEnabled>
+              <a class="comment-link" href="<$BlogItemPermalinkUrl$>#links"><span style="text-transform:lowercase"><$I18NLinksToThisPost$></span></a>
+            </BlogItemBacklinksEnabled>
+          </MainOrArchivePage><$BlogItemControl$>
+        </p>
+      
+      </div>
+      <!-- End .post -->
+
+      <!-- Begin #comments -->
+      <ItemPage>
+      <div id="comments">
+        <BlogItemCommentsEnabled><a name="comments"></a>
+  
+          <dl id="comments-block">
+            <$CommentPager$>
+            <BlogItemComments>
+
+              <div class="box">
+                <dt class="comment-poster" id="<$BlogCommentAnchorName$>"><a name="<$BlogCommentAnchorName$>"></a>
+                  <$I18NCommentAuthorSaid$>
+                </dt>
+                <dd class="comment-body">
+                  <p><$BlogCommentBody$></p>
+                </dd>
+                <dd class="comment-timestamp"><a href="<$BlogCommentPermalinkURL$>" title="comment permalink"><$BlogCommentDateTime$></a>
+                  <$BlogCommentDeleteIcon$>
+                </dd>
+              </div>
+
+            </BlogItemComments>
+            <$CommentPager$>
+          </dl>
+ 
+          <div class="box">
+            <p class="comment-timestamp">
+              <$BlogItemCreate$>
+            </p>
+          </div>
+        </BlogItemCommentsEnabled>
+
+        <div class="box">
+          <p class="comment-timestamp">
+            <a href="<$BlogURL$>">&lt;&lt; <$I18NHome$></a>
+          </p>
+        </div>
+      </div>
+      </ItemPage>
+      <!-- End #comments -->
+
+      </Blogger>
+    </div>
+    <!-- End #main -->
+
+    <!-- Begin #sidebar -->
+    <div id="sidebar">
+  
+      <!-- Begin about -->
+      <div class="box">
+        <h1 class="box-title">
+          About This Blog
+        </h1>
+        <p>This blog will track releases and updates to the Macro
+        Explain-o-matic.</p>
+
+        <p>If you find bugs (likely), please leave a comment with
+        example input and a bug description.  All feedback left here
+        will be read by the author, although responses may be
+        limited.</p>
+
+        <p>Thanks!</p>
+      </div>
+
+      <!-- Begin previous posts -->
+      <div class="box">
+        <h1 class="box-title">
+          <$I18NPreviousPosts$>
+        </h1>
+
+        <ul id="recently">
+          <BloggerPreviousItems>
+            <li><a href="<$BlogItemPermalinkURL$>"><$BlogPreviousItemTitle$></a></li>
+          </BloggerPreviousItems>
+        </ul>
+      </div>
+  
+    </div>
+    <!-- End #sidebar -->
+
+  </div>
+  <!-- End #content -->
+
+  <div id="footer">
+    <p>World of Warcraft and Blizzard Entertainment are trademarks or
+    registered trademarks of Blizzard Entertainment, Inc. in the
+    U.S. and/or other countries.  Spell and item information provided
+    by <a href="http://db.mmo-champion.com/">MMO-Champion</a> and <a
+    href="http://www.wowhead.com">Wowhead</a>.  All other content
+    copyright 2009 by Fitzcairn of Sisters of Elune.</p>
+
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+        <table cellspacing="0" width="100%" class="tt_table">
+          <tr>
+            <td class="title" align="left">
+              Macro
+            </td>
+            <td class="space"></td>
+            <td class="title" align="left">
+              Explanation
+            </td>
+          </tr> 
+{% for cmd in macro %} 
+          <tr>
+  {% if forloop.first %}
+            <td class="mid_first">
+  {% else %}
+            <td class="mid">
+  {% endif %}
+              {{ cmd.line }}
+            </td>
+            <td class="space"></td>
+  {% if forloop.first %}
+            <td class="mid_first">
+  {% else %}
+            <td class="mid">
+  {% endif %}
+              {{ cmd.interpret }}
+            </td>
+          </tr>
+{% endfor %}       
+        </table>
+

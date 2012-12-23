@@ -1,0 +1,124 @@
+    <div id="about_main">
+
+      <div class="about">
+        <a name="basics"></a>
+        <h1 class="about-title">Basic Macro Information</h1>
+        <div class="link-body">
+          <div>
+          <a href="http://www.worldofwarcraft.com/info/basics/macroguide-one.html">Blizzard's Macro Guide</a>
+          <p>
+            A good basic intro that will get you started quickly.  For
+            a more thorough introduction, however, I'd use the Wowwiki
+            guide listed below.
+          </p>
+          <a href="http://www.wowwiki.com/Making_a_macro">Wowwiki's guide to making a macro</a>
+          <p>
+            Initially written by Cogwheel, this is a very long and
+            thorough guide explaining exactly how macros work. 
+          </p>
+          <a href="http://www.wowwiki.com/Cooldown#Global_cooldown">Spells subject to the Global Cooldown, from Wowwiki</a>
+          <p>
+            The number one macro question I see: "why can't I have a
+            macro cast X and then Y?"  GCDs are the reason, and the
+            list of spells subject to the GCD can be found here.
+          </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about">
+        <a name="comp"></a>
+        <h1 class="about-title">Macro Compilations</h1>
+        <div class="link-body">
+          <div>
+          <a href="http://www.wowwiki.com/Useful_macros">Useful macros, from Wowwiki</a>
+          <p>
+          A good list of general macro examples.  Click your class
+          icon on the right side to drill down to class-specific
+          macros.  Warning: as of this writing, not all of them are
+          verified working in WoW version 3.1.
+          </p>
+
+          <a href="http://www.arenajunkies.com/macros/">Macros from Arena Junkies</a>
+          <p>
+          A huge set of PvP-oriented macros categorized by class.
+          Same 3.1 compatibility caveat applies.
+          </p>
+
+          <a href="http://www.wowmacroswarcraft.com/">World of Warcraft Macros</a>
+          <p>
+          A blog dedicated to reviewing macros, and it has plenty of them.
+          </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="about">
+        <a name="addon"></a>
+        <h1 class="about-title">Interesting Macro Addons</h1>
+        <div class="link-body">
+          <div>
+
+          <a href="http://wow.curse.com/downloads/wow-addons/details/ihml.aspx">I Have Macro Lol!</a>
+          <p>
+          This is a pretty cool addon that automatically customizes
+          macros to fit specific situations.  An example: imagine a
+          /use X macro where X was automatically changed to whatever
+          daily quest item you're working with?  A great idea, and
+          featured by wowinsider.com.
+          </p>
+
+          <a href="http://www.wowinterface.com/downloads/info10496-SuperDuperMacro.html">Super Duper Macro</a>
+          <p>
+          A great addon that essentially allows you to break the
+          255-character limit for macros.
+          </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about">
+        <a name="forums"></a>
+        <h1 class="about-title">Useful Macro Forums</h1>
+        <div class="link-body">
+          <div>
+
+          <a href="http://forums.worldofwarcraft.com/board.html?forumId=11114&amp;sid=1">Official Macros and UI Forum</a>
+          <p>
+            This forum is pretty active and actually can be extreme
+            useful--provided the search function is working, of
+            course.
+          </p>
+
+          <a href="http://www.arenajunkies.com/forumdisplay.php?f=64">Arena Junkies Macro Forum</a>
+          <p>
+            If you're looking for PvP macro help, this is the place to
+            go.  Some really great stuff posted here.
+          </p>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- End #main -->
+
+    <!-- Begin #menu -->
+    <div id="about_menu">
+
+      <!-- Begin menu items -->
+      <div class="box">
+        <h1 class="box-title">Contents</h1>
+
+        <ul id="recently">
+            <li><a href="#basics">Basic Macro Information</a></li>
+            <li><a href="#comp">Macro Compilations</a></li>
+            <li><a href="#addon">Interesting Macro Addons</a></li> 
+            <li><a href="#forums">Useful Macro Forums</a></li> 
+
+        </ul>
+      </div>
+  
+    </div>
+    <!-- End #sidebar -->

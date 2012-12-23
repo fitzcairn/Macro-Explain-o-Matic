@@ -1,0 +1,220 @@
+
+      <a id="search" name="#search"></a>
+      <div id="search_results_container"><div id="search_results">
+        <div class="box_title">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+
+              <td align="left" valign="top">
+                <h1>Macros Tagged with "{{ query|escape }}":</h1>
+              </td>
+              <td align="right" valign="middle">
+                <code>Current WoW version is {{ curr_version }}</code>
+              </td>
+
+            </tr>
+          </table>
+        </div>
+
+        <!-- Table width is a hack to get IE5/6 to display right. -->
+        <table class="search_table" width="786" cellpadding="0" cellspacing="0" align="center">
+
+          <!-- Column header with sorting -->
+          <tr class="cols">
+            <td class="med" valign="top">
+            <span class="sort">
+              <form name="title_sort" action="{{ search }}" method="get" onsubmit="return run_search();">
+                <input type="hidden" name="{{ q_esc }}" value="1"></input>
+                <input type="hidden" name="{{ q_in }}" value="{{ query|escape }}"></input>
+                <input type="hidden" name="{{ page_var }}" value="{{ page }}"></input>
+                <a href="javascript:document.title_sort.submit();">Title
+              {% ifequal sort "-title" %}
+                <img class="arrow" src="{{ static }}/sort_down.gif"></a>
+                <input type="hidden" name="{{ s_in }}" value="title"/>
+              {% else %}
+                {% ifequal sort "title" %}
+                  <img class="arrow" src="{{ static }}/sort_up.gif"></a>
+                {% else %}              
+                  </a>
+                {% endifequal %}
+                  <input type="hidden" name="{{ s_in }}" value="-title"/>
+              {% endifequal %}
+              </form>
+            </span>
+            </td>
+            <td class="big" valign="top">
+            <span class="sort">
+              Preview
+            </span>
+            </td>
+            <td class="big" valign="top">
+            <span class="sort">
+              Tags
+            </span>
+            </td>
+            <td class="med" valign="top">
+            <span class="sort">
+              Classes
+            </span>
+            </td>
+
+            <td class="rating" valign="top">
+            <span class="sort">
+              <form name="rating_sort" action="{{ search }}" method="get" onsubmit="return run_search();">
+                <input type="hidden" name="{{ q_esc }}" value="1"></input>
+                <input type="hidden" name="{{ q_in }}" value="{{ query|escape }}"></input>
+                <input type="hidden" name="{{ page_var }}" value="{{ page }}"></input>
+                <a href="javascript:document.rating_sort.submit();">Rating
+              {% ifequal sort "-rating" %}
+                <img class="arrow" src="{{ static }}/sort_down.gif"></a>
+                <input type="hidden" name="{{ s_in }}" value="rating"/>
+              {% else %}
+                {% ifequal sort "rating" %}
+                  <img class="arrow" src="{{ static }}/sort_up.gif"></a>
+                {% else %}              
+                  </a>
+                {% endifequal %}
+                  <input type="hidden" name="{{ s_in }}" value="-rating"/>
+              {% endifequal %}
+              </form>
+            </span>
+            </td>
+
+            <td class="small" valign="top">
+            <span class="sort">
+              <form name="views_sort" action="{{ search }}" method="get" onsubmit="return run_search();">
+                <input type="hidden" name="{{ q_esc }}" value="1"></input>
+                <input type="hidden" name="{{ q_in }}" value="{{ query|escape }}"></input>
+                <input type="hidden" name="{{ page_var }}" value="{{ page }}"></input>
+                <a href="javascript:document.views_sort.submit();">Views
+              {% ifequal sort "-views" %}
+                <img class="arrow" src="{{ static }}/sort_down.gif"></a>
+                <input type="hidden" name="{{ s_in }}" value="views"/>
+              {% else %}
+                {% ifequal sort "views" %}
+                  <img class="arrow" src="{{ static }}/sort_up.gif"></a>
+                {% else %}              
+                  </a>
+                {% endifequal %}
+                  <input type="hidden" name="{{ s_in }}" value="-views"/>
+              {% endifequal %}
+              </form>
+            </span>
+            </td>
+
+            <td class="version" valign="top">
+            <span class="sort">
+              <form name="version_sort" action="{{ search }}" method="get" onsubmit="return run_search();">
+                <input type="hidden" name="{{ q_esc }}" value="1"></input>
+                <input type="hidden" name="{{ q_in }}" value="{{ query|escape }}"></input>
+                <input type="hidden" name="{{ page_var }}" value="{{ page }}"></input>
+                <a href="javascript:document.version_sort.submit();">Version
+              {% ifequal sort "-version" %}
+                <img class="arrow" src="{{ static }}/sort_down.gif"></a>
+                <input type="hidden" name="{{ s_in }}" value="version"/>
+              {% else %}
+                {% ifequal sort "version" %}
+                  <img class="arrow" src="{{ static }}/sort_up.gif"></a>
+                {% else %}              
+                  </a>
+                {% endifequal %}
+                  <input type="hidden" name="{{ s_in }}" value="-version"/>
+              {% endifequal %}
+              </form>
+            </span>
+            </td>
+          </tr>
+
+{% for r in results %} 
+          <tr onmouseover="this.style.color='#c1c1c1'" onmouseout="this.style.color='#868f92'" onclick="window.open('{{ r.id }}','_self')" class="{% if forloop.counter|divisibleby:2 %}even{% else %}odd{% endif %}">
+            <td class="med" valign="top">
+            <div>{{ r.title|escape }}</div>
+            </td>
+            <td class="big" valign="top">
+            <div class="preview">{{ r.macro|escape }}</div>
+            </td>
+            <td class="big" valign="top">
+            <div>{{ r.tags|escape }}</div>
+            </td>
+            <td class="med" valign="top">
+            <div>
+            {% for class in r.classes %}
+                <img alt="{{ class }}" src="{{ static }}/{{ class }}.png">
+            {% endfor %}
+            </div>
+            </td>
+            <td class="rating" valign="top">
+              {% for star in r.stars %}
+                {% if star.on %}
+                  <img src="{{ static }}/star_on.gif" id="rating_star_{{ star.id }}">
+                {% endif %}
+                {% if star.half %}
+                  <img src="{{ static }}/star_half.gif" id="rating_star_{{ star.id }}">
+                {% endif %}
+                {% if star.off %}
+                  <img src="{{ static }}/star_off.gif" id="rating_star_{{ star.id }}">
+                {% endif %}
+                {% endfor %}
+            </td>
+            <td class="small" valign="top">
+            <div>{{ r.views }}</div>
+            </td>
+            <td class="version" valign="top">
+            <div>{{ r.version }}</div>
+            </td>
+          </tr>
+{% endfor %}
+
+{% if search_error %}
+          <!-- Errors --->
+          <tr>
+            <td class="error" colspan="7" width="100%" align="center" valign="bottom">
+            <font class="error">{{ search_error|escape }}</font>
+            </td>
+          </tr>
+{% endif %}
+
+          <!-- Pagination -->
+          <tr>
+            <td colspan="7" width="100%" align="center" valign="bottom">
+              <table class="pagination" width="100%" align="center">
+                <tr>
+                  <td>&nbsp</td>
+                  <td class="page" align="right">
+{% if prev_page %}
+                    <form name="prev" action="{{ search }}" method="get">
+                    <input type="hidden" name="{{ q_esc }}" value="1"></input>
+                    <input type="hidden" name="{{ q_in }}" value="{{ query|escape }}"></input>
+                    <input type="hidden" name="{{ page_var }}" value="{{ prev_page }}"></input>
+                    <input type="hidden" name="{{ s_in }}" value="{{ sort }}"/>
+                    <a href="javascript:document.prev.submit();">...Page {{ prev_page }}</a>
+                    </form>
+{% endif %}
+                  </td>
+                  <td class="page" align="center">   
+                    <form name="reload" action="{{ search }}" method="get">
+                    <input type="hidden" name="{{ q_esc }}" value="1"></input>
+                    <input type="hidden" name="{{ q_in }}" value="{{ query|escape }}"></input>
+                    <input type="hidden" name="{{ page_var }}" value="{{ page }}"></input>
+                    <input type="hidden" name="{{ s_in }}" value="{{ sort }}"/>
+                    <a href="javascript:document.reload.submit();">[Page {{ page }}]</a>
+                    </form>
+                  </td>
+                  <td class="page" align="left">
+{% if next_page %}
+                    <form name="next" action="{{ search }}" method="get">
+                    <input type="hidden" name="{{ q_esc }}" value="1"></input>
+                    <input type="hidden" name="{{ q_in }}" value="{{ query|escape }}"></input>
+                    <input type="hidden" name="{{ page_var }}" value="{{ next_page }}"></input>
+                    <input type="hidden" name="{{ s_in }}" value="{{ sort }}"/>
+                    <a href="javascript:document.next.submit();">Page {{ next_page }}...</a>
+                    </form>
+{% endif %}
+                  </td>
+                  <td>&nbsp</td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+      </div></div>

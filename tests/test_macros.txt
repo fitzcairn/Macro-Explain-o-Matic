@@ -1,0 +1,2404 @@
+/script px,py=GetPlayerMapPosition("player")
+/script DEFAULT_CHAT_FRAME:AddMessage(format("[ %s ] (%.1f, %.1f)",GetZoneText(),px*100,py*100));
+
+#showtooltip [nomodifier] attack; [modifier] Shoot (or Throw)
+/startattack
+/cast [modifier] Shoot (or Throw)
+
+#showtooltip
+/cast [equipped:Fishing Pole] Fishing; [equipped:Thrown] Throw; Shoot
+
+#shoot
+/cast !Shoot
+
+#showtooltip
+/cast [combat] [harm,nodead] Badass spell
+/cast [target=mouseover,help,nodead,exists] [help,nodead] [] Fluffy spell
+
+#showtooltip
+/cast [mod:ctrl,target=player] [target=mouseover,help,nodead,exists] [help,nodead] Fluffy spell
+/cast [harm,nodead] Badass spell; Fluffy spell
+
+#showtooltip
+/cast [nomod:ctrl,harm,nodead] Fireball, [mod:ctrl,harm,nodead] Pyroblast
+/cast [target=mouseover,help,nodead,exists] [nomod:ctrl,help,nodead] Arcane Intellect
+/cast [mod:ctrl,help,nodead] Arcane Brilliance
+
+#showtooltip
+/cast [target=mouseover,help,nodead,exists] [help,nodead] Flash of Light
+/cast [nomod:ctrl] Consecration; [mod:ctrl] Consecration(Rank 1)
+
+#showtooltip
+/cast [combat] [harm,nodead] Combat spell
+/use Water
+/use Food
+
+/stopmacro [noexists][target=focus,noexists]
+/target focus
+/targetlasttarget
+/focus
+/targetlasttarget 
+
+/focus [target=focus, noexists]
+/target [combat, noexists] focus
+/clearfocus [nocombat, noexists]
+/stopmacro [target=focus, noexists]
+/target focus
+/targetlasttarget
+/focus [exists]
+/targetlasttarget
+
+/cast [target=mouseover, exists][] Name Of Spell
+
+/target [target=focustarget, harm, nodead]
+
+#show Attack
+/target [target=focustarget, harm, nodead]
+/startattack
+
+/script SetRaidTarget("mouseover", n)
+
+/focus [modifier:shift] target
+/target [modifier:alt] focus
+/target [nomodifier:shift/alt] targettarget
+
+/focus [modifier:alt]
+/stopmacro [modifier:alt]
+/cleartarget
+/assist focus
+
+/use [target=player] Heavy Netherweave Bandage
+
+/use [help,nomodifier:alt] Heavy Netherweave Bandage; [target=player] Heavy Netherweave Bandage
+
+/use [modifier:alt,target=player] Heavy Netherweave Bandage
+/use [modifier:ctrl,target=pet] Heavy Netherweave Bandage
+/use [help] Heavy Netherweave Bandage
+
+/script for bag = 0, 4 do for slot = 1, GetContainerNumSlots(bag) do local name = GetContainerItemLink(bag,slot) if name and string.find(name,"ff9d9d9d") then DEFAULT_CHAT_FRAME:AddMessage("Selling "..name) UseContainerItem(bag,slot) end end end
+
+/run for bag=0,4 do for slot=1,GetContainerNumSlots(bag) do local texture,itemCount,locked,quality=GetContainerItemInfo(bag,slot) if quality==2 then UseContainerItem(bag,slot) end end end
+
+/script CheckInbox() for m = GetInboxNumItems(), 1, -1 do TakeInboxMoney( m ) end
+
+/script CheckInbox() for m = GetInboxNumItems(), 1, -1 do TakeInboxItem( m ) end
+
+/script PickupInventoryItem(20) PickupInventoryItem(71)
+/script PickupInventoryItem(21) PickupInventoryItem(70)
+/script PickupInventoryItem(22) PickupInventoryItem(69)
+/script PickupInventoryItem(23) PickupInventoryItem(68)
+
+/script OpenAllBags()
+
+/run o=OpenAllBags c=CloseAllBags i=IsBagOpen cw=CloseBag if i(0) and i(1) and i(2) and i(3) and not i(4) then c() cw(0); else if i(0) or i(1) or i(2) or i(3) or i(4) then c() cw(0) o() cw(4) else o() cw(4) end;end
+
+#show [mounted]Skyguard Bombs; Fel Gland
+/use [mounted]Skyguard Bombs
+/use [mounted]Skyguard Blasting Charges
+/target [mounted]Diso
+/use [mounted]Booterang
+/stopmacro [mounted]
+/use Banishing Crystal
+/use Yarzill's Mutton
+/use Wrangling Rope
+
+/equip [mounted]item:35233
+/use 1
+/equip [noworn:1]item:#####
+
+/script i = GetNumQuestLeaderBoards(); for j = 1, i, 1 do a1, a2, a3 = GetQuestLogLeaderBoard(j); SendChatMessage(a1, "PARTY"); end;
+
+/script SelectGossipAvailableQuest(1)
+/script SelectGossipActiveQuest(1)
+/script CompleteQuest()
+/script SelectGossipOption(1)
+/script AcceptQuest()
+/script GetQuestReward(1)
+
+/script SelectQuestLogEntry(1); SetAbandonQuest(); AbandonQuest();
+
+/use [combat] Super Mana Potion; [nocombat] Filtered Draenic Water
+
+#showtooltip
+/use [nomodifier]Purified Draenic Water; [modifier] Conjured Manna Biscuit
+
+#showtooltip Naaru Ration
+/use Conjured Manna Biscuit
+/use Naaru Ration
+
+/use [nomodifier]Super Mana Potion; [modifier:alt ] Super Healing Potion;[modifier:ctrl] Major Dreamless Sleep Potion
+
+#showtooltip
+/cast [nocombat,mod:alt] Will of the Forsaken
+/cast [combat,mod:alt] Cannibalize
+/cast [combat] Will of the Forsaken
+/cast [nocombat] Cannibalize
+
+#showtooltip Cooking
+/use [button:1] Cooking
+/cast [button:2] Basic Campfire
+
+/equip [noequipped:Fishing Poles, nomodifier:alt] Seth's Graphite Fishing Pole
+/equip [modifier:alt] Mana Wrath
+/equip [modifier:alt] Lamp of Peaceful Radiance
+/cast [equipped:Fishing Poles, nomodifier:alt] Fishing
+
+#showtooltip Fishing
+/cast [button:1] Fishing
+/use [button:2] x y
+
+#showtooltip Fishing
+/equip [noequipped:Fishing Poles, nomodifier:alt] x y
+/equip [modifier:alt] x y
+/cast [equipped:Fishing Poles, nomodifier:alt, nomodifier:ctrl] Fishing
+/use [modifier:ctrl] x z
+/use [modifier:ctrl] 16
+
+#showtooltip [mod:shift] 4 17; [mod:ctrl] 4 13;Fishing
+/cast [equipped:Fishing Pole, nomod:shift, nomod:ctrl] Fishing
+/use [mod:shift, equipped:Fishing Pole] 4 17
+/use [mod:shift, equipped:Fishing Pole] 16
+/stopmacro [nomod:ctrl]
+/outfitter toggle Fishing
+
+#show Speckled Tastyfish
+
+/castsequence [nocombat] find herbs, find minerals
+
+/follow
+/script if UnitIsPlayer("target") and UnitIsFriend("player","target") and CheckInteractDistance("target",4) and not IsControlKeyDown() then SendChatMessage("is following "..UnitName("target")..".","EMOTE") end
+
+/yell "%n, stop running so I can heal you!"
+
+/script BattlefieldMinimap_LoadUI() if BattlefieldMinimap:IsVisible() then MiniMapBattlefieldFrame.status = ""; BattlefieldMinimap:Hide() else MiniMapBattlefieldFrame.status = "active"; BattlefieldMinimap:Show() end
+
+/script ToggleFrame(WorldMapFrame);
+
+/equipslot 17 *Your weapon name*
+
+/equipslot [equipped:Two-Hand] 16 *One-Hand Weapon name*
+/equipslot [equipped:Two-Hand] 17 *Shield name*
+/equipslot [equipped:One-Hand] 16 *Two-Hand Weapon name*
+
+/equip [equipped:Two-Hand] *DPS One-Hand Weapon name*
+/equip [equipped:Two-Hand] *Off-Hand Weapon name*
+/equip [equipped:One-Hand] *Tanking Weapon name*
+/equip [equipped:One-Hand] *Shield name*
+/equip [equipped:Shields] *Two-Hand Weapon name*
+
+/equipslot [modifier:alt] 17 *Shield name*
+/equipslot [modifier:alt] 16 *One-Hand Weapon name*
+/equipslot [nomodifier] 16 *Two-Hand Weapon name*
+/equipslot [Modifier:shift] 17 *Offhand Weapon*
+/equipslot [modifier:shift] 16 *MainHand Weapon name*
+
+#showtooltip
+/use [nobutton:2] Z
+/equipslot [button:2] Z X Y
+
+/use 13
+/use 14
+
+/castsequence reset=90 Bladefist's Breadth, Blackhand's Breadth
+
+/use [button:1] 13
+/use [button:2] 14
+
+/run SetCVar("Sound_EnableSFX","0")
+/use 13
+/use 14
+/run SetCVar("Sound_EnableSFX","1")
+/castsequence X, Y, Z
+
+/script UIErrorsFrame:UnregisterEvent("UI_ERROR_MESSAGE");
+/console Sound_EnableSFX 0
+/use 13
+/use 14
+/cast Spellname
+/script UIErrorsFrame:RegisterEvent("UI_ERROR_MESSAGE");
+/console Sound_EnableSFX 1
+
+/console Sound_EnableSFX 0
+/use 13
+/use 14
+/script UIErrorsFrame:Clear()
+/console Sound_EnableSFX 1
+/cast Mind Blast
+
+/stopmacro [help] [noexists]
+
+/script local infoType, info1, info2 = GetCursorInfo(); if infoType == "item" then DEFAULT_CHAT_FRAME:AddMessage( info1 ); end
+
+/script DEFAULT_CHAT_FRAME:AddMessage( GetMouseFocus():GetName() );
+
+/script local type, id, book = GetCursorInfo();DEFAULT_CHAT_FRAME:AddMessage((type=="item") and GetItemIcon(id) or (type=="spell") and GetSpellTexture(id,book) or (type=="macro") and select(2,GetMacroInfo(id)))
+
+/script CastSpellByName(#prof#);SendChatMessage("I'll create items against mats, look out: "..GetTradeSkillListLink(),"CHANNEL",nil,GetChannelName("Trade - City"));CloseTradeSkill();
+
+/script CastSpellByName("Engineering");SendChatMessage("I'll create items against mats, look out: "..GetTradeSkillListLink(),"CHANNEL",nil,GetChannelName("Trade - City"));CloseTradeSkill();
+
+/use Borean Leather scraps
+/use Borean Leather scraps
+/use Borean Leather scraps
+/use Borean Leather scraps
+/use Borean Leather scraps
+/use Borean Leather scraps
+
+#showtooltip Death Grip
+/cast Death Grip
+/cast Chains of Ice
+
+/castsequence reset=25 Death Grip, Chains of Ice
+
+#showtooltip Death Grip
+/cast Death Grip
+/cast Gnaw
+
+#showtooltip Strangulate
+/cast Strangulate
+/cast Mind Freeze
+
+#showtooltip Strangulate
+/cast Strangulate
+/cast Mind Freeze
+/cast Arcane Torrent
+
+#showtooltip 
+/cast [nomod] Death Coil; [mod:alt,target=pet] Death Coil
+
+#showtooltip Death Coil
+/cast [button:2, target=player] Death Coil; Death Coil
+
+#showtooltip Death Coil
+/cast Lichborne
+/cast [target=player] Death Coil
+
+#showtooltip Death Coil
+/cast [button:2] Lichborne
+/cast [button:2, target=player] Death Coil; Death Coil
+
+; [Button:3, target=pet] Death Coil
+
+#showtooltip Lichborne
+/cast Lichborne
+/cast Unbreakable Armor
+/cast Icebound Fortitude
+
+#showtooltip Lichborne
+/cast Lichborne
+/cast Unbreakable Armor
+/cast Icebound Fortitude
+/cast Stoneform
+
+/castsequence reset=35 Death Grip, Dark Command
+
+#showtooltip
+/castsequence [mod] Death and Decay; reset=combat Icy Touch, Plague Strike, Pestilence, Death Strike, Heart Strike
+/cast [nomod] Rune Strike
+
+#showtooltip Hungering Cold
+/cast Lichborne
+/cast Unbreakable Armor
+/cast Icebound Fortitude
+/cast Hungering Cold
+
+#showtooltip Leap
+/cast Leap
+/cast Gnaw
+
+#showtooltip
+/cast [exists][target=player] Leap
+/cast [harm] Gnaw
+/petfollow [noexists]
+
+#showtooltip
+/target [modifier:alt] pet
+/cast [modifier:alt] Corpse Explosion
+/targetlasttarget 
+/cast [nomodifier] Corpse explosion
+
+#showtooltip
+/cast Vampiric Blood
+/cast Rune Tap
+
+#showtooltip
+/cast [mod:alt] Vampiric Blood
+/cast Rune Tap
+
+#showtooltip Lichborne
+/cast Icebound Fortitude
+/cast Vampiric Blood
+/cast Rune Tap
+/cast Lichborne
+/cast [target=player] Death Coil
+
+#showtooltip
+/cast [target=player] Death Coil
+
+#showtooltip
+/castsequence reset=6 Plague Strike, Icy Touch, Heart Strike, Heart Strike, Death Strike, Death Coil
+/script UIErrorsFrame:Clear()
+
+#showtooltip
+/castsequence [nomod] reset=6/combat/shift/target Icy Touch, Plague Strike, Blood Strike, Heart Strike,  Death Strike,  Death Coil;[mod:ctrl]  Death Coil
+
+#showtooltip
+/castsequence reset=6/combat/shift Icy Touch, Plague Strike, Scourge Strike, Blood Strike, Blood Strike, Death Coil, Scourge Strike, Death Coil, Scourge Strike, Scourge Strike, Death Coil
+
+#showtooltip
+/castsequence reset=6/combat/shift Icy Touch, Plague Strike, Scourge Strike, Pestilence, Blood Boil, Death Coil, Scourge Strike, Death Coil, Scourge Strike, Scourge Strike, Death Coil
+
+#showtooltip
+/cast Blood Strike
+/cast !Rune Strike
+
+/console Sound_EnableSFX 0
+/castsequence reset=nocombat/alt Icy Touch, Plague Strike, Obliterate, Heart Strike, Heart Strike, Death Coil
+/use 13
+/use 14
+/cast Rune Strike
+/script UIErrorsFrame:Clear()
+/console Sound_EnableSFX 1
+
+#showtooltip
+/castsequence reset=10/target Icy Touch, Plague Strike, Blood Strike, Howling Blast, Blood Strike
+
+#showtooltip
+/cast Death Grip
+/stopmacro [noexists][help]
+/script local c="Death Grip";if GetSpellCooldown(c)==0 then PlaySoundFile("Sound\\Creature\\HeadlessHorseman\\Horseman_Beckon_01.wav") end;
+
+#showtooltip
+/cast Death Grip
+/cast Gnaw
+/stopmacro [noexists][help]
+/script local c="Death Grip";if GetSpellCooldown(c)==0 then PlaySoundFile("Sound\\Creature\\HeadlessHorseman\\Horseman_Beckon_01.wav") end;
+
+#showtooltip
+/cast Raise Dead
+/stopmacro [noexists] [help]
+/script local c="Raise Dead";if GetSpellCooldown(c)==0 then PlaySoundFile("Sound\\Creature\\Ashbringer\\ASH_SPEAK_12.wav") end;
+
+#showtooltip
+/cast Death Gate
+/stopmacro [noexists] [help]
+/script local c="Death Gate";if GetSpellCooldown(c)==0 then PlaySoundFile("Sound\\Creature\\NexusPrinceShafar\\Auch_NexPrince_Death01.wav")  end;
+
+#showtooltip Travel Form
+/cast [nostance:2/4/5,swimming] Aquatic Form; [nostance:2/4/5,flyable, nocombat] Swift Flight Form; [nostance:2/4/5,outdoors] Travel Form
+/cancelform [stance:2/4/5]
+
+/cast [stance:1] !Dire Bear Form
+/cast [stance:2] !Aquatic Form
+/cast [stance:3] !Cat Form
+/cast [stance:4] !Travel Form
+
+#showtooltip
+/cast [form:1] Lacerate; [form:3] Maim; [noform] Healing Touch
+
+#showtooltip Nature's Grasp
+/cast Nature's Grasp
+/follow
+
+/cast [target=player] Innervate
+
+/focus [target=focus, exists, nodead] focus; [btn:2][] target
+/cast [target=focus] Entangling Roots
+
+/castsequence reset=target Mark of the Wild, Thorns
+
+/castsequence [target=player] reset=10 Thorns, Mark of the Wild
+
+/cast [modifier:shift, button:2, target=player] Thorns
+/castsequence [button:2, target=player] reset=6 Mark of the Wild, Thorns
+/cast [modifier:shift] Thorns
+/castsequence reset=target Mark of the Wild, Thorns
+
+#show Gift of the Wild
+/cast [button:3] Gift of the Wild; [button:2] Thorns; Mark of the Wild
+
+#showtooltip
+/cast [modifier:shift] Thorns; [modifier:alt] Gift of the Wild; Mark of the Wild
+
+#showtooltip
+/cast [button:1,target=mouseover,help,exists] [button:1,target=target,help,nodead] [target=player] Insert any friendly spell/nowiki
+
+#showtooltip
+/cancelform
+/dismount
+/cast [modifier: Alt] Swift Spectral Tiger; [swimming] Aquatic Form; [flyable,nocombat] Swift Flight Form; Travel Form
+
+#showtooltip
+/cast Rejuvenation [mounted, form]
+/cast [modifier: Shift] Swift Stormsaber; [swimming] Aquatic Form; [flyable,nocombat] Flight Form; Travel Form
+
+#showtooltip
+/say I am resurrecting %t
+/cast [combat] Rebirth ; Revive
+
+#showtooltip
+/script SendChatMessage("WTS out of combat res, only 100G !!!", "WHISPER", nil, UnitName("mouseover"));
+/cast [combat] Rebirth ; Revive
+
+/say I am resurrecting %t
+
+/stopcasting
+/cast Nature's Swiftness
+/cast [target=player] Healing Touch
+
+/stopcasting
+/cast [mod:alt,target=player][help] Nature's Swiftness
+/castsequence [mod,target=player][help] reset=25/combat Healing Touch, Rejuvenation, Swiftmend, Regrowth
+
+#showtooltip Lifebloom
+/castsequence [modifier:alt,target=player][target=mouseover, exists][] reset=7 Lifebloom, Rejuvenation, Lifebloom
+
+#showtooltip Swiftmend
+/castsequence [exists,help] reset=12/target Rejuvenation, Swiftmend
+/stopmacro [exists,help]
+/castsequence [modifier:alt,target=player][target=mouseover, exists][] reset=12 Rejuvenation, Swiftmend
+
+#showtooltip Lifebloom
+/focus [target=focus,exists,nodead] focus; [harm] target
+/cast [target=focustarget] Lifebloom
+
+#showtooltip
+/stopmacro [nohelp,nodead]
+/y Resurrecting %t
+/cast Rebirth
+
+#showtooltip Rejuvenation
+/target [modifier:shift] Eagle Spirit; [modifier:ctrl] Falcon Spirit; [modifier:alt] Hawk Spirit; party1
+/cast [modifier] Rejuvenation (Rank 1); Rejuvenation
+/targetlasttarget
+
+#showtooltip
+/castsequence reset=60 Survival Instincts, Frenzied Regeneration, Barkskin
+/use Master Healthstone
+/use Super Healing Potion
+/use 13 (or 14) (if you have tanking trinkets)
+
+/console Sound_EnableSFX 0
+/cast Survival Instincts
+/cast Barkskin
+/cast Frenzied Regeneration
+/use Runic Healing Potion
+/use Master Heathstone
+/use 13
+/script UIErrorsFrame:Clear()
+/console Sound_EnableSFX 1
+
+/cast [form:1/3] Faerie Fire (Feral)(); Faerie Fire
+
+#showtooltip
+/cast [nostealth] Shred; [stealth] Ravage 
+
+/cancelaura [stance:2] Aquatic Form; [stance:3] Cat Form; [stance:4] Travel Form; [stance:5] Moonkin Form/Tree of Life; [mounted] Mount Name
+/focus [target=focus,noexists]
+/cast [nostance] Dire Bear Form
+/cast [target=focus] Feral Charge
+
+#showtooltip Shadowmeld
+/castsequence reset=119 Shadowmeld, Cat Form(Shapeshift), Prowl, Pounce
+
+#showtooltip Prowl
+/cast [no combat, form:3] Prowl
+/swapactionbar 1 2
+
+#showtooltip Pounce
+/cast [form:3, Stealth] Pounce
+/ [Combat] swapactionbar 2 1
+
+#showtooltip
+/cast Faerie Fire (Feral) ()
+/script SetRaidTarget("target",8)
+/startattack
+
+/cast Growl
+/startattack
+
+#showtooltip Mangle - Cat
+/cast item name
+/cast Tiger's Fury
+/cast Mangle - Cat
+/startattack
+
+/castsequence [nocombat, form:3] reset=combat Track Humanoids, Find Herbs, Find Minerals
+/castsequence [nocombat, noform:3] Find Minerals, Find Herbs
+
+/castsequence [stealth]pounce;reset=25/combat/target shred, claw, claw, rake, rip, claw, claw
+
+/castsequence [stealth]pounce;reset=25/combat/target Mangle - Cat, shred, Mangle - Cat, rake, rip, Mangle - Cat, Mangle - Cat
+
+#showtooltip
+/cast [nostance:3/1] Cat Form;[nocombat, nostealth, stance:3] Prowl;[nostealth, stance:3] Mangle - Cat;[stance:3, stealth] Pounce;[stance:1] Mangle - Bear
+
+/cast Maul
+/castrandom Mangle - Bear, Mangle - Bear, Lacerate, Faerie Fire (Feral) ()
+
+#showtooltip
+/castsequence reset=4 Mangle - Bear, Lacerate, Lacerate, Lacerate
+/startattack
+
+/castsequence [btn:1] reset=6/target Mangle - Bear, Lacerate, Lacerate
+/cast [btn:2] Swipe
+/cast Maul
+
+#showtooltip
+/run c="Druid's Shield Wall: 15 seconds of increased avoidance!"if UnitInRaid("player")then SendChatMessage(c, "RAID")elseif GetNumPartyMembers()0 then SendChatMessage(c, "PARTY")end
+/use Moroes' Lucky Pocket Watch
+/use Badge of Tenacity
+
+/cast [nostance:3] Cat Form; Dash
+
+#showtooltip
+/startattack
+/use 13
+/cast Mangle - Cat
+
+#showtooltip Mangle - Cat 
+/startattack 
+/console Sound_EnableSFX 0 
+/use 13 
+/console Sound_EnableSFX 1 
+/run UIErrorsFrame:Clear() 
+/cast Mangle - Cat
+
+#showtooltip
+/startattack
+/use [mod:alt] 10; Mangle - Cat
+/use 13
+
+#showtooltip Force of Nature
+/cast [nopet] Force of Nature
+/click [pet] PetActionButton8
+/click [pet] PetActionButton1
+
+/castsequence reset=target Entangling Roots, Starfire, Moonfire
+
+/castsequence reset=target Starfire, Moonfire, Entangling Roots, Insect Swarm
+
+/stopcasting
+/cast Barkskin
+/cast Hurricane
+
+/targetexact Wrath of Air Totem
+/targetexact Mana Spring Totem
+/targetexact Poison Cleansing Totem
+/targetexact Windfury Totem V
+/targetexact Mana Tide Totem
+/targetexact Grounding Totem
+/cast Moonfire
+
+#showtooltip
+/console Sound_EnableSFX 0
+/cast !auto shot
+/cast Kill Shot
+/castrandom Steady Shot, Arcane Shot
+/console Sound_EnableSFX 1
+/script UIErrorsFrame:Clear()
+
+#showtooltip Hunter's Mark
+/castsequence reset=5 [button:2] Hunter's Mark; Serpent Sting, Hunter's Mark
+/stopmacro [button:2]
+/petattack
+/petdefensive
+
+#showtooltip Bestial Wrath
+/cast Kill Command
+/cast Bestial Wrath
+/use 13
+/use 14
+
+#showtooltip
+/console Sound_EnableSFX 0
+/cast !auto shot
+/cast Kill Shot
+/castrandom Steady Shot, Arcane Shot, Multi-Shot, Chimera Shot
+/use 13
+/use 14
+/console Sound_EnableSFX 1
+/script UIErrorsFrame:Clear()
+
+#showtooltip Hunter's Mark
+/castsequence reset=5 [button:2] Hunter's Mark; Serpent Sting, Hunter's Mark
+/stopmacro [button:2]
+/cast [combat] Kill Command
+/petattack
+/petdefensive
+
+#showtooltip
+/console Sound_EnableSFX 0
+/cast !auto shot
+/cast Kill Shot
+/castrandom Steady Shot, Explosive Shot, Multi-Shot
+/use 13
+/use 14
+/console Sound_EnableSFX 1
+/script UIErrorsFrame:Clear()
+
+#showtooltip Hunter's Mark
+/castsequence reset=5 [button:2] Hunter's Mark; Serpent Sting, Hunter's Mark
+/stopmacro [button:2]
+/cast [combat] Kill Command
+/petattack
+/petdefensive
+
+#showtooltip
+/cast [target=focus,exists,nodead] Misdirection; [target=pet,exists,nodead] Misdirection
+
+#showtooltip
+/castsequence reset=target/3 Wing Clip, Raptor Strike, Wing Clip
+/castrandom [target=target, exists] Mongoose Bite
+
+#showtooltip
+/cast [nopet, modifier:ctrl] Tame Beast
+/cast [combat] Heart of the Phoenix
+/cast [nopet] Call Pet; [target=pet, dead] Revive Pet
+/castsequence [pet, nomodifier, button:1] reset=15 Mend Pet, null
+/cast [button:2] Dismiss Pet
+
+#showtooltip
+/console Sound_EnableSFX 0
+/cast [combat] Arcane Torrent
+/cast !Aspect of the Dragonhawk
+/petpassive [nocombat]
+/console Sound_EnableSFX 1
+/script UIErrorsFrame:Clear()
+
+#showtooltip
+/console Sound_EnableSFX 0
+/cast [combat] Arcane Torrent
+/cast !Aspect of the Viper
+/petpassive [nocombat]
+/console Sound_EnableSFX 1
+/script UIErrorsFrame:Clear()
+
+#showtooltip
+/petautocasttoggle [btn:2,group,mod]Growl;[btn:2,nogroup,mod]Cower;[btn:2,group]Cower;[btn:2]Growl
+/petautocastoff [btn:3]Growl
+/petautocastoff [btn:3]Cower
+/stopmacro [nobtn:1]
+/cast [group,mod]Growl;[nogroup,mod]Cower;[group]Cower;Growl
+
+#showtooltip
+/cast Hunter's Mark
+/petautocaston [group] Cower; [nogroup] Growl
+/petautocastoff [nogroup] Cower; [group] Growl
+
+/cast Bestial Wrath
+/cast Rapid Fire
+/use 13
+/use 14
+/cast Blood Fury
+
+/petattack
+/petfollow [target=pettarget,exists] 
+
+#showtooltip Battlemaster's Determination
+/script UIErrorsFrame:Hide()
+/use Horde Battle Standard
+/use Battlemaster's Determination
+/use Super Healing Potion
+/use Healthstone
+/cast Deterrence
+
+#showtooltip Viper Sting
+/clearfocus [modifier:shift]
+/focus [target=focus,noexists]; [target=focus,dead]
+/cast [target=focus,exists,harm]Viper Sting
+
+/castsequence [mod:shift target=mouseover,help] Intervene, Roar of Sacrifice
+/castsequence [nomod,target=Tokdåre] Intervene, Roar of Sacrifice
+
+#showtooltip Master's Call
+/cast [modifier:alt, target=focus] Master's Call
+/cast [modifier:shift] Master's Call
+/cast [target=player] Master's Call
+
+/cast [target=mouseover] Tranquilizing Shot
+
+#showtooltip Living Bomb
+/focus
+/cast Living Bomb
+
+/cancelaura Ice Block
+/cast [modifier:shift]Counterspell
+/cast Ice Block
+
+/cast [nocombat] Pyroblast; Fireball
+
+/castsequence  [nocombat] reset=combat Pyroblast, Fireball; Fireball
+
+/castsequence [nocombat,modifier:alt] Fireball; [nocombat][combat,modifier:alt] Pyroblast, Fireball; Fireball
+
+/stopcasting
+/castsequence reset=21 Frost Nova, Cold Snap
+
+#showtooltip Counterspell
+/stopcasting
+/cast Counterspell
+
+#showtooltip Ice Barrier
+/stopcasting
+/cast Ice Barrier
+
+#showtooltip Frostbolt
+/use 13
+/use 14
+/cast Frostbolt
+
+#showtooltip Frostbolt
+/use 13
+/use 14
+/script UIErrorsFrame:Clear()
+/cast Frostbolt
+
+#showtooltip Frostbolt
+/run SetCVar("Sound_EnableSFX","0")
+/use 13
+/use 14
+/run SetCVar("Sound_EnableSFX","1")
+/cast Frostbolt
+
+#showtooltip Pyroblast
+/cast Presence of Mind
+/cast Arcane Power
+/use 13
+/use 14
+/cast Pyroblast
+
+#showtooltip Frostbolt
+/cast Presence of Mind
+/cast Arcane Power
+/cast Icy Veins
+/use Icon of the Silver Crescent
+/cast Frostbolt
+
+/cast Counterspell
+/cast Arcane Power
+/cast Icy Veins
+/use 13/14 [Skull of Gul'dan]
+/cast Presence of Mind
+/cast Pyroblast
+
+#showtooltip Ice Lance
+/stopcasting
+/target [exists] Grounding Totem
+/cast Ice Lance
+/targetlasttarget
+
+#showtooltip Counterspell
+/stopcasting
+/cast [target=mouseover,exists][target=target,exists] Counterspell
+
+/cast Polymorph
+/stopmacro [noexists] [dead] [help]
+/p Sheeping %t. Back off it.
+
+#showtooltip [target=focus,harm] [] Polymorph
+/stopcasting
+/clearfocus [modifier:shift][target=focus,dead][target=focus,noexists]  
+/focus [target=focus,noexists]  
+/cast [target=focus] Polymorph
+
+#showtooltip
+/clearfocus [target=focus,dead]
+/focus [target=focus,noexists]
+/script SetRaidTarget("focus", 1)
+/cast [target=focus]Polymorph
+/stopmacro [nogroup]
+/s --== Sheeping and Marking "%t" ==--
+
+/s --== Sheeping and Marking "%f" ==--
+
+/focus [button:1]
+/cast [button:1,nomodifier:shift] Polymorph; [target=focus,exists,button:2,nomodifier:shift] Polymorph
+/stopmacro [nomodifier:shift]
+/target focus
+
+/focus [button:1]
+/cast [button:1,nomodifier:shift] Polymorph; [target=focus,exists,button:2,nomodifier:shift] Polymorph
+/stopmacro [nomodifier:shift]
+/target [button:2] focus
+/castsequence Presence of Mind, Polymorph
+
+/clearfocus [target=focus,dead][target=focus,noexists]
+/focus [target=mouseover,exists][target=focus,noexists]
+/script SetRaidTarget("focus", 1)
+/cast [target=focus] Polymorph
+/stopmacro [nogroup]
+/p --== Sheeping and Marking "%f" ==--
+
+/castrandom [harm] Polymorph(Rank 4), Polymorph(Pig), Polymorph(Turtle)
+/stopmacro [noharm]
+/emote randomly polymorphs %t.
+
+/cast [button:1,nomodifier]Conjure Water;[button:1,modifier:shift]Conjure Food;[button:1,modifier:ctrl]Conjure Mana Jade;
+/use [button:2,nomodifier]Conjured Spring Water;[button:2,modifier:shift]Conjured Pumpernickel;[button:2,modifier:ctrl]Mana Jade;
+
+/cast [modifier:alt]Conjure Mana Agate
+/castsequence [nomodifier,button:2] reset=8 Conjure Water,Conjure Food,Conjure Mana Agate
+/stopmacro [button:2]
+/use [nomodifier]Conjured Purified Water;[modifier:ctrl]Conjured Rye;[modifier:shift]Mana Agate
+
+/use Conjured Crystal Water
+/use Conjured Cinnamon Roll
+
+#showtooltip 
+/cast [modifier:alt][button:2] 1 16 
+/castsequence [nomodifier:alt, button:1] reset=20 1 20, 1 16 
+
+#showtooltip [modifier:alt] Conjure Water; Conjured Glacier Water
+/cast [button:2] Conjure Water
+/use [button:1] Conjured Glacier Water
+
+#showtooltip [modifier:alt] Conjure Food; Conjured Croissant
+/cast [button:2] Conjure Food
+/use [button:1] Conjured Croissant
+
+#show Conjured Crystal Water
+/cast [button:2,nomodifier] Conjure Water
+/cast [button:2,modifier:ctrl] Conjure Food
+/use [button:1] Conjured Cinnamon Roll
+/use [button:1] Conjured Crystal Water
+
+/castsequence [modifier:alt] reset=120 Conjure Water, Conjure Food,  Conjure Mana Emerald, Conjure Water, Conjure Food
+/stop macro [modifier:alt]
+/use Conjured Manna Biscuit
+/use Conjured Glacier Water
+/stopmacro [button:2]
+/use Conjured croissant
+
+#show none - so that your UI don't get confused since we got 2 usable items
+/use [nomodifier:alt,button:1] add conjured food name here - left click = eat food
+/use [nomodifier:alt,button:2] add conjured water name here - right click = drink water
+/cast [modifier:alt, button:1] Conjure Food - alt+left click = conjure highest rank food
+/cast [modifier:alt,button:2] Conjure Water - alt+right click = conjure highest rank water
+
+#show Mana Citrine
+/cast [button:2] Conjure Mana Citrine
+/stopmacro [button:2]
+/use Mana Citrine
+
+#show Mana Ruby
+/use Mana Ruby
+/cast [nocombat] Conjure Mana Ruby
+
+#showtooltip Mana Emerald
+/cast [button:1] Conjure Mana Gem
+/use [button:2] Mana Emerald
+
+/run for b=0,4,1 do for s=1,GetContainerNumSlots(b),1 do local n=GetContainerItemLink(b,s) if n and string.find(n,"Mana Emerald") then PickupContainerItem(b,s) DeleteCursorItem() end end end
+/cast Conjure Mana Gem
+
+#show Rune of Teleportation
+/say Teleporting, Cya!
+/cast [button:2,nomodifier] Teleport: Ironforge
+/cast [button:2,modifier:ctrl] Teleport: Stormwind
+
+#show Chestnut Mare Bridle (or whatever your mount item is)
+/cast [nomounted,harm] Mana Shield
+/stopcasting
+/use Chestnut Mare Bridle (or whatever your mount item is)
+
+#Showtooltip Arcane Intellect
+/cast [target=player,button:1] Arcane Intellect
+/cast [button:2] Arcane Intellect
+
+#Showtooltip Arcane Intellect
+/cast [target=player,button:2] Arcane Intellect
+/cast [button:1] Arcane Intellect
+/cast [modifier:ctrl,group,button:1] Arcane Brilliance
+
+#show Arcane Powder
+/cast [button:2, modifier:alt, target=player] Arcane Brilliance; [button:2] Arcane Brilliance; [modifier:alt, target=player] Arcane Intellect; Arcane Intellect
+
+#show Light Feather
+/dismount
+/cast Slow Fall
+
+#show Rune of Portals
+/cast [button:2] Portal: Shattrath; Teleport: Shattrath
+
+/cast [group,nomodifier] Portal: Shattrath; Teleport: Shattrath
+/stopmacro [nogroup][modifier]
+/p  Shattrath Portal Incoming 
+
+/cast [button:2/3] Portal: Shattrath; Teleport: Shattrath
+/stopmacro [button:1/2]
+/script local C; if(GetNumRaidMembers()==0) then C = "PARTY" else C = "RAID" end SendChatMessage("Opening Portal to [Shattrath City], Enjoy your trip.", C)
+
+#showtooltip
+/cast [btn:2]Hearthstone;[mod:ctrl,mod:alt]Teleport: Shattrath;[nomod]Teleport: Ironforge;[mod:shift]Teleport: Stormwind;[mod:ctrl,nomod:alt]Teleport: Darnassus;[mod:alt,nomod:ctrl]Teleport: Exodar
+
+#showtooltip
+/cast [btn:3,nomod]Hearthstone;[btn:1,nomod]Teleport: Stormwind;[mod:shift]Teleport: Ironforge;[mod:ctrl]Teleport: Darnassus;[btn:2]Portal: Stormwind;[btn:2,mod:shift]Portal: Ironforge;[btn:2,mod:ctrl]Portal: Darnassus;
+
+#showtooltip
+/cast [btn:1,nomod]Portal: Orgrimmar;[mod:shift]Portal: Silvermoon;[mod:ctrl,nomod:alt]Portal: Thunder Bluff;[mod:alt,nomod:ctrl]Portal: Undercity;[mod:alt,mod:ctrl]Portal: Shattrath;
+
+#showtooltip Molten Armor;
+/cast [button:2] Frost Armor; [nomodifier:alt] Molten Armor; Mage Armor;
+
+/cast [button:2] Ice Armor; [button:3] Mage Armor; Molten Armor;
+
+/targetparty
+/cast Remove Lesser Curse
+
+/targetraid
+/cast Remove Lesser Curse
+
+/cast [target=mouseover,exists] Remove Lesser Curse
+
+#Showtooltip Arcane Missiles
+/cast [nochanneling:Arcane Missiles] Arcane Missiles
+
+#Showtooltip Arcane Blast
+/use [nochanneling:Arcane Missiles] 13
+/cast [nochanneling:Arcane Missiles] Arcane Blast
+
+#showtooltip Frostbolt
+/petstay
+/petattack
+/cast Frostbolt
+
+#showtooltip Frost Nova
+/petfollow
+/stopcasting
+/cast Frost Nova
+
+/script UIErrorsFrame:UnregisterEvent("UI_ERROR_MESSAGE");
+/cast Frost Nova
+/click [pet] PetActionButton5
+/script UIErrorsFrame:RegisterEvent("UI_ERROR_MESSAGE");
+
+#showtooltip Frost Nova
+/petfollow
+/stopcasting
+/script UIErrorsFrame:UnregisterEvent("UI_ERROR_MESSAGE");
+/cast Frost Nova
+/click [pet] PetActionButton5
+/script UIErrorsFrame:RegisterEvent("UI_ERROR_MESSAGE");
+
+#showtooltip Ice Block
+/petaggressive
+/cast Ice Block
+
+#showtooltip Summon Water Elemental
+/cast  [button:2,target=pet] Focus Magic; [pet] Waterbolt; Summon Water Elemental
+
+/castsequence reset=60 summon water elemental, freeze, freeze
+/petattack [nomodifier]
+/petfollow [modifier:alt]
+/petstay [modifier:ctrl]
+
+#showtooltip
+/cast [nomodifier] Judgement of Wisdom;/cast [modifier:shift] Judgement of Light;/cast [modifier:ctrl] Judgement of Justice; 
+
+#showtooltip Hearthstone
+/cast [button:1] Divine Shield
+/use [button:2] Hearthstone
+
+#showtooltip
+/castsequence [harm] reset=target/shift Seal of Light, Judgement of Light
+
+#showtooltip Blessing of Might
+/cast [target=mouseover,exists] Blessing of Might; Blessing of Might
+
+#showtooltip Blessing of Might
+/cast [modifier:shift] Greater Blessing of Might; Blessing of Might
+
+#showtooltip
+/cast [modifier:shift][target=player] Blessing of Freedom
+/cast [nomodifier:shift] Blessing of Freedom
+
+#showtooltip Redemption
+/cast Redemption
+/stopmacro [nohelp][nodead]
+/p Resurrecting %t.
+
+#showtooltip Swift White Steed
+/castsequence [mounted] !Crusader Aura, Swift White Steed
+/castsequence [nomounted] Swift White Steed, !Retribution Aura 
+
+/cast [nocombat, nomounted] !Crusader Aura; [mounted] !Concentration Aura;
+/cast [nocombat, nomounted] Blue Hawkstrider;
+/dismount
+
+#showtooltip
+/castsequence [noflyable],[mod:shift]reset=ctrl Charger,Crusader Aura,Retribution Aura;
+[flyable,nomod:shif]reset=ctrl Golden Gryphon,Crusader Aura,Retribution Aura
+
+/cast [nomounted] !Crusader Aura 
+/castrandom Summon Charger,Reins of the Black War Tiger 
+/dismount [mounted] 
+/cast !Concentration Aura
+
+/castsequence [nocombat, nomounted] !Crusader Aura, Summon Charger
+/cast [mounted] !Devotion Aura
+/dismount [mounted]
+
+/cast [nocombat, nomounted] Summon Charger
+/castsequence [mounted] !Crusader Aura, Summon Charger
+/cast [mounted] !Devotion Aura
+
+#showtooltip Charger
+/cast [nocombat, nomounted] !Crusader Aura; [mounted] !Retribution Aura;
+/cast [nocombat, nomounted] Swift Green Gryphon;
+/cast [nocombat, nomounted] Charger;
+/dismount
+
+/castsequence reset=3.0 find herbs, find minerals, sense undead
+
+/cast Avenging Wrath
+/use 13
+/use 14
+/cast Divine Favor
+/cast Holy Shock
+/cast Judgement
+
+/clearfocus [modifier:shift] [target=focus,dead] [target=focus,noexists] 
+/focus [target=focus,noexists] 
+/script SetRaidTarget("focus", 1) 
+/cast [target=focus] Hand of Sacrifice
+
+#showtooltip Hand of Protection
+/cancelaura Hand of Protection
+/cast [nogroup,target=player][target=targettarget,party] Hand of Protection
+
+#showtooltip Divine Plea
+/cast Divine Plea
+/cast Arcane Torrent
+
+#showtooltip Spirit of the Lynx
+/target spirit of the lynx 
+/cast [target=spirit of the lynx] Judgement of Light
+
+#showtooltip
+/clearfocus [target=focus, dead]
+/clearfocus [mod:alt]
+/stopmacro [mod:alt]
+/stopmacro [target=focus, dead]
+/target focus
+/focus
+/cast Repentance
+/targetlasttarget
+
+#showtooltip Sacred Shield
+/cast [button:2, target=targettarget] Sacred Shield
+/cast Sacred Shield
+
+#showtooltip
+/script SendChatMessage("WTS out of combat res, only 100G !!!", "WHISPER", nil, UnitName("mouseover"));
+/cast Redemption
+
+/say I am resurrecting %t
+
+/use 13
+/use 14
+/cast Divine Favor
+/cast Divine Illumination
+/cast Avenging Wrath
+/script UIErrorsFrame:Clear()
+/cast [mod:shift,target=mouseover,help][mod:shift,help][mod:shift,target=player] Holy Light; 
+[target=mouseover,help][help][target=player] Flash of Light
+
+#showtooltip
+/cast [mod,target=player][target=mouseover,help,nodead]
+[help,nodead][nogroup,target=player][target=targettarget,help,nodead]Cleanse
+
+#showtooltip
+/cast [mod,target=player][target=mouseover,help,nodead]
+[help,nodead][nogroup,target=player][target=targettarget,help,nodead]Holy Light
+
+#showtooltip
+/cast [mod,target=player][target=mouseover,help,nodead]
+[help,nodead][nogroup,target=player][target=targettarget,help,nodead]Flash of Light
+
+#show Flash of Light
+/cast [modifier:alt,target=player] Flash of Light
+/cast [help,target=target] Flash of Light
+/cast [help,nodead,nomodifier:alt,target=targettarget,help,nodead] Flash of Light
+/cast Flash of Light
+
+#show Flash of Light
+/castsequence reset=8 Holy Light(Rank 3),Flash of Light,Flash of Light,Flash of Light,
+Flash of Light,Flash of Light,Flash of Light,Flash of Light,Flash of Light,Flash of Light,
+Flash of Light,Flash of Light,Flash of Light
+
+/focus [target]
+
+/target focus
+/assist [target]
+/cast [modifier:alt]Holy Light;Flash of Light
+
+/cast Beacon of Light
+/dbm timer 60 Bacon Time!
+
+#showtooltip
+/cast Beacon of Light
+/bwlcb 60 Recast Beacon!
+
+/cancelaura Divine Shield 
+/cast Divine Shield
+
+#showtooltip Holy Shield
+/cast Holy Shield
+/cancelaura Hand of Salvation
+
+#showtooltip Holy Shield
+/cast Holy Shield
+/cancelaura Hand of Salvation
+/cancelaura Hand of Protection
+/cancelaura Divine Shield
+
+#showtooltip Righteous Defense
+/cast [noharm] [target=targettarget,noharm] Righteous Defense
+
+#showtooltip Righteous Defense
+/cast [target=mouseover,help,nodead][help,nodead][target=targettarget,help,nodead]Righteous Defense
+
+#showtooltip Righteous Defense
+/cast [target=focus,help,nodead][help,nodead][target=targettarget,help,nodead]Righteous Defense
+
+#showtooltip
+/cast Holy Shield
+/cast [noharm] [target=targettarget,noharm] Righteous Defense
+
+#showtooltip
+/cast [help] Righteous Defense; Hand of Reckoning
+
+#showtooltip
+/cast [target=mouseover, exists, help] Righteous Defense; [help] Righteous Defense; [target=mouseover, exists, harm] Hand of Reckoning; Hand of Reckoning
+
+#showtooltip
+/cast [target=mouseover, exists, help] [help] Righteous Defense; [target=mouseover, exists, harm] [harm] Hand of Reckoning
+
+/script dr=function(x)return 1/(1/16+0.9560/x)end;DEFAULT_CHAT_FRAME:AddMessage("Need 102.4 combat table coverage. Currently at: "..GetDodgeChance()+GetBlockChance()+GetParryChance()+5+dr(GetCombatRating(CR_DEFENSE_SKILL)/122.962))
+
+#showtooltip
+/cast [mod:alt, target=player] Power Word: Shield
+/cast [nomod:alt, nocombat] Smite
+/castsequence [nomod:alt, combat] reset=combat/target Shadow Word: Pain, Mind Blast, Smite, Smite
+
+#showtooltip
+/script SendChatMessage("WTS out of combat res, only 100G !!!", "WHISPER", nil, UnitName("mouseover"));
+/cast Resurrection
+
+/say I am resurrecting %t
+
+/stopcasting
+/cast [target=mouseover,exists] Greater Heal
+
+/stopcasting
+/cast [target=mouseover,exists] Renew
+
+/stopcasting
+/cast [help] Greater Heal;/cast [harm] [target=mouseover,exists] Greater Heal
+
+/cast [help][target=targettarget][] Greater Heal
+
+#showtooltip Greater Heal
+/cast [help, nomodifier:alt][nomodifier:alt, target=targettarget][modifier:alt, target=player][] Greater Heal
+
+/cast [button:2] Prayer of Fortitude; Power Word: Fortitude
+
+/stopmacro [stance:1][combat]
+/cast Resurrection
+/stopmacro [nohelp][nodead]
+/ra Resurrecting %t.
+
+/cast [target=player]Power Word: Shield
+
+/cast [target=mouseover,exists][] Flash Heal
+
+/castsequence [help] [target=mouseover,help,exists] [target=targettarget, help, exists] [target=player] reset=target/5 Renew, Heal
+
+/stopcasting
+/cast [nomodifier:alt,target=mouseover,nodead,help][nomodifier:alt,help,nodead][nomodifier:alt,target=targettarget,nodead,help][nomodifier:alt,target=player][modifier:alt,target=player]Greater Heal
+
+/cast [target=mouseover,exists,help,nodead] Renew; [target=mouseover,exists,harm,nodead] Shadow Word: Pain; [help,nodead] Renew; 
+[harm,nodead] Shadow Word: Pain; [target=player] Renew
+
+/cast [target=player,modifier:alt] [target=mouseover,help,nodead] Renew; [target=mouseover,harm,nodead] Shadow Word: Pain;
+[help,nodead] Renew; [harm,nodead] Shadow Word: Pain; [target=focus,exists] [target=player] Renew
+
+/cast [nostance] Shadowform
+/castsequence [target=player,stance:1] Inner Fire, Power Word: Fortitude, Shadow Protection, (Racial Priest Spell)
+
+/castsequence [harm]  reset=target/18 Shadow Word: Pain, Shoot
+/stopmacro [harm]
+/cast [help] [target=targettarget, help, exists] Power Word: Fortitude
+/castsequence [target=player] reset=5 Inner Fire, Power Word: Fortitude
+
+/castsequence [help] reset=target/5 Power Word: Fortitude, Shadow Protection
+/castsequence [harm] reset=target/18 Shadow Word: Pain, Shoot
+/castsequence [target=player] reset=15 Inner Fire, Shadow Protection, Power Word: Fortitude
+
+/castsequence [target=player]  reset=20/ Inner Fire, Power Word: Fortitude, Shadow Protection
+
+#showtooltip Shackle Undead
+/clearfocus [modifier:alt][target=focus,dead][target=focus,help][target=focus,noexists]
+/focus [target=focus,noexists]
+/cast [target=focus]Shackle Undead
+
+/raid Shackling %f
+
+#showtooltip Mind Control
+/focus [target=focus,noexists]
+/cast [nobtn:2,target=focus]Mind Control
+/stopmacro [nobtn:2]
+/cancelaura Mind Control
+/target focus
+/clearfocus
+/stopmacro [nogroup]
+/s Mind Control Released!
+
+#showtooltip Mind Control
+/focus [target=focus,noexists]
+/cast [nobtn:2,target=focus]Mind Control
+/stopmacro [nobtn:2]
+/cancelaura Mind Control
+/target focus
+/cast Silence
+/clearfocus
+/stopmacro [nogroup]
+/s Mind Control Released!
+
+#showtooltip Mind Control
+/focus [target=focus,noexists]
+/cast [nobtn:2,target=focus]Mind Control
+/stopmacro [nobtn:2]
+/cast [target=player]Power Word: Shield
+/target focus
+/clearfocus
+/stopmacro [nogroup]
+/s Mind Control Released!
+
+#showtooltip Devouring Plague
+/use [harm] Xi'ri's Gift
+/cast [harm] Inner Focus
+/stopcasting
+/cast Devouring Plague
+
+#showtooltip Heal trinket
+/use 13
+/use 14
+/cast Inner Focus
+/cast Greater Heal
+
+/castsequence reset=45 Silence, Arcane Torrent
+
+#showtooltip Mind Flay
+/cast [nochanneling:Mind Flay] Mind Flay
+
+/cast [stance:1,harm] Mind Blast; [stance:1,help] Shadowform; [nostance,help] Flash Heal; [nostance,harm] Shadowform
+
+/use 14
+/use 13
+/castsequence [stance:1,harm] reset=target/combat Vampiric Touch, Shadow Word: Pain, Vampiric Embrace, Mind Flay, Mind Blast, Shoot; [stance:1,help] Shadowform; [nostance,help] Flash Heal, Renew; [nostance,harm] Shadowform
+
+/r I'm not a healbot. Good luck!
+
+#showtooltip
+/cast [target=mouseover,noharm,exists] Flash Heal;[target=mouseover,harm,exists] Mind Blast;[noharm]Flash Heal;[harm]Mind Blast
+
+#showtooltip Will of the Forsaken
+/castsequence reset=5 [target=player]Will of the Forsaken,Fear Ward
+
+#showtooltip
+/cast [btn:1,exists,nodead][btn:1][btn:2,target=player] Dispel Magic
+
+#showtooltip 
+/targetfriend [modifier:alt]
+/castsequence [nomodifier] reset=target/5 Power Word: Fortitude, Divine Spirit, Shadow Protection
+
+#showtooltip
+/cast [group,help][target=player] Power Word: Shield
+
+#shoot
+/cast !shoot
+
+/startattack 
+/castsequence reset=30/target/combat/ctrl Shadow Word: Pain, Starshards
+
+/cast [help][target=targettarget,help][target=focus,help][target=player] Prayer of Mending
+
+#showtooltip
+/cast [nogroup,target=player] [group,help] [group,target=none] Spellname
+
+#showtooltip Shadowfiend
+/cast [harm,nodead][target=targettarget,harm,nodead]Shadowfiend
+
+/rw The healer is under attack!
+/helpme
+
+#showtooltip Tricks of the Trade
+/cast [target=targettarget] Tricks of the Trade
+
+#showtooltip Hemorrhage
+/console Sound_EnableSFX 0
+/use Figurine - Shadowsong Panther
+/console Sound_EnableSFX 1
+/cast [modifier:alt] Kick
+/cast [modifier:shift] Shiv
+/cast Hemorrhage
+/stopmacro [help] [noexists]
+/cancelaura Blessing of Protection
+/startattack
+
+/cast [modifier:ctrl] Shadowstep
+/cast [modifier:alt] Cloak of Shadows
+/cast vanish
+/stopattack
+
+/cast Hemorrhage
+/stopmacro [help] [noexists]
+/cancelaura Blessing of Protection
+
+/use [nomounted, flyable] Swift Purple Windrider; [nomounted, noflyable] Horn of the Frostwolf Howler
+/cast [mounted, nocombat] Stealth
+/dismount [mounted, noflying]
+/dismount [exists, harm]
+/cast [nomounted] Stealth
+
+/use Bladefist's Breadth
+/use Ancient Draenei War Talisman
+
+/use 13
+/use 14
+
+#showtooltip Sinister Strike
+/console Sound_EnableSFX 0
+/use Bladefist's Breadth
+/cast Sinister Strike
+/console Sound_EnableSFX 1
+/script UIErrorsFrame:Clear()
+
+/castrandom Sinister Strike, Riposte
+
+/castsequence reset=1 Sinister Strike, Riposte
+
+/cast [button:1] Sinister Strike; [button:2] Riposte
+
+/cast Riposte
+/cast Sinister Strike
+
+/equipslot 16 [Dagger]
+/cast [stealth] Pick Pocket
+/cast Backstab
+/equipslot 16 [Original Weapon]
+
+/equipslot17 [insert lowest DPS dagger for MH]
+/equipslot18 [insert highest DPS dagger for OH]
+/cast Mutilate
+/equipslot17 [normal MH wep]
+/equipslot [normal OH wep]
+
+/cast !Stealth
+
+/cast [stance] Stealth
+
+/cast [noequipped:Fist Weapon] Backstab;/cast [equipped:Fist Weapon] Sinister Strike
+
+/cast [stealth] Ambush; Backstab
+
+/cast [nostealth] Backstab; Ambush
+
+/cast [equipped:Daggers] Ambush; Cheapshot
+
+/equipslot [stealth,noequipped:Daggers] 16 Dagger of Pwnage
+/cast [stealth,equipped:Daggers] Ambush
+
+/cast [nostealth,nocombat] Stealth
+/castsequence reset=20 Ghostly Strike, Sinister Strike, Sinister Strike, Sinister Strike, 
+Sinister Strike, Sinister Strike, Sinister Strike, Sinister Strike, Sinister Strike
+
+/cast [equipped:Daggers,nocombat] Stealth
+/equipslot [nostealth,nocombat,noequipped:Daggers] 16 Dagger of Pwnage
+/equipslot [combat,equipped:Daggers] 16 Sword of Pwnage
+/cast Sinister Strike
+
+/use [nomodifier] Instant Poison IV; [modifier:alt] Crippling Poison II; [modifier:ctrl] Mind-numbing Poison III
+/use [button:1] 16; [button:2] 17
+
+#showtooltip
+/use [mod:ctrl,mod:shift] Anesthetic Poison;[mod:ctrl,mod:alt] Deadly Poison; [mod:alt] Crippling Poison;[mod:ctrl] Mind-numbing Poison;[mod:shift] Wound Poison;Instant Poison
+/use [btn:1] 16; [btn:2] 17
+
+#showtooltip *posion name with rank*
+/use *poison name with rank*
+/use *weapon slot* (16 = Main Hand | 17 = Off-Hand)
+
+#showtooltip Cripping Poison II
+/use Crippling Poison II
+/use 17
+
+#showtooltip Deadly Posion VII
+/use Deadly Poison VII
+/use [button:1] 16; [button:2] 17
+
+#showtooltip
+/cast [btn:1,nomod]Crippling Poison II;[mod:shift]Wound poison V;[mod:ctrl,nomod:alt]
+Deadly Poison VII;[mod:alt,nomod:ctrl]Instant Poison VII;[mod:alt,mod:ctrl]Mind-numbing Poison III;
+
+/cast [target=mouseover,exists,harm,nodead] Blind
+
+/cast [target=mouseover,exists,harm,nodead][harm,nodead] Blind
+
+/cast [nostealth] stealth
+/cast [stealth] cheap shot
+/cast [combat] Hemorrhage
+
+/cast [nomounted, nostealth] Stealth; [nomounted] Cheap Shot
+/use [mounted] Swift White Steed
+
+/equip [noequipped:bow] Bow of Love
+/cast Expose Armor
+/stopattack
+
+/equip [noequipped:bow] Bow of Love
+/cast Cheap Shot
+/stopattack
+
+/cast Cold Blood
+/cast Eviscerate
+
+/use 13
+/castsequence Evasion, Adrenaline Rush
+
+/use 13
+/castrandom Adrenaline Rush, Evasion
+
+/cast Premeditation
+/cast Cheap shot
+
+#showtooltip Preparation
+/cast Evasion
+/cast Sprint
+/cast Preparation
+
+/castsequence reset=6 ghostly strike, hemorrhage, hemorrhage, hemorrhage, hemorrhage, hemorrhage
+
+/castsequence reset=7 hemorrhage, ghostly strike, hemorrhage, hemorrhage, hemorrhage, hemorrhage, hemorrhage
+
+/cast [nostealth,nocombat] stealth
+/cast [stealth] Shadowstep
+/cast [stealth] Premeditation
+/cast [stealth] Ambush
+/cast [combat] Hemorrhage
+
+/cast [nostealth] Stealth
+/stopcasting
+/cast Pick Pocket
+/stopcasting
+/cast Ambush
+
+/script SetCVar(&quot;AutoLootDefault&quot;, 1) 
+/cast Pick Pocket
+/in 1/script SetCVar(&quot;AutoLootDefault&quot;, 0) 
+
+#showtooltip Pick Pocket
+/console targetNearestDistance 5.000000
+/targetenemy [noharm][dead]
+/console targetNearestDistance 10.000000
+/cast [harm,nodead] Sap
+/script SetAutoLootDefault(1)
+/cast Pick pocket 
+/in 1/script SetAutoLootDefault(0)
+
+#showtooltip Pick Pocket
+/cast [nostealth,nocombat] Stealth
+/cast [nostealth,combat] Vanish
+/targetenemy [target=harm, nodead]
+/cast Sap
+/cast Pick Pocket
+/cleartarget
+
+#showtooltip Stealth
+/cast [stealth, harm] Pick Pocket; Stealth
+
+/cast [equipped:Thrown] Throw; Shoot
+
+#showtooltip
+/cast [button:1, equipped:thrown]Throw; [button:1] Shoot;
+/startattack [button:1]
+/stopmacro [button:1]
+/script if ( not CursorHasItem() ) then PickupContainerItem(0,15); PickupInventoryItem(18); PickupContainerItem(0,15); end
+
+/equipslot [noequipped:Thrown] 18 My Thrown Weapon
+cast [equipped:Thrown] Deadly Throw
+
+/cast Deadly Throw
+/cast [equipped:Thrown] Throw; Shoot
+
+/cast Sap
+/cast Pick Pocket
+
+/cast Gouge
+/stopcasting
+/use [target=player] Netherweave Bandage
+
+#showtooltip
+/castsequence [nomodifier:ctrl] reset=4 Gouge, Backstab
+/cast [modifier:ctrl] Backstab
+
+#showtooltip
+/cast [combat,nostealth] Gouge
+/cast [nocombat,nostealth] Stealth
+/cast [stealth] Cheap Shot
+
+/cast [nocombat] Stealth; Vanish
+
+/cast [combat,stealth] Stealth; [nocombat] Stealth; Vanish
+
+#show Blade Flurry
+/startattack
+/use Bladefist's Breadth
+/cast Blade Flurry
+
+#show 16
+/equipslot [equipped:Sword] 16 Dagger
+/equipslot [equipped:Dagger] 16 Sword
+
+#show 16
+/equipslot [stealth,equipped:Sword/Mace/Fist] 16 (name of your dagger)
+/equipslot [nostealth,equipped:Dagger] 16 (name of your Sword/mace/fist weapon)
+
+#show 16
+/script PickupInventoryItem(16); PickupInventoryItem(17);
+
+/cast [stealth] Cheap Shot; Kidney Shot
+
+/cast Sprint
+/cast Evasion
+
+/cast Gouge
+/equipslot 16 dagger
+/equipslot 17 dagger
+
+/cast Backstab
+/equipslot 16 sword or mace or fist weapon
+/equipslot 17 sword or mace or fist weapon 
+
+/cast Sinister Strike
+/equipslot 16 sword or mace or fist weapon
+/equipslot 17 sword or mace or fist weapon
+
+/castsequence Premeditation, Shadowstep, Preparation, Premeditation, Garrote, Shadowstep, Rupture
+
+#showtooltip
+/castsequence reset=10 Kick, Arcane Torrent
+
+#showtooltip Sap
+/console targetNearestDistance 10.000000
+/targetenemy [noharm][dead]
+/console targetNearestDistance 41.000000
+/cast [harm,nodead] Sap 
+
+#showtooltip [target=focus,harm] [] Sap
+/clearfocus [modifier:shift][target=focus,dead][target=focus,noexists]
+/focus [target=focus,noexists]
+/cast Sap
+
+#showtooltip [target=focus,harm] [] Blind
+/clearfocus [modifier:shift][target=focus,dead][target=focus,noexists]
+/cast [target=focus] Blind
+
+#show
+/cast Expose Armor
+/cleartarget
+/targetlasttarget
+
+#showtooltip Sinister Strike
+/startattack 
+/cast Sinister Strike
+
+#showtooltip Tricks of the Trade
+/cast [target=focus,help] Tricks of the Trade
+
+#showtooltip Tricks of the Trade
+/cast [target=Narcisa,help] Tricks of the Trade
+
+#showtooltip
+/clearfocus [help]
+/focus [help]
+/stopmacro [help]
+/cast [target=focus,help] Tricks of the Trade
+
+/cast [mounted,combat] Vanish
+/cast [mounted] Stealth(Rank 4)
+/cast [nocombat] Stealth(Rank 4)
+/cast Vanish
+
+/cast [combat] Gouge
+/cast [nocombat,no stealth] Stealth
+
+/castsequence reset=4 Searing Totem, Mana Spring Totem, Grounding Totem, Strength of Earth Totem
+
+/castsequence [nogroup] reset=4 mana spring totem, searing totem
+/castsequence [group] reset=4 windfury totem, fire nova totem
+
+/use [nomodifier] Windfury Weapon; [modifier:alt] Rockbiter Weapon; [modifier:ctrl] Flametongue Weapon; [modifier:shift] Frostbrand Weapon
+
+#showtooltip 
+/castsequence reset=5 Windfury Weapon, Flametongue Weapon;
+/castsequence reset=5 16, 17;
+/click StaticPopup1Button1
+
+#showtooltip 
+/script CancelItemTempEnchantment(1) 
+/cast Windfury Weapon 
+/use 16 
+/click StaticPopup1Button1 
+
+#showtooltip 
+/script CancelItemTempEnchantment(2) 
+/cast Flametongue Weapon 
+/use 17 
+/click StaticPopup1Button1 
+
+/stopcasting
+/cast Earth Shock
+
+#showtooltip
+/stopcasting
+/cast Wind Shock
+
+/cast [mod:alt] Water Shield; Lightning Shield
+
+#showtooltip Earth Elemental Totem
+/cast [target=focus,nomodifier:alt] Lesser Healing Wave
+/stopmacro [nomodifier:alt]
+/cast Earth Elemental Totem
+/target Greater Earth Elemental
+/focus
+
+#showtooltip Fire Elemental Totem
+/cast [target=focus,nomodifier:alt] Lesser Healing Wave
+/stopmacro [nomodifier:alt]
+/cast Fire Elemental Totem
+/target Greater Fire Elemental
+/focus
+
+#showtooltip Bloodlust
+/stopmacro [nocombat]
+/script local u,m = IsUsableSpell("Bloodlust") if u and not m and GetNumRaidMembers()  0 then SendChatMessage("  BLOODLUST! ","RAID") end
+/cast Bloodlust
+
+#showtooltip Lesser Healing Wave
+/cast [help,exists] [target=mouseover,help,exists] [target=player] Lesser Healing Wave
+
+/cast [combat,harm] Nature's Swiftness
+/cast [harm] Chain Lightning
+
+/stopmacro [nocombat,noharm]
+/use 13
+/use 14
+/cast Elemental Mastery
+/cast Nature's Swiftness
+/cast Chain Lightning
+
+/castsequence  [no modifier] Lightning Shield(Rank 9); [modifier:alt] Water Shield(Rank 8); [modifier:shift] Totemic Call
+
+#showtooltip
+/cast Stormstrike
+/startattack [harm]
+
+#showtooltip Stormstrike
+/stopmacro [noharm]
+/cast trinkets here
+/castrandom Stormstrike, Earth Shock, Feral Spirit, Lava Lash
+
+#showtooltip Earth Shock
+/cast [button:2,target=player] Cure Disease; [harm] Earth Shock; [help] Cure Disease
+/startattack [harm]
+
+#showtooltip Stormstrike
+/cast [button:2,target=player] Cure Poison; [harm] Stormstrike; [help] Cure Poison
+/startattack [harm]
+
+#showtooltip
+/script SendChatMessage("WTS out of combat res, only 100G !!!", "WHISPER", nil, UnitName("mouseover"));
+/cast Ancestral Spirit
+
+#showtooltip Mana Tide Totem
+/stopmacro [nocombat]
+/script local u,m = IsUsableSpell("Mana Tide Totem") if u and not m and GetNumPartyMembers()  0 then SendChatMessage("  Dropping Mana Tide ","PARTY") end
+/cast Mana Tide Totem
+
+#showtooltip Healing Wave
+/cast Nature's Swiftness
+/cast Healing Wave
+
+#showtooltip Healing Wave
+/cast Healing Wave [nocombat]
+/stopmacro [nocombat]
+/use 13
+/use 14
+/cast Nature's Swiftness
+/cast Healing Wave
+
+/cast [target=mouseover,exists] Cure Poison
+
+/cast [target=mouseover,help,exists] [target=help,exists] [target=targettarget,help,exists] [target=player] Cure Disease
+
+#showtooltip HealingSpell
+/cast [target=mouseover,help,exists] [target=target,help,nodead] [target=targettarget,help,nodead] [target=player] HealingSpell
+
+#showtooltip
+/target [modifier:ctrl] player 
+/cast [exists,nodead,help] [target=mouseover,nodead,help,raid] [target=focus,help] [] Lesser Healing Wave;
+/targetlasttarget [modifier:ctrl]
+
+#showtooltip Healing Wave
+/target [modifier:ctrl] player 
+/cast [combat]Nature's Swiftness
+/cast [exists,help] [target=mouseover,help,exists] [target=focus,help,exists] [] Healing Wave
+/targetlasttarget [modifier:ctrl]
+
+#showtooltip
+/cast [target=mouseover,exists][modifier:alt,target=player][target=focus,help, nodead][target=target,help,nodead][target=targettarget,help,nodead][noexists]Earth Shield
+
+#showtooltip [modifier:alt] Healing Stream Totem; Mana Spring Totem
+/cast [modifier:alt] Healing Stream Totem; Mana Spring Totem
+
+#showtooltip Curse of Agony
+/use 13
+/use 14
+/cast Metamorphosis
+/cast [pet:Felguard] [pet:imp] Demonic Empowerment
+/script UIErrorsFrame:Clear()
+/cast Curse of Agony
+
+#showtooltip Curse of Agony
+/use 13
+/use 14
+/cast Metamorphosis
+/cast [pet:Felguard] [pet:imp] Demonic Empowerment
+/script UIErrorsFrame:Clear()
+/cast [modifier:alt,target=focus] Curse of Agony
+/cast [nomodifier,target=target] Curse of Agony
+
+#showtooltip shadow bolt
+/console Sound_EnableSFX 0
+/use 13
+/use 14
+/cast Metamorphosis
+/cast Demonic Empowerment
+/cast shadow bolt
+/script UIErrorsFrame:Clear()
+/console Sound_EnableSFX 1
+/run PlaySoundFile(&quot;Sound\\Creature\\Illidan\\BLACK_Illidan_13.wav&quot;)
+
+#showtooltip Life Tap
+/cast [modifier:alt] Life Tap(Rank 1)
+/cast [nomodifier] Life Tap
+
+#showtooltip Shadow Bolt
+/use 13
+/use 14
+/script UIErrorsFrame:Clear()
+/cast Shadow Bolt 
+
+#showtooltip Shadow Bolt
+/use 13
+/use 14
+/script UIErrorsFrame:Clear()
+/cast [modifier:alt,target=focus] Shadow Bolt
+/cast [nomodifier,target=target] Shadow Bolt
+/clearfocus [target=focus, dead] 
+
+#showtooltip
+/castsequence [mod:alt] Curse of the Elements; reset=10/target/combat Immolate, Incinerate, Searing Pain, Incinerate
+
+#showtooltip
+/castsequence [mod:alt] Curse the Elements; [mod:ctrl] Shadow Bolt; reset=10/target/combat Corruption, Shadow Bolt, Shadowburn, Shadow Bolt, Seed of Corruption, Shoot (if your wand is shadow damage)
+
+/castsequence reset=10 Immolate, Curse of Agony, Corruption, Siphon Life
+
+#Showtooltip
+/castsequence reset=10 Siphon Life, Corruption, Curse of Agony, Life Tap
+
+#showtooltip
+/cast [modifier:alt] Incinerate; Immolate
+
+#showtooltip
+/targetfriend
+/cast Detect Invisibility
+
+#showtooltip
+/castsequence [target=player] Fel Armor, Soul Link, Detect Invisibility, Unending Breath
+
+/cast [nopet] Fel Domination
+/castsequence [nopet] Summon Voidwalker(Summon);[pet] Demonic Sacrifice
+/cast [pet] Demon Armor
+
+#showtooltip
+/castsequence [nopet,mod:alt] Summon Voidwalker; [nopet,mod:ctrl] Summon Felhunter; [nopet] Summon Felguard; [pet] reset=4 Soul Link, Demon Armor, Summon Dreadsteed
+
+/petattack
+/cast [mod:alt] Drain Soul
+/cast [nocombat] Curse of Agony
+/castsequence reset=target/combat Corruption,Life Tap,Drain Life,Health Funnel,Shoot
+
+/petattack
+/cast [mod:alt] Drain Soul
+/cast [nocombat] Amplify Curse
+/cast [nocombat] Curse of Agony
+/castsequence reset=target/combat Corruption,Life Tap,Drain Life,Health Funnel,Shoot
+
+#showtooltip
+/castsequence [mod:ctrl] Searing Pain; [mod:alt] Incinerate; reset=10/combat/target Immolate, Corruption, Incinerate, Life Tap, Drain Life, Searing Pain
+
+/petattack
+/castsequence [mod:ctrl] Searing Pain; [mod:alt] Incinerate; reset=10/combat/target Immolate, Corruption, Incinerate, Life Tap, Drain Life, Searing Pain
+
+/petattack [nocombat]
+/console Sound_EnableSFX 0
+/use item:31615
+/console Sound_EnableSFX 1
+/script UIErrorsFrame:Clear();
+/castsequence reset=5/target Unstable Affliction,Immolate,Curse of Agony,Corruption,Siphon Life
+
+#showtooltip Curse of Doom
+#show Curse of Doom
+/use 13
+/stopcasting
+/use 14
+/stopcasting
+/cast Curse of Doom
+
+/stopmacro [noharm]
+/cast [nomodifier,nochanneling:Drain Soul(Rank 1)] Drain Soul(Rank 1)
+/cast [modifier:ctrl,nochanneling:Drain Mana] Drain Mana
+/cast [modifier:alt,nochanneling:Drain Life] Drain Life
+
+#showtooltip
+/cast [mod:ctrl] Drain Mana; [mod:alt] Drain Life; Drain Soul
+
+#showtooltip
+/cast [mod:ctrl,nochanneling:Drain Mana] Drain Mana; [mod:alt,nochanneling:Drain Life] Drain Life; [nochanneling:Drain Soul] Drain Soul
+
+/stopmacro [flying]
+/cast [outdoors,nomounted,nomodifier:ctrl,flyable] Ebon Gryphon; [outdoors,nomounted] Summon Dreadsteed(Summon)
+/dismount [mounted]
+
+#showtooltip [mod:alt] Summon Dreadsteed; [flyable] Tawny Windrider; Summon Dreadsteed
+/cast [nomounted, mod:alt] Summon Dreadsteed; [nomounted,flyable] Tawny Windrider; [nomounted] Summon Dreadsteed
+/dismount [mounted,noflying]
+
+#showtooltip
+/cast [mod:ctrl] Summon Dreadsteed; [mod:alt] Summon Felguard; [flyable] Blue Windrider; Summon Dreadsteed
+/dismount [noflying,mounted]
+
+/cast [nomod]Howl of Terror
+/stopmacro [nomod]
+/focus [mod:shift,nomod:ctrl]none;[target=focus,harm,nodead]focus;[harm,nodead];none
+/cast [target=focus,mod:alt]Fear;[target=focus,mod:ctrl,mod:shift]Banish(Rank 1);[target=focus,mod:ctrl]Banish
+
+#showtooltip
+/focus [target=focus, noexists][target=focus, dead] mouseover
+/cast [nomodifier, target=focus] Fear
+/stopmacro [nomodifier]
+/clearfocus [modifier:ctrl]
+
+/petattack [modifier]
+/cast Shadow Bolt
+
+/petattack [target=pettarget,noexists]
+/petfollow [target=pettarget,exists]
+
+/petattack
+/castsequence reset=combat/target Corruption, Curse of Agony, Life Tap, Drain Life, Shoot
+
+/cast [nomodifier:ctrl,nocombat] Shadow Bolt; [nocombat]Curse of Recklessness
+/petattack [nomodifier:ctrl,nocombat]
+/castsequence [combat] reset=target Curse of Agony, Immolate, Corruption
+
+/petattack [nomodifier]
+/use [mod:alt] Drain Soul
+/castsequence [nomodifier] reset=target/combat Corruption, Curse of Agony, Immolate, Shadow Bolt, Shadow Bolt, Shoot
+
+/petattack
+/castsequence [modifier:alt,nogroup,pet:Voidwalker/pet:Felhunter] Searing Pain, Shadow Bolt, Shadow Bolt
+/cast [modifier:alt] Shadow Bolt
+/castsequence reset=combat/target Immolate, Curse of Agony, Corruption
+
+/petattack
+/petattack [target=Fire Resistance Totem] 
+/petattack [target=Windfury Totem]
+/petattack [target=Earthbind Totem]
+/petattack [target=Tremor Totem]
+/petattack [target=Grounding Totem]
+
+#showtooltip
+/cast [pet:Voidwalker,combat] Sacrifice; [pet:Voidwalker] Consume Shadows; [pet:Succubus,target=focus][pet:Succubus] Seduction; [pet:Felhunter,button:2,target=player] Devour Magic; [pet:Felhunter] Spell Lock
+
+#showtooltip
+/cast [pet:Imp]Dark Pact;[pet:Succubus,target=focus]Seduction;[pet:Felhunter,target=focus]Spell Lock
+/stopmacro [nopet:voidwalker]
+/cast [combat]Dark Pact;Health Funnel
+/cast [nocombat]Consume Shadows;Sacrifice
+
+#showtooltip
+/cast [pet:voidwalker,combat] Sacrifice
+/cast [pet:Succubus,target=target] Seduction
+/cast [pet:Felhunter,target=target] Spell Lock
+/cast [pet:Felguard,target=target] Intercept
+
+/cast [pet:imp] Dark Pact; Life Tap
+
+#showtooltip [pet:imp/felhunter] Dark Pact; Life Tap
+/cast [pet:imp/felhunter] Dark Pact; Life Tap
+
+/cast [button:2,target=player] Devour Magic; Devour Magic
+
+/cast Fel Domination
+/stopcasting
+/cast Summon [pet you want to summon](Summon)
+
+#showtooltip [mod:ctrl] Summon Felhunter; [mod:alt] Summon Voidwalker; [mod:shift] Summon Imp; Summon Felguard
+/cast Fel Domination
+/cast [mod:ctrl] Summon Felhunter; [mod:alt] Summon Voidwalker; [mod:shift] Summon Imp; Summon Felguard
+
+/cast [modifier:shift]Summon Imp(Summon); [modifier:ctrl]Summon Succubus(Summon); [button:2]Summon Voidwalker(Summon); Summon Felhunter(Summon)
+
+/focus [nocombat]
+/petattack [target=focus, exists,harm,combat]; [target=focustarget,exists,harm,combat]; target
+
+/cast [nopet:Voidwalker] Summon Voidwalker
+/cast [pet:Voidwalker,nocombat] Consume Shadows
+/cast [pet:Voidwalker,combat] Sacrifice
+
+/cast [target=pet,dead] Summon Voidwalker; [combat,pet:Voidwalker] Sacrifice; Summon Voidwalker
+
+#showtooltip
+/cast Health Funnel
+/cast [nocombat, pet:Voidwalker] Consume Shadows
+
+/petfollow
+/petpassive
+/petattack [harm]
+
+/petfollow [pet:succubus]
+/cast [harm] Spell Lock
+/cast [help] Devour Magic
+/cast Seduction
+/cast Sacrifice
+/cast Intercept
+/petstay [noexists]
+/petdefensive [noexists]
+
+#showtooltip
+/cast [help,pet:felhunter] Devour Magic; [pet:felhunter,target=player] Devour Magic; 
+[pet:voidwalker,combat] Suffering; [pet:voidwalker,nocombat] Consume Shadows; 
+[pet:succubus] Soothing Kiss
+
+#showtooltip
+/cast [pet:felhunter,target=target] Spell Lock;
+[pet:succubus,target=target] Seduction;
+[pet:voidwalker,combat] Sacrifice; [pet:voidwalker,nocombat] Consume Shadows;
+
+#showtooltip 
+/cast [btn:2] Summon Felguard
+/cast [btn:2,mod:shift] Summon Felsteed 
+/cast [btn:2,mod:alt]  Eye of Kilrogg
+/cast [mod:alt] Summon Succubus
+/cast [mod:ctrl] Summon Felhunter
+/cast [mod:shift] Summon Voidwalker
+/cast Summon Imp
+
+#showtooltip 
+/cast [btn:2] Summon Felguard; [btn:2,mod:shift] Summon Felsteed; [btn:2,mod:alt] Eye of Kilrogg; [mod:alt] Summon Succubus; [mod:ctrl] Summon Felhunter; [mod:shift] Summon Voidwalker; Summon Imp
+
+#showtooltip
+/cast [mod:alt] Summon Felguard; [mod:ctrl] Summon Voidwalker; [mod:shift] Summon Succubus; Summon Felhunter
+
+#show Seduction
+/clearfocus [modifier:alt] 
+/focus [target=focus,noexists]; [target=focus,dead] 
+/clearfocus [target=focus,help] 
+/petstay 
+/petfollow 
+/stopcasting 
+/cast [pet:succubus,target=focus,exists,harm] Seduction; Seduction
+
+#showtooltip
+/cast [pet:Felhunter,button:1,target=party1] Devour Magic; 
+/cast [pet:Felhunter,button:2,target=party2] Devour Magic;
+/cast [pet:Felhunter,button:3,target=player] Devour Magic;
+
+#showtooltip
+/cast [mod:alt,target=party1] Devour Magic; [mod:ctrl,target=party2] Devour Magic; [target=player] Devour Magic
+
+#showtooltip Spell Lock
+/clearfocus [modifier:shift]
+/focus [target=focus, noexists]
+/cast [nomodifer, pet:Felhunter, target=focus, harm] Spell Lock; [modifier:ctrl, pet:Felhunter, target=mouseover, harm] Spell Lock
+
+#showtooltip Devour Magic
+/cast [modifier:shift, pet:Felhunter] Devour Magic; [pet:Felhunter, target=player] Devour Magic
+
+#showtooltip
+/cast [nobutton:1] Summon Felsteed(Summon)
+/cast [nomodifier] Summon Imp(Summon)
+/cast [modifier:shift] Summon Voidwalker(Summon)
+/cast [modifier:ctrl] Summon Succubus(Summon)
+/cast [modifier:alt] Summon Felhunter(Summon)
+
+/console Sound_EnableSFX 0
+/cast [mod:alt] Create Spellstone; Create Firestone
+/use [mod:alt] Master Spellstone; Master Firestone
+/use 16
+/click StaticPopup1Button1
+/console Sound_EnableSFX 1
+
+#showtooltip Minor Soulstone
+/cast [modifier:alt,target=player] Minor Soulstone; [button:1] Minor Soulstone;  [button:2] Create Soulstone
+
+#showtooltip
+/use [button:1] Healthstone; [button:2] Superior Healing Potion
+
+/cast [nocombat]Create Lesser Healthstone	 
+/use [combat]Lesser Healthstone	 
+/use [combat]Lesser Healing Potion
+
+#showTooltip Master Healthstone
+/cast [group, button:2] Ritual of souls
+/cast [button:2] Create Healthstone
+/use [button:1] Master Healthstone
+
+/run i="Soul Shard"d=1 for x=0,4 do for y=1,GetContainerNumSlots(x) do  if (d0) then l=GetContainerItemLink(x,y)  if l and GetItemInfo(l)==i then PickupContainerItem(x,y) DeleteCursorItem() d=d-1 end end end end
+
+/run i="Soul Shard"d=GetItemCount(i)-20 for x=0,4 do for y=1,GetContainerNumSlots(x) do  if (d0) then l=GetContainerItemLink(x,y) if l and GetItemInfo(l)==i then PickupContainerItem(x,y) DeleteCursorItem() d=d-1 end end end end
+
+#showtooltip [form:2]Taunt;[form:3];[nocombat][mod:ctrl]Charge;Attack
+/click [form:1,combat]MultiBarRightButton8;[form:1]MultiBarLeftButton8;[harm]MultiBarLeftButton9;MultiBarrightButton9
+
+#showtooltip Taunt
+/click [target=targettarget,party,nodead]MultiBarRightButton9;MultiBarRightButton8
+
+#showtooltip [nostance:2,combat]Attack; [stance:2,target=player]Attack;
+/cast [stance:1,nocombat]Charge; [stance:2,target=targettarget,party,nodead]Taunt
+/startattack
+
+[stance:2,target=targettarget,party,nodead]Taunt
+
+#showtooltip Taunt
+/stopmacro [nomodifier:alt,target=targettarget,noraid]
+/cast Taunt
+
+/rw Pulling %t !
+
+#showtooltip
+/castrandom [equipped:shields] Shield Slam, Revenge; Revenge
+/cast [equipped:shields] Shield Block
+
+#showtooltip
+/cast Devastate
+//cast !Heroic Strike
+/startattack
+
+/cast [stance:1] Retaliation; [stance:2,equipped:Shields] Shield Wall; [stance:2,noequipped:Shields] Battle Stance; [stance:3] Recklessness
+/stopcasting
+/cast [stance:1,modifier:ctrl] Defensive Stance
+
+/cast [stance:1/2,noequipped:Shields] Berserker Stance; [stance:1/2,equipped:Shields] Shield Bash; [stance:3] Pummel
+
+/cast [nostance:3,equipped:Shields] Shield Bash; [stance:3] Pummel; Berserker Stance;
+
+#show [combat] Intercept; Charge
+/cast [stance:1/2,combat] Berserker Stance; [stance:3,combat] Intercept; [stance:2/3,nocombat] Battle Stance; [stance:1,nocombat] Charge
+/stopcasting
+/cast [equipped:Shields] Defensive Stance
+
+/castsequence [combat,stance:1] Thunder Clap; [combat,stance:3,nomodifier:ctrl] reset=2 Berserker Rage, Defensive Stance
+/stopcasting
+/cast [nocombat,stance:1] Charge; [nocombat,nomodifier:ctrl] Battle Stance; [stance:3] Intercept; Berserker Stance
+
+/cast [nostance:2] Defensive Stance; [help] Intervene; [target=targettarget, help] Intervene
+
+/cast [nocombat] Battle Stance; [target=focus,raid,nodead,nomodifier:ctrl] Intervene; [raid] Intervene;  [target=targettarget,raid] Intervene
+
+/cast [help] [target=targettarget,help] [target=focus,help] Intervene
+
+/cast [help] [target=targettarget, help] Intervene; [mod:ctrl] [ ] Charge
+
+#showtooltip Intervene
+/clearfocus [modifier:alt][target=focus,noexists]
+/focus [target=focus,noexists]
+/cast [target=focus]Intervene
+
+#showtooltip
+/cast [nocombat] Charge; [stance:3,modifier] Intercept
+/cast !Heroic Strike
+
+#show [combat] Intercept; Charge
+/cast [nocombat,stance:1] Charge; [combat,stance:3] Intercept; [nocombat,nostance:1] Battle Stance; [combat,nostance:3] Berserker Stance
+/stopcasting
+/cast [stance:1/3] Hamstring
+
+/targetenemy [noexists, nodead]
+/assist [help]
+/cast [exists,nohelp,nocombat] Charge
+/cast [combat] Bloodrage
+
+/targetenemy [noexists, nodead]
+/assist [help]
+/stopmacro [noharm]
+/cast [nomodifier:alt, nocombat] Charge
+/startattack [harm]
+/cast [modifier:alt] Bloodrage
+/stopcasting [modifier:alt]
+/cast [modifier:alt] Throw; Overpower
+
+#showtooltip
+/targetenemy [noexists,nodead]
+/assist [help]
+/cast [nomodifier:alt,nocombat]Charge; [nomodifier:alt,combat]Overpower
+/startattack [harm]
+/stopmacro [nomodifier:alt]
+/cast Bloodrage
+/stopcasting
+/cast [equipped:Thrown]Throw; Shoot
+
+/cast [nostance:2] Defensive Stance
+/castsequence [stance:2] Throw, Charge, Berserker Rage, Bloodrage
+
+/castsequence [stance:1] Charge, Defensive Stance
+/castsequence [stance:2] Berserker Rage, Bloodrage
+
+/cast Heroic Throw
+/cast Shield Block
+/rw Pulling %t
+
+#showtooltip
+/cast Heroic Throw
+/cast Charge(Rank 3)
+/cast Shield Block
+/rw charging %t
+
+/cast [stance:1,nocombat] Charge
+/stopcasting
+/cast [stance:1] Defensive Stance; Battle Stance
+
+/cast [stance:3] Intercept
+/stopcasting
+/cast [stance:3] Defensive Stance; Berserker Stance
+
+/cast [stance:1] Mocking Blow; Battle Stance
+
+/cast [stance:1,combat] Mocking Blow
+/stopcasting
+/cast Defensive Stance
+
+/cast [stance:2] Taunt; Defensive Stance
+
+#showtooltip Taunt
+/cast [nostance:2] Defensive Stance; [stance:2, target=mouseover, exists, harm][stance:2, nodead, harm][stance:2, target=targettarget, nodead, harm][stance:2] Taunt
+
+#showtooltip Mocking Blow
+/cast [nostance:1] Battle Stance; [stance:1, target=mouseover, nodead, harm][stance:1, nodead, harm][stance:1, target=targettarget, nodead, harm][stance:1] Mocking Blow
+
+#showtooltip Intervene
+/cast [nostance:2] Defensive Stance; [stance:2, target=mouseover, nodead, help][stance:2, nodead, help][stance:2, target=targettarget, nodead, help][stance:2] Intervene
+
+/castsequence reset=30 Intercept, Heroic Fury
+
+/cast [nostance:1] Battle Stance; Overpower
+
+#showtooltip
+/console Sound_EnableSFX 0
+/cast Heroic Strike
+/use 13
+/use 14
+/cast [stance:1] Overpower; [stance:2] Revenge
+/console Sound_EnableSFX 1
+/script UIErrorsFrame:Clear();
+
+/cast [stance:3] Intercept; Berserker Stance
+/stopcasting
+/cast [stance:3] Hamstring
+
+/cast Bloodrage
+/cast Berserker Rage
+
+#showtooltip [stance:3] Berserker Rage; Bloodrage
+/cast Bloodrage
+/cast [stance:3] Berserker Rage
+
+/cast [target=mouseover, harm, nodead][harm, nodead][target=targettarget, harm, nodead][] Sunder Armor
+
+/cast [target=mouseover, harm, nodead][harm, nodead][target=targettarget, harm, nodead][] Shield Slam
+/cast [modifier:ctrl] Cleave; [modifier:shift] Heroic Strike;
+
+/cast [target=mouseover,harm,nodead] Taunt; Taunt
+
+/cast [target=mouseover,nomod,harm,nodead] Heroic Throw;[equipped:thrown,mod:shift,harm,nodead] Throw; [mod:shift,harm,nodead] Shoot; Heroic Throw
+
+/cast [modifier:ctrl,harm,nodead]Sunder Armor;[target=mouseover,harm,nodead]Sunder Armor;Devastate
+
+/cast [target=mouseover,nomod,harm,nodead] Devastate; [target=mouseover,mod:shift,harm,nodead] Sunder Armor; Devastate
+
+/castrandom [target=mouseover, exists, harm, nodead] Sunder Armor; Devastate, Devastate, Revenge
+/cast Shield Block
+/stopcasting
+/cast Heroic Strike
+
+/cast [nostance:1] Battle Stance; Sweeping Strikes
+/stopcasting
+/castsequence reset=6/target [stance:1/2] Thunder Clap, Cleave, Demoralizing Shout
+/script UIErrorsFrame:Clear(); UIErrorsFrame:Show()
+
+/castrandom [stance:1] Overpower,Devastate; [stance:2] Revenge,Devastate; [stance:3] Whirlwind,Devastate
+/cast Bloodrage
+/stopcasting
+/cast Heroic Strike
+/startattack
+
+/cast [modifier:ctrl] Sweeping Strikes
+/stopcasting
+/castrandom [stance:1] Overpower,Mortal Strike; [stance:2] Revenge,Mortal Strike; [stance:3] Whirlwind,Mortal Strike
+/cast Bloodrage
+/startattack
+
+/castrandom [stance:1] Overpower,Death Wish,Bloodthirst,Rampage; [stance:2] Revenge,Bloodthirst,Rampage; [stance:3] Whirlwind,Death Wish,Bloodthirst,Rampage
+/cast Bloodrage
+/startattack
+
+/cast [modifier:ctrl] Sweeping Strikes
+/stopcasting
+/castrandom [stance:1] Overpower,Death Wish,Bloodthirst; [modifier:ctrl] Death Wish; [stance:2] Revenge,Bloodthirst; [stance:3] Whirlwind,Death Wish,Bloodthirst
+/cast Bloodrage
+/startattack
+
+#show [noequipped:shield] second weapon here(1 hander); first weapon here (2 hander)
+/equip [button:1] first weapon(2 hander)
+/equip [button:2] second weapon(1 hander)
+/equip [button:2] shield or other offhand
+
+#showtoolip
+/equip [equipped:shield,one-hand] first weapon(2 hander)
+/equip [equipped:two-hand] second weapon(1 hander)
+/equip [equipped:two-hand] shield or other offhand)
+
+/equipslot [equipped:two-hand] 17 Shield here
+/equipslot [equipped:shield] 17 offhand two hander here
+/equipslot 16 Main two hander here
+
+#showtooltip Spell Reflection
+/equipslot [equipped:two-hand] 17 Shield here
+/cast [stance:1/3] Defensive Stance
+/cast [stance:2] Spell Reflection
+/stopcasting
+
+#showtooltip [noequipped:shield] shield; off-hand weapon
+/equipslot [noequipped:shield] 17 shield
+/equipslot [equipped:shield] 17 off-hand weapon
+
+#showtooltip [noequipped:shield] off-hand weapon; shield
+/equipslot [noequipped:shield] 17 shield
+/equipslot [equipped:shield] 17 off-hand weapon
+
+#showtooltip [noequipped:shield ]shield; Shield Bash
+/equipslot [noequipped:shield] 17 shield
+/cast [equipped:shield] Shield Bash
+/equipslot [equipped:shield] 17 off-hand weapon
+
+/cast Defensive Stance
+/equipslot 16 King's Defender
+/equipslot 17 Shield of Impenetrable Darkness
+
+/cast Battle Stance
+/equipslot 16 Warbringer
+/equipslot 17 Vindicator's Brand
+
+/cast Berserker Stance
+/equipslot 16 Warbringer
+/equipslot 17 Vindicator's Brand
+
+/cast [nomodifier,stance:1/2]Spell Reflection; [nomodifier,stance:3]Berserker Rage;
+/cast [modifier:alt,stance:1]Sweeping Strikes;
+/cast [modifier:ctrl,stance:1]Retaliation;[modifier:ctrl,stance:2]Shield Wall;[modifier:ctrl,stance:3]Recklessness;
+
+/cast [nomodifier,stance:1/3] Hamstring; [nomodifier,stance:2] Disarm;
+/cast [modifier:alt] Intimidating Shout;
+/cast [modifier:ctrl] Piercing Howl;
+
+/cast [nomodifier,stance:1]Charge;[nomodifier,stance:2]Intervene;[nomodifier,stance:3]Intercept;
+/cast [modifier:alt]Bloodrage;
+/cast [modifier:ctrl,equipped:Thrown]Throw;[modifier:ctrl]Shoot;
+/cast [modifier:shift]Shadowmeld;
+
+/cast [nomodifier] Mortal Strike;
+/cast [modifier:alt,stance:1] Overpower; [modifier:alt, stance:2] Revenge;
+/cast [modifier:ctrl,stance:1]Mocking Blow;[modifier:ctrl,stance:2]Taunt;
+/cast [modifier:shift, stance:1/2] Rend;
+
+/cast [nomodifier, stance:1/3]Victory Rush;[nomodifier,stance:2,equipped:shields]Shield Block;[modifier:alt]Sunder Armor;
+/cast [modifier:ctrl,stance:1/3]Execute;[modifier:shift,stance:1/2,equipped:shields]Shield Bash;[modifier:shift,stance:3]Pummel;
+
+/cast [nomodifier] Heroic Strike;
+/cast [modifier:alt] Cleave;
+/cast [modifier:ctrl,stance:1/2] Thunder Clap;[modifier:ctrl,stance:3]Whirlwind;
+/cast [modifier:shift] Slam;
+
+/cast [nomodifier] Battle Shout;
+/cast [modifier:alt] Demoralizing Shout;
+/cast [modifier:ctrl] Commanding Shout;
+/cast [modifier:shift] Challenging Shout;
+
+#showtooltip
+/cast [equipped:Thrown] Throw; Shoot
+
+#showtooltip
+/show [stance:1] Charge; [stance:2] Taunt; [stance:3] Intercept
+/startattack [harm]
+/cast [stance:1] Charge; [stance:2] Taunt; [stance:3] Intercept
+
+#showtooltip [stance:1] Charge; [stance:2] Taunt; [stance:3] Intercept
+
+/equip [button:2] mainhand weapon
+/equip [button:1] shield; [button:2] offhand weapon
+/castsequence Defensive Stance, Spell Reflection
+/stopcasting
+
+/equipslot 16 [button:1] mainhand weapon
+/equipslot 17 [button:1] shield
+/cast Spell Reflection
+/stopcasting
+/equipslot 16 [button:2] 2h weapon
+
+/equip [button:2] Name of your offhand weapon
+
+/equip [noequipped:shields] Mallet of the Tides
+/equip [noequipped:shields] Aldori Legacy Defender
+/cast [stance:3] Battle Stance
+/cast [stance:1/2] Spell Reflection
+/equip [modifier:shift] Lionheart Executioner
+/cast [modifier:shift] Berserker Stance
+
+/cast [equipped:One-Hand] Devastate ; Sunder Armor
+
+/cast Intimidating Shout 
+/stopattack 
+/use Heavy Netherweave Bandage
+
+#showtooltip Revenge(Rank 9)
+/cast Heroic Strike(Rank 13)
+/cast Revenge(Rank 9)
+
+#showtooltip Devastate(Rank 5)
+/cast Shield Block
+/cast Devastate(Rank 5)
+
+#showtooltip Devastate(Rank 5)
+/cast Shield Block
+/cast Devastate(Rank 5)
+/use Coren's Lucky Coin
+
+showtooltip [mod:alt] Intervene; Intercept
+/cast [mod:alt, target=playertargettarget] Intervene; [nostance:3]Berserker Stance; Intercept
+/cast [nostance:2] Defensive Stance

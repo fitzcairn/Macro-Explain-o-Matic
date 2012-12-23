@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<macro>
+  <info>
+    <title>{{ title|escape }}</title>
+    <author_name>{{ author_name|escape }}</author_name>
+    <author_server>{{ author_server|escape }}</author_server>
+    <notes>{{ notes|escape }}</notes>
+    <version>{{ version }}</version>
+    <curr_version>{{ curr_version }}</curr_version>
+    <classes>{{ classes|escape }}</classes>
+    <tags>{{ tags|escape }}</tags>
+    <macro_id>{{ macro_id }}</macro_id>
+  </info>
+  <explanation>
+{% for macro_command in interpret %}
+    <command>
+{% for if_do in macro_command %}
+{% if if_do.0 %}
+      <condition>
+{% for tok in if_do.0 %}
+        <token>
+          <type>{{ tok.0 }}</type>
+          <orig>{{ tok.1 }}</orig>
+          <interpretation>{{ tok.2 }}</interpretation>
+          <wowhead_url>{{ tok.3 }}</wowhead_url>
+          <warn>{{ tok.4 }}</warn>
+          <error>{{ tok.5 }}</error>
+        </token>
+{% endfor %}
+      </condition>
+{% endif %}
+      <action>
+{% for tok in if_do.1 %}
+        <token>
+          <type>{{ tok.0 }}</type>
+          <orig>{{ tok.1 }}</orig>
+          <interpretation>{{ tok.2 }}</interpretation>
+          <wowhead_url>{{ tok.3 }}</wowhead_url>
+          <warn>{{ tok.4 }}</warn>
+          <error>{{ tok.5 }}</error>
+        </token>
+{% endfor %}
+      </action>
+{% endfor %}
+    </command>
+{% endfor %}
+  </explanation>
+</macro>

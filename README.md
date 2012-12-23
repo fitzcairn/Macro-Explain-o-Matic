@@ -5,7 +5,7 @@ This is all the source and tools for Fitzcairn's Macro Explain-o-matic (www.macr
 
 A couple things to note about this code:
 
-1. It was intended as an experiment to see how Google App Engine performed (and at the time it was written, the answer was "poorly!" for a number of reasons).  The code is structured entirely around GAE's unique persistence model.
+1. It was intended as an experiment to see how Google App Engine performed (and at the time it was written, the answer was "poorly!" for a number of reasons).  The code is structured entirely around GAE's unique persistence model.  I included the app.yaml and index.yaml files to make uploading to your own GAE instance easier.
 2. This is my first foray into writing a parse tree + interpreter.  You have been warned. :)
 3. I'm also including all of the JS code I wrote to empower sites to take advantage of my API to do explain macros.
 

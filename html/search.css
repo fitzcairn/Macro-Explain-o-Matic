@@ -1,0 +1,162 @@
+/* Styles for the search page. */
+
+/* Search Results Page ------> */
+#search_results_container {
+  font-size: 12px;
+  width: 100%;
+  padding:10px 4px 10px 4px;
+  display: block;
+  float: left;
+  margin:0px auto;
+  overflow:hidden;
+}
+
+#search_results { 
+  font-size: 12px;
+  padding:2px;
+  float: left;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #282d2f;
+  background-color:#2d3234;
+  overflow:hidden;
+}
+
+
+/* Results table ----> */
+.search_table { 
+  font-size: 12px;
+  color:#868f92;
+  margin-left: 0px;
+  margin-right: auto;
+  text-align: left;
+  display: block;
+  border: 0px;
+  padding:0px 0px 0px 0px;
+  margin-top: 4px;
+}
+.search_table img {
+  display:inline;
+  width: 20px;
+}
+.search_table td {
+  text-align: left;
+}
+.search_table td.error {
+  padding: 10px;
+  font-style:italic;
+  text-align: center;
+}
+
+
+/* Col sizing */
+.search_table tr td.big {
+  width: 160px;
+}
+.search_table tr td.med {
+  width: 135px;
+}
+.search_table tr td.med div img {
+  vertical-align: middle;
+  display:inline;
+}
+.search_table tr td.rating {
+  width: 90px;
+}
+.search_table tr td.rating img {
+  margin: 0px;
+  padding: 0px;
+  width:12px;
+  height: 12px;
+  vertical-align: middle;
+  display:inline;
+}
+.search_table tr td.small {
+  width: 60px;
+}
+.search_table tr td.version {
+  width: 75px;
+}
+
+/* Column headers. */
+.search_table tr.cols td { 
+  padding:4px;
+  background-color:#2d3234;
+  border-width: 0px 0px 1px 0px;
+  border-style: dashed solid dashed solid;
+  border-color: #383e41;
+}
+/* Sortable header style */
+.search_table tr.cols td .sort {
+  font-variant: small-caps;
+  font-family: "Trebuchet MS";
+  border: 0px;
+  padding:0px;
+  font-size:14px;
+  font-weight:bold;
+  color:#c1c1c1;
+  /*color: #99b6c4;*/
+}
+.search_table tr.cols td .sort img {
+  display: inline;
+  border: 0px;
+  padding:0px;
+  width: 12px;
+  height: 12px;
+}
+
+
+
+
+
+
+/* Row styling */
+.search_table tr.even td {
+  cursor:pointer;cursor:hand;
+  border: 0px;
+  padding:0px;
+  background-color:#2d3234;
+  border-width: 0px 0px 1px 0px;
+  border-style: dashed solid dashed solid;
+  border-color: #212527;
+}
+
+.search_table tr.odd td {
+  cursor:pointer;cursor:hand;
+  border: 0px;
+  padding:0px;
+  background-color:#383e41;
+  border-width: 0px 0px 1px 0px;
+  border-style: dashed solid dashed solid;
+  border-color: #212527;
+}
+
+/* For non-JS users */
+.search_table tr div a {
+  color:#868f92;
+  text-decoration:none;
+}
+
+/* Style spacing in each cell via an anchor */
+.search_table td div {
+  display:block;
+  padding:4px;
+  height: 60px;
+}
+.search_table td div.preview {
+  font-style:italic;
+}
+
+
+
+/* Pagination row. */
+.search_table .pagination { 
+  padding:4px;
+  font-size: 12px;
+}
+.search_table .pagination .page { 
+  width: 70px;
+}
+
+

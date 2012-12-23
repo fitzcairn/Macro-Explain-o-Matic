@@ -1,0 +1,104 @@
+   	  <div id="interpret_container">
+        <h1>{{ error|escape }}</h1>
+        <table cellspacing="0" class="interpret_table">
+          <tr>
+            <td class="title">
+              <table cellspacing="0">
+                <tr>
+                  <td align="left"><h1>Macro</h1></td>
+                  <td align="right">
+                    <div id="error_on">
+                      <a onclick='return remove_sup();' href="#">Hide Errors</a>
+                    </div>
+                    <div id="error_off">
+                      <a onclick='return add_sup();' href="#">Show Errors</a>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+            <td class="space_mid"><div class="spacer"></div></td>
+            <td class="title">
+              <table cellspacing="0">
+                <tr>
+                  <td align="left"><h1>Explanation</h1></td>
+                  <td align="right">
+                    <a class="i_help" href="#" onclick="return false;">?</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr> 
+{% for cmd in macro %} 
+          <tr>
+{% if forloop.first %}
+            <td class="mid_first">
+{% else %}
+            <td class="mid">
+{% endif %}
+              <div class="data">{{ cmd.line }}</div>
+            </td>
+            <td class="space_mid"><div class="spacer"></div></td>
+{% if forloop.first %}
+            <td class="mid_first">
+{% else %}
+            <td class="mid">
+{% endif %}
+              <div class="data">{{ cmd.interpret }}</div>
+            </td>
+          </tr>
+{% endfor %}       
+          <tr>
+            <td class="bottom"><div style="height: 1px;"></div></td>
+            <td class="space_mid"><div class="spacer"></div></td>
+            <td class="bottom"><div style="height: 1px;"></div></td>
+          </tr> 
+        </table>
+
+        <!-- Help hover -->
+        <div id="help-html">
+          <ul>
+            <li>Mouse over macro words to see how each part of your
+            macro is interpreted.
+            </li>
+            <li>Mouse over <a class="wowhead" href="#">Items and
+            Spells</a> to see information from Wowhead.
+            Click on them to be taken directly to Wowhead.
+            </li>
+            <li>A <sup class="warn">?</sup> is a warning about
+            your macro. Mouse over them for more information.
+            </li>
+            <li>A <sup class="error">!</sup> is a problem
+            with your macro.  Mouse over them for more
+            information.
+            </li>
+          </ul>
+        </div>
+	  </div>
+
+      <script type="text/javascript" defer="defer">
+          <!--
+          // Load the interpretation lib.
+          function load_interp_lib() {
+            if (self.interp_lib) {
+              interp_lib.init("interpret_container", "{{ tok_on }}", "{{ tok_off }}", "help-html");
+            }
+          }
+          add_onload_event(load_interp_lib);
+          
+
+          // Wrappers to prevent errors if the interpretation lib
+          // didn't load.  Return false to prevent link from going
+          // anywhere.
+          function add_sup(tag) {
+            if (self.interp_lib) interp_lib.add_error_tags(tag);
+            return false;
+          }         
+          function remove_sup(tag) {
+            if (self.interp_lib) interp_lib.remove_error_tags(tag);
+            return false;
+          } 
+        
+          // -->
+      </script>
+

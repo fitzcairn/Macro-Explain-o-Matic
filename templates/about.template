@@ -1,0 +1,178 @@
+    <div id="about_main">
+
+      <div class="about">
+        <a name="how"></a>
+        <h1 class="about-title">How to Use this Site</h1>
+        <div class="about-body">
+          <div>
+
+            <p>Welcome to the Macro Explain-o-matic!  Not sure what
+            your macro does?  Trying to debug a macro that won't work?
+            Help is just a few clicks away.</p>
+
+            <h3>Step 1: Enter your WoW macro.</h3>
+
+            <p>Paste or your write your macro in the text box and
+            click "Explain this Macro!"</p>
+
+            <p>If you are completely new to macros, please check out
+            the <a href="/links">Macro Resources</a> section for
+            several comprehensive WoW macro lists.  Any of them can be
+            put in into the Explain-o-matic for an explanation of what
+            it does.</p>
+
+            <h3>Step 2: Reading the Macro Explanation.</h3>
+
+            <p>The Explain-o-matic will give you a line-by-line
+            English explanation of what your macro does.  When you
+            mouse over a part of your macro, the English explanation
+            of what it does will highlight also.</p>
+
+            <p>Macro parameters recognized by the Explain-o-matic will
+            look <font class="wowhead">like this</font>.  Mouse over
+            these tokens to retrieve information from <a
+            href="http://wowhead.com">Wowhead.com</a>.</p>
+
+            <p>If the Explain-o-matic detects an issue with your
+            macro, you will see the following symbol in your macro code:
+            
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<font class="token">macro warning</font><sup class="warn">?</sup></p>
+
+            <p>If the Explain-o-matic doesn't understand your macro
+            (or detects a serious error), you will see the following
+            symbol in your macro code:</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<font class="token_error">macro error</font><sup class="error">!</sup></p>
+
+            <p>Mouse over these for more information about macro
+            problems.<p>
+
+            You can turn macro warnings off any time by clicking:</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<code>Turn Warnings <input class="button" type="button"
+            value="OFF"></input></code>
+
+            <p>You can review a short version of this help section at
+            any time by mousing over the help button in the right
+            corner of the macro explanation:</p>
+
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;<input class="button" type="button"
+            value="Help"></input></p>
+
+            <h3>Step 3: Sharing Your Macro (and Explanation!)</h3>
+
+            <p>The Explain-o-matic makes it easy to quickly save your
+            macros and send them to your friends.  You'll never have
+            to explain a macro to anyone again!</p>
+
+            <p>Saving your macro takes a few quick steps.  First,
+            select which classes can use your macro from the list of
+            icons.  Click an icon to select that class.</p>
+
+            <p>Next, add a few tags describing your macro.  What is
+            useful for?  Click the tags underneath the next box to
+            quickly add some of the example tags, or add your own.</p>
+
+            <p>If you want, add some optional information to this
+            macro.  Give it a title, author, or add some notes for
+            other folks to use.</p>
+
+            <p>That's it.  Click "Save" and you're done--your macro and
+            its explanation are now saved, and can be viewed by
+            anyone.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="about">
+        <a name="about"></a>
+        <h1 class="about-title">About the Explain-o-matic</h1>
+        <div class="about-body">
+          <div>
+
+            <p>Fitzcairn's Macro Explain-o-matic is a simple tool
+            intended to help make macros more accessible for World of
+            Warcraft players.</p>
+
+            <p>I got the idea for this site after spending hours on
+            the web myself trying to figure out why my macros weren't
+            working.  It turned into an interesting side-project that
+            I puttered on here and there before gestating as the
+            Explain-o-matic.</p>
+
+            <p>Macros are an extraordinarily powerful tool that
+            increases player effectiveness.  My hope is that the
+            Explain-o-matic will help every World of Warcraft player
+            take advantage of what macros offer.</p>
+
+            <p>Oh, and about the name: I picked "Explain-o-matic"
+            randomly one day and just ran with it.  It seems to fit
+            the WoW theme better than any of the others I could think
+            of.</p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="about">
+        <a name="author"></a>
+        <h1 class="about-title">About the Author</h1>
+        <div class="about-body">
+          <div>
+
+            <p>I've been playing World of Warcraft on and off for
+            several years, culminating in running a large and
+            successful guild on US Moon Guard realm. I've since
+            retired to just casual play among friends.  These days I'm
+            an avid (and terrible) PvPer who prefers stabbing stuff on
+            my Rogue.</p>
+
+            <p>All questions and comments about this site are welcome.
+            Thanks!</p>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div class="about">
+        <a name="kudos"></a>
+        <h1 class="about-title">Acknowledgements</h1>
+        <div class="about-body">
+          <div>
+
+            <p>I could not have written this tool without the
+            insightful posts of Cogwheel, both on WoWWiki and on the
+            WoW Forums.  His initial guide to macros was a huge help,
+            and more importantly was proven right time and again
+            through testing in-game.</p>
+
+            <p>I've read that Cogwheel has moved on, but in case he
+            ever reads this: many thanks for all your work!</p>
+
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- End #main -->
+
+    <!-- Begin #menu -->
+    <div id="about_menu">
+
+      <!-- Begin menu items -->
+      <div class="box">
+        <h1 class="box-title">Contents</h1>
+
+        <ul id="recently">
+            <li><a href="#how">How to Use this Site</a></li>
+            <li><a href="#about">About the Explain-o-matic</a></li>
+            <li><a href="#author">About the Author</a></li>
+            <li><a href="#kudos">Aknowledgements</a></li> 
+        </ul>
+      </div>
+  
+    </div>
+    <!-- End #sidebar -->

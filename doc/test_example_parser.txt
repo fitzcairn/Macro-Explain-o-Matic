@@ -1,0 +1,7 @@
+x = 10 + 10 + 4
+if x == 23
+   y = x + 4
+else
+   y = x + 10
+endif
+print y

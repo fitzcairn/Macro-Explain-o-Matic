@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<!-- Definition of a token -->
+<xs:element name="token">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="type" type="xs:string"/>
+      <xs:element name="orig" type="xs:string"/>
+      <xs:element name="interpretation" type="xs:string"/>
+      <xs:element name="wowhead_url" type="xs:string"/>
+      <xs:element name="warn" type="xs:string"/>
+      <xs:element name="error" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+
+<!-- Macro -->
+<xs:element name="macro">
+  <xs:complexType>
+    <xs:sequence>
+
+      <!-- Macro information -->
+      <xs:element name="info">
+        <xs:complexType>
+          <xs:sequence>
+            <!-- Optional elements -->
+            <xs:element name="title" type="xs:string" minOccurs="0"/>
+            <xs:element name="author_name" type="xs:string" minOccurs="0"/>
+            <xs:element name="author_server" type="xs:string" minOccurs="0"/>
+            <xs:element name="notes" type="xs:string" minOccurs="0"/>
+
+            <!-- Required -->
+            <xs:element name="version" type="xs:string"/>
+            <xs:element name="curr_version" type="xs:string"/>
+            <xs:element name="classes" type="xs:string"/>
+            <xs:element name="macro_id" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+
+      <!-- Macro explanation -->
+      <xs:element name="explanation">
+        <xs:complexType>
+          <xs:sequence>
+
+            <!-- Macro command; there can be many of these -->
+            <xs:element name="command" maxOccurs="unbounded">
+              <xs:complexType>
+                <xs:sequence>
+
+                  <!-- May not always be a condition -->
+                  <xs:element name="condition" minOccurs="0">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <!-- Tokens in the condition; can be many. -->
+                        <xs:element ref="token" maxOccurs="unbounded"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+
+                  <!-- Action to perform, must be one of these -->
+                  <xs:element name="action">
+                    <xs:complexType>
+                      <xs:sequence>
+                        <!-- Tokens in the action; can be many. -->
+                        <xs:element ref="token" maxOccurs="unbounded"/>
+                      </xs:sequence>
+                    </xs:complexType>
+                  </xs:element>
+
+                <!-- end command -->
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+ 
+          <!-- end explanation -->
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+
+    <!-- end macro -->
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+
+</xs:schema>

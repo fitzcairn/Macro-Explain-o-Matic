@@ -1,0 +1,98 @@
+    <div id="about_main">
+
+      <div class="about">
+        <a name="tooltip"></a>
+        <h1 class="about-title">Add Explain-o-matic Tooltips to Your Site<em>New!</em></h1>
+        <div class="about-body">
+          <div>
+            <script type="text/javascript" src="http://static.macroexplain.com/tooltips.js"></script>
+            
+            <p>With tooltips, it's easier than ever to use the
+            Explain-o-matic on your site!  And adding them is a 
+            snap.</p>
+
+            <h3>Step 1: Add this bit of HTML code anywhere in your
+            page</h3>
+
+            <pre>&lt;script type="text/javascript"
+src="http://static.macroexplain.com/tooltips.js"&gt;&lt;/script&gt;</pre>
+
+            <p>And thats it!  With that code in your page, macro
+            explainations will now appear as hovers over all links to
+            macros saved in the Explain-o-matic.</p>
+
+            <p><u>Example:</u> here is a <a
+            href="http://www.macroexplain.com/mf">macro for Hunter
+            misdirects.</a></p>
+
+            <p>Please enjoy.  If you find bugs, please leave me a <a
+            href="http://blog.macroexplain.com">comment in the release
+            blog.</a> Thanks!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="about">
+        <a name="service"></a>
+        <h1 class="about-title">XML/JSON Macro Explanations via REST<em>New!</em></h1>
+        <div class="about-body">
+          <div>
+            <p>This site is built on several free APIs made available
+            by other WoW-related sites.  To give back a bit, the
+            Macro Explain-o-Matic will now return macro explanations
+            in JSON and XML for previously saved macros.</p>
+            
+            <p>Using this is simple.  As example, consider the 
+            following saved macro:</p>
+
+            <pre><a href="http://www.macroexplain.com/mbi">http://www.macroexplain.com/mbi</a></pre>
+
+            <p>To request the interpretation in JSON, make the
+            following request:</p>
+        
+            <pre><a href="http://www.macroexplain.com/json/mbi">http://www.macroexplain.com/json/mbi</a></pre>
+
+            <p>Likewise, to get a response back in XML, request 
+            the following:</p>
+
+            <pre><a href="http://www.macroexplain.com/xml/mbi">http://www.macroexplain.com/xml/mbi</a></pre>
+
+            <p>That's pretty much all there is to it.  I'd love to see
+            someone use this to build something neat.  Feel free to
+            post any questions to <a
+            href="http://blog.macroexplain.com">the blog.</a></p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="about">
+        <a name="addon"></a>
+        <h1 class="about-title">The Explain-o-matic WoW Addon<em>Coming Soon!</em></h1>
+        <div class="about-body">
+          <div>
+            <p>A WoW addon for Fitzcairn's Macro Explain-o-matic is
+            under construction.  Check back soon for updates.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- End #main -->
+
+    <!-- Begin #menu -->
+    <div id="about_menu">
+
+      <!-- Begin menu items -->
+      <div class="box">
+        <h1 class="box-title">Contents</h1>
+
+        <ul id="recently">
+            <li><a href="#tooltip">Add Explain-o-matic Tooltips to Your Site<em>New!</em></a></li>
+            <li><a href="#service">XML/JSON Macro Explanations via REST<em>New!</em></a></li>
+            <li><a href="#addon">The Explain-o-matic WoW Addon<em>Coming Soon!</em></a></li>
+        </ul>
+      </div>
+  
+    </div>
+    <!-- End #sidebar -->

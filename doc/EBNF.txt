@@ -1,0 +1,7 @@
+command = "/", command-verb, [ {command-object, ";" } command-object] ]
+command-verb = ? any secure command word ?
+command-object = { condition } parameters
+parameters = ? anything which may be passed to the command word ?
+condition = "[" condition-phrase { "," condition-phrase } "]"
+condition-phrase = [ "no" ], option-word, [ ":" option-argument { "/" option-argument } ]
+option-argument = ? any one-word option, such as 'shift, 'ctrl', 'target', '1', '2' ?

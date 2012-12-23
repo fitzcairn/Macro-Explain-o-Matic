@@ -1,0 +1,893 @@
+US-Aegwynn
+US-Aerie Peak
+US-Agamaggan
+US-Aggramar
+US-Akama
+US-Alexstrasza
+US-Alleria
+US-Altar of Storms
+US-Alterac Mountains
+US-Aman'Thul
+US-Andorhal
+US-Anetheron
+US-Antonidas
+US-Anub'arak
+US-Anvilmar
+US-Arathor
+US-Archimonde
+US-Area 52
+US-Argent Dawn
+US-Arthas
+US-Arygos
+US-Auchindoun
+US-Azgalor
+US-Azjol-Nerub
+US-Azshara
+US-Azuremyst
+US-Baelgun
+US-Balnazzar
+US-Barthilas
+US-Black Dragonflight
+US-Blackhand
+US-Blackrock
+US-Blackwater Raiders
+US-Blackwing Lair
+US-Blade's Edge
+US-Bladefist
+US-Bleeding Hollow
+US-Blood Furnace
+US-Bloodhoof
+US-Bloodscalp
+US-Bonechewer
+US-Borean Tundra
+US-Boulderfist
+US-Bronzebeard
+US-Burning Blade
+US-Burning Legion
+US-Caelestrasz
+US-Cairne
+US-Cenarion Circle
+US-Cenarius
+US-Cho'gall
+US-Chromaggus
+US-Coilfang
+US-Crushridge
+US-Daggerspine
+US-Dalaran
+US-Dalvengyr
+US-Dark Iron
+US-Darkspear
+US-Darrowmere
+US-Dath'Remar
+US-Dawnbringer
+US-Deathwing
+US-Demon Soul
+US-Dentarg
+US-Destromath
+US-Dethecus
+US-Detheroc
+US-Doomhammer
+US-Draenor
+US-Dragonblight
+US-Dragonmaw
+US-Drak'thul
+US-Drak'Tharon
+US-Draka
+US-Dreadmaul
+US-Drenden
+US-Dunemaul
+US-Durotan
+US-Duskwood
+US-Earthen Ring
+US-Echo Isles
+US-Eitrigg
+US-Eldre'Thalas
+US-Elune
+US-Emerald Dream
+US-Eonar
+US-Eredar
+US-Executus
+US-Exodar
+US-Farstriders
+US-Feathermoon
+US-Fenris
+US-Firetree
+US-Fizzcrank
+US-Frostmane
+US-Frostmourne
+US-Frostwolf
+US-Galakrond
+US-Garithos
+US-Garona
+US-Garrosh
+US-Ghostlands
+US-Gilneas
+US-Gnomeregan
+US-Gorefiend
+US-Gorgonnash
+US-Greymane
+US-Grizzly Hills
+US-Gul'dan
+US-Gundrak
+US-Gurubashi
+US-Hakkar
+US-Haomarush
+US-Hellscream
+US-Hydraxis
+US-Hyjal
+US-Icecrown
+US-Illidan
+US-Jaedenar
+US-Jubei'Thos
+US-Kael'thas
+US-Kalecgos
+US-Kargath
+US-Kel'Thuzad
+US-Khadgar
+US-Khaz Modan
+US-Khaz'goroth
+US-Kil'jaeden
+US-Kilrogg
+US-Kirin Tor
+US-Korgath
+US-Korialstrasz
+US-Kul Tiras
+US-Laughing Skull
+US-Lethon
+US-Lightbringer
+US-Lightning's Blade
+US-Lightninghoof
+US-Llane
+US-Lothar
+US-Madoran
+US-Maelstrom
+US-Magtheridon
+US-Maiev
+US-Mal'Ganis
+US-Malfurion
+US-Malorne
+US-Malygos
+US-Mannoroth
+US-Medivh
+US-Misha
+US-Mok'Nathal
+US-Moon Guard
+US-Moonrunner
+US-Mug'thol
+US-Muradin
+US-Nagrand
+US-Nathrezim
+US-Nazgrel
+US-Nazjatar
+US-Ner'zhul
+US-Nesingwary
+US-Nordrassil
+US-Norgannon
+US-Onyxia
+US-Perenolde
+US-Proudmoore
+US-Quel'dorei
+US-Ravencrest
+US-Ravenholdt
+US-Rexxar
+US-Rivendare
+US-Runetotem
+US-Sargeras
+US-Saurfang
+US-Scarlet Crusade
+US-Scilla
+US-Sen'jin
+US-Sentinels
+US-Shadow Council
+US-Shadowmoon
+US-Shadowsong
+US-Shandris
+US-Shattered Halls
+US-Shattered Hand
+US-Shu'halo
+US-Silver Hand
+US-Silvermoon
+US-Sisters of Elune
+US-Skullcrusher
+US-Skywall
+US-Smolderthorn
+US-Spinebreaker
+US-Spirestone
+US-Staghelm
+US-Steamwheedle Cartel
+US-Stonemaul
+US-Stormrage
+US-Stormreaver
+US-Stormscale
+US-Suramar
+US-Tanaris
+US-Terenas
+US-Terokkar
+US-Thaurissan
+US-The Forgotten Coast
+US-The Scryers
+US-The Underbog
+US-The Venture Co
+US-Thorium Brotherhood
+US-Thrall
+US-Thunderhorn
+US-Thunderlord
+US-Tichondrius
+US-Tortheldrin
+US-Trollbane
+US-Turalyon
+US-Twisting Nether
+US-Uldaman
+US-Uldum
+US-Undermine
+US-Ursin
+US-Uther
+US-Vashj
+US-Vek'nilash
+US-Velen
+US-Warsong
+US-Whisperwind
+US-Wildhammer
+US-Windrunner
+US-Winterhoof
+US-Wyrmrest Accord
+US-Ysera
+US-Ysondre
+US-Zangarmarsh
+US-Zul'jin
+US-Zuluhed
+EU-Aegwynn
+EU-Aerie Peak
+EU-Agamaggan
+EU-Aggramar
+EU-Ahn'Qiraj
+EU-Al'Akir
+EU-Alexstrasza
+EU-Alleria
+EU-Alonsus
+EU-Aman'Thul
+EU-Ambossar
+EU-Anachronos
+EU-Anetheron
+EU-Antonidas
+EU-Anub'arak
+EU-Arak-arahm
+EU-Arathi
+EU-Arathor
+EU-Archimonde
+EU-Area 52
+EU-Argent Dawn
+EU-Arthas
+EU-Arygos
+EU-Aszune
+EU-Auchindoun
+EU-Azjol-Nerub
+EU-Azshara
+EU-Baelgun
+EU-Balnazzar
+EU-Blackhand
+EU-Blackmoore
+EU-Blackrock
+EU-Blade's Edge
+EU-Bladefist
+EU-Bloodfeather
+EU-Bloodhoof
+EU-Bloodscalp
+EU-Blutkessel
+EU-Boulderfist
+EU-Bronze Dragonflight
+EU-Bronzebeard
+EU-Burning Blade
+EU-Burning Legion
+EU-Burning Steppes
+EU-C'Thun
+EU-Chamber of Aspects
+EU-Chants éternels
+EU-Cho'gall
+EU-Chromaggus
+EU-Confrérie du Thorium
+EU-Conseil des Ombres
+EU-Crushridge
+EU-Culte de la Rive noire
+EU-Daggerspine
+EU-Dalaran
+EU-Dalvengyr
+EU-Darkmoon Faire
+EU-Darksorrow
+EU-Darkspear
+EU-Das Konsortium
+EU-Das Syndikat
+EU-Deathwing
+EU-Defias Brotherhood
+EU-Dentarg
+EU-Der Mithrilorden
+EU-Der Rat von Dalaran
+EU-Der abyssische Rat
+EU-Destromath
+EU-Dethecus
+EU-Die Aldor
+EU-Die Arguswacht
+EU-Die Nachtwache
+EU-Die Silberne Hand
+EU-Die Todeskrallen
+EU-Die ewige Wacht
+EU-Doomhammer
+EU-Draenor
+EU-Dragonblight
+EU-Dragonmaw
+EU-Drak'thul
+EU-Drek'Thar
+EU-Dun Modr
+EU-Dun Morogh
+EU-Dunemaul
+EU-Durotan
+EU-Earthen Ring
+EU-Echsenkessel
+EU-Eitrigg
+EU-Eldre'Thalas
+EU-Elune
+EU-Emerald Dream
+EU-Emeriss
+EU-Eonar
+EU-Eredar
+EU-Executus
+EU-Exodar
+EU-Festung der Stürme
+EU-Forscherliga
+EU-Frostmane
+EU-Frostmourne
+EU-Frostwhisper
+EU-Frostwolf
+EU-Garona
+EU-Garrosh
+EU-Genjuros
+EU-Ghostlands
+EU-Gilneas
+EU-Gorgonnash
+EU-Grim Batol
+EU-Gul'dan
+EU-Hakkar
+EU-Haomarush
+EU-Hellfire
+EU-Hellscream
+EU-Hyjal
+EU-Illidan
+EU-Jaedenar
+EU-Kael'thas
+EU-Karazhan
+EU-Kargath
+EU-Kazzak
+EU-Kel'Thuzad
+EU-Khadgar
+EU-Khaz Modan
+EU-Khaz'goroth
+EU-Kil'jaeden
+EU-Kilrogg
+EU-Kirin Tor
+EU-Kor'gall
+EU-Krag'jin
+EU-Krasus
+EU-Kul Tiras
+EU-Kult der Verdammten
+EU-La Croisade écarlate
+EU-Laughing Skull
+EU-Les Clairvoyants
+EU-Les Sentinelles
+EU-Lightbringer
+EU-Lightning's Blade
+EU-Lordaeron
+EU-Los Errantes
+EU-Lothar
+EU-Madmortem
+EU-Magtheridon
+EU-Mal'Ganis
+EU-Malfurion
+EU-Malygos
+EU-Mannoroth
+EU-Marécage de Zangar
+EU-Mazrigos
+EU-Medivh
+EU-Minahonda
+EU-Molten Core
+EU-Moonglade
+EU-Mug'thol
+EU-Nagrand
+EU-Nathrezim
+EU-Naxxramas
+EU-Nazjatar
+EU-Nefarian
+EU-Neptulon
+EU-Ner'zhul
+EU-Nera'thor
+EU-Nethersturm
+EU-Nordrassil
+EU-Norgannon
+EU-Nozdormu
+EU-Onyxia
+EU-Outland
+EU-Perenolde
+EU-Proudmoore
+EU-Quel'Thalas
+EU-Ragnaros
+EU-Rajaxx
+EU-Rashgarroth
+EU-Ravencrest
+EU-Ravenholdt
+EU-Rexxar
+EU-Runetotem
+EU-Sanguino
+EU-Sargeras
+EU-Scarshield Legion
+EU-Sen'jin
+EU-Shadowmoon
+EU-Shadowsong
+EU-Shattered Halls
+EU-Shattered Hand
+EU-Shattrath
+EU-Shen'dralar
+EU-Silvermoon
+EU-Sinstralis
+EU-Skullcrusher
+EU-Spinebreaker
+EU-Sporeggar
+EU-Steamwheedle Cartel
+EU-Stonemaul
+EU-Stormrage
+EU-Stormreaver
+EU-Stormscale
+EU-Sunstrider
+EU-Suramar
+EU-Sylvanas
+EU-Taerar
+EU-Talnivarr
+EU-Tarren Mill
+EU-Teldrassil
+EU-Temple noir
+EU-Terenas
+EU-Terrordar
+EU-The Maelstrom
+EU-The Sha'tar
+EU-The Venture Co
+EU-Theradras
+EU-Thrall
+EU-Throk'Feroth
+EU-Thunderhorn
+EU-Tichondrius
+EU-Tirion
+EU-Todeswache
+EU-Trollbane
+EU-Turalyon
+EU-Twilight's Hammer
+EU-Twisting Nether
+EU-Tyrande
+EU-Uldaman
+EU-Uldum
+EU-Un'Goro
+EU-Varimathras
+EU-Vashj
+EU-Vek'lor
+EU-Vek'nilash
+EU-Vol'jin
+EU-Warsong
+EU-Wildhammer
+EU-Wrathbringer
+EU-Xavius
+EU-Ysera
+EU-Ysondre
+EU-Zenedar
+EU-Zirkel des Cenarius
+EU-Zul'jin
+EU-Zuluhed
+EU-Азурегос
+EU-Дракономор
+EU-Вечная Песня
+EU-Свежеватель Душ
+EU-Седогрив
+EU-Страж Смерти
+EU-Гордунни
+EU-Пиратская бухта
+EU-Ясеневый лес
+EU-Термоштепсель
+EU-Гром
+EU-Король-лич
+TW-Altar of Storms
+TW-Arthas
+TW-Arygos
+TW-Balnazzar
+TW-Bleeding Hollow
+TW-Bloodscalp
+TW-Chillwind Point
+TW-Crystalpine Stinger
+TW-Demon Fall Canyon
+TW-Dragonmaw
+TW-Dreadmist Peak
+TW-Frostmane
+TW-Frostmourne
+TW-Gnomeregan
+TW-Hellscream
+TW-Howling Fjord
+TW-Icecrown
+TW-Light's Hope
+TW-Menethil
+TW-Nightsong
+TW-Onyxia
+TW-Quel'dorei
+TW-Shadowmoon
+TW-Silverwing Hold
+TW-Skywall
+TW-Spirestone
+TW-Stormscale
+TW-Sundown Marsh
+TW-Warsong
+TW-Whisperwind
+TW-World Tree
+TW-Wrathbringer
+TW-Zealot Blade
+KR-Aegwynn
+KR-Al'ar
+KR-Alexstrasza
+KR-Alleria
+KR-Azshara
+KR-Blackmoore
+KR-Burning Legion
+KR-Cenarius
+KR-Dalaran
+KR-Deathwing
+KR-Durotan
+KR-Elune
+KR-Eonar
+KR-Eye of the Storm
+KR-Garona
+KR-Gul'dan
+KR-Hellscream
+KR-Hyjal
+KR-Karazhan
+KR-Kargath
+KR-Kul Tiras
+KR-Llane
+KR-Malfurion
+KR-Malygos
+KR-Medivh
+KR-Norgannon
+KR-Ragnaros
+KR-Rexxar
+KR-Stormrage
+KR-Tirion
+KR-Uther
+KR-Wildhammer
+KR-Windrunner
+KR-Zul'jin
+CN-Abyssal Maw
+CN-Aerie Peak
+CN-Aessina
+CN-Agamaggan
+CN-Aggramar
+CN-Ahn'Qiraj
+CN-Akama
+CN-Al'Akir
+CN-Al'ar
+CN-Alexstrasza
+CN-Alleria
+CN-Alonsus
+CN-Altar of Storms
+CN-Alterac Mountains
+CN-Anachronos
+CN-Andorhal
+CN-Anetheron
+CN-Antonidas
+CN-Anub'arak
+CN-Anvilmar
+CN-Arathi
+CN-Arathor
+CN-Archaedas
+CN-Archimonde
+CN-Argus
+CN-Arthas
+CN-Arygos
+CN-Ashenvale
+CN-Astranaar
+CN-Aszune
+CN-Aviana
+CN-Azgalor
+CN-Azjol-Nerub
+CN-Azshara
+CN-Azuregos
+CN-Baelgun
+CN-Balnazzar
+CN-Barthilas
+CN-Black Dragonflight
+CN-Blackhand
+CN-Blackmoore
+CN-Blackrock
+CN-Blackwing Lair
+CN-Bladefist
+CN-Blanchard
+CN-Bleeding Hollow
+CN-Blood Furnace
+CN-Bloodfeather
+CN-Bloodhoof
+CN-Bloodmaul
+CN-Bloodscalp
+CN-Blue Dragonflight
+CN-Booty Bay
+CN-Boulderfist
+CN-Brann
+CN-Bronze Dragonflight
+CN-Bronzebeard
+CN-Burning Blade
+CN-Burning Legion
+CN-Burning Steppes
+CN-C'Thun
+CN-Cassandra
+CN-Cenarius
+CN-Chillwind Point
+CN-Cho'gall
+CN-Chromaggus
+CN-Claw of the Shadowmancer
+CN-Crushridge
+CN-Crystalpine Stinger
+CN-Daggerspine
+CN-Dalvengyr
+CN-Danath Trollbane
+CN-Dark Iron
+CN-Dark Phantom
+CN-Dark Portal
+CN-Darkspear
+CN-Darrowmere
+CN-Dath'Remar
+CN-Death's Door
+CN-Deathforge
+CN-Deathwing
+CN-Deepfury
+CN-Deephome
+CN-Demon Fall Canyon
+CN-Demon Soul
+CN-Demonslayer
+CN-Dentarg
+CN-Destromath
+CN-Detheroc
+CN-Direwing
+CN-Doomhammer
+CN-Dor'Danil
+CN-Draenor
+CN-Dragonblight
+CN-Dragonmaw
+CN-Drakkari
+CN-Dreadmaul
+CN-Dreadmist Peak
+CN-Dream Bough
+CN-Dreamwalker
+CN-Dun Modr
+CN-Dunemaul
+CN-Durotan
+CN-Duskwood
+CN-Dustbelcher
+CN-Dustwind Gulch
+CN-Echo Isles
+CN-Echo Ridge
+CN-Eldre'Thalas
+CN-Emerald Dream
+CN-Emeriss
+CN-Eonar
+CN-Eranikus
+CN-Eredar
+CN-Executus
+CN-Explorer's League
+CN-Falathim
+CN-Feathermoon
+CN-Fel Rock
+CN-Fenris
+CN-Feralas
+CN-Fire Plume Ridge
+CN-Firegut
+CN-Firelands
+CN-Firetree
+CN-Fist of the Titans
+CN-Flame Crest
+CN-Force of Elemental
+CN-Fray Island
+CN-Freewind
+CN-Frostmane
+CN-Frostmourne
+CN-Frostreaver Crown
+CN-Frostwhisper
+CN-Frostwolf
+CN-Gadgetzan
+CN-Galardell
+CN-Garithos
+CN-Garona
+CN-Gazlowe
+CN-Gnomeregan
+CN-Gold Road
+CN-Gordunni
+CN-Gorefiend
+CN-Gorgonnash
+CN-Greymane
+CN-Grim Batol
+CN-Grimtotem
+CN-Guardian Blade
+CN-Gul'dan
+CN-Gurubashi
+CN-Hakkar
+CN-Hectae
+CN-Hellscream
+CN-Holy Chanter
+CN-Hydraxis
+CN-Hyjal
+CN-Icecrown
+CN-Illidan
+CN-Immol'thar
+CN-Ironaya
+CN-Isillien
+CN-Itharius
+CN-Jaedenar
+CN-Jammal'an
+CN-Jin'do
+CN-Kael'thas
+CN-Kaleidoscope Star
+CN-Karazhan
+CN-Kargath
+CN-Kel'Thuzad
+CN-Khadgar
+CN-Khardros
+CN-Khaz'goroth
+CN-Kil'jaeden
+CN-Kilrogg
+CN-Kul Tiras
+CN-Kurdran
+CN-Laughing Skull
+CN-Lethon
+CN-Lich King
+CN-Lightning's Blade
+CN-Lord Kazzak
+CN-Lordaeron
+CN-Lothar
+CN-Lushwater Oasis
+CN-Madoran
+CN-Maelstrom
+CN-Magatha
+CN-Magtheridon
+CN-Maiev Shadowsong
+CN-Mal'Ganis
+CN-Malfurion
+CN-Malygos
+CN-Mannoroth
+CN-Medivh
+CN-Menethil
+CN-Midnight Scythe
+CN-Modgud
+CN-Mograine
+CN-Molten Core
+CN-Moonglade
+CN-Mosh'Ogg
+CN-Mossflayer
+CN-Mug'thol
+CN-Murmur
+CN-Naxxramas
+CN-Nazjatar
+CN-Nefarian
+CN-Nekros
+CN-Neltharion
+CN-Neptulon
+CN-Ner'zhul
+CN-Nighthaven
+CN-Northrend
+CN-Nozdormu
+CN-Onyxia
+CN-Ossirian
+CN-Outland
+CN-Pandaren
+CN-Perenolde
+CN-Poison-tipped Bone Spear
+CN-Prestor
+CN-Proudmoore
+CN-Quel'Thalas
+CN-Ragnaros
+CN-Rajaxx
+CN-Rangers
+CN-Ravencrest
+CN-Ravenholdt
+CN-Razorwind Canyon
+CN-Red Cloud Mesa
+CN-Red Dragonflight
+CN-Rend
+CN-Rexxar
+CN-Rhonin
+CN-Ring of Trials
+CN-Rivendare
+CN-River Pride
+CN-Runetotem
+CN-Sapphiron
+CN-Sargeras
+CN-Scarlet Crusade
+CN-Scholomance
+CN-Searinox
+CN-Sen'jin
+CN-Sethekk
+CN-Shadow Council
+CN-Shadowfang Keep
+CN-Shadowmoon
+CN-Shattered Halls
+CN-Shattered Hand
+CN-Shrine of the Dormant Flame
+CN-Silver Hand
+CN-Silvermoon
+CN-Silverpine Forest
+CN-Skullcrusher
+CN-Skywall
+CN-Smolderthorn
+CN-Soulflayer
+CN-Spirestone
+CN-Splinter Fist
+CN-Staghelm
+CN-Stonetalon Peak
+CN-Storm Eye
+CN-Stormrage
+CN-Stormreaver
+CN-Stormscale
+CN-Stranglethorn
+CN-Stratholme
+CN-Stromgarde Keep
+CN-Sun Rock Retreat
+CN-Sundown Marsh
+CN-Sunstrider
+CN-Sutarn
+CN-Swiftwind
+CN-Sylvanas
+CN-Taerar
+CN-Tanaris
+CN-Tarren Mill
+CN-Temple of Elune
+CN-Thaurissan
+CN-The Forgotten Coast
+CN-The Golden Plains
+CN-The Great Sea
+CN-The Master's Glaive
+CN-The Underbog
+CN-The Veiled Sea
+CN-Theradras
+CN-Theramore
+CN-Therazane
+CN-Thermaplugg
+CN-Thoradin
+CN-Thousand Needles
+CN-Thrall
+CN-Thunder Axe Fortress
+CN-Thunder Bluff
+CN-Thunderaan
+CN-Thunderhorn
+CN-Thunderlord
+CN-Tirisfal Glades
+CN-Tortheldrin
+CN-Turalyon
+CN-Twisting Nether
+CN-Tyr's Hand
+CN-Tyrande
+CN-Uldaman
+CN-Uldum
+CN-Un'Goro
+CN-Vaelastrasz
+CN-Valley of Kings
+CN-VanCleef
+CN-Varimathras
+CN-Vek'lor
+CN-Vek'nilash
+CN-Vilebranch
+CN-Vol'jin
+CN-Warsong
+CN-Well of Eternity
+CN-Whispering Shore
+CN-Whisperwind
+CN-Whitemane
+CN-Windrunner
+CN-Windshear Crag
+CN-Wing of the Whelping
+CN-Winterspring
+CN-World Tree
+CN-Xavian
+CN-Ysera
+CN-Ysondre
+CN-Zalazane
+CN-Zealot Blade
+CN-Zul'jin
+CN-Zuluhed

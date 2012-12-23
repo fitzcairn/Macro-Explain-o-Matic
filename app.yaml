@@ -1,0 +1,64 @@
+application: macro-interpreter
+version: 1-5
+runtime: python
+api_version: 1
+
+handlers:
+- url: /remote_api
+  script: $PYTHON_LIB/google/appengine/ext/remote_api/handler.py
+  login: admin
+
+- url: /
+  script: interpret.py
+
+### START REST API
+- url: /xml/m.*
+  script: service.py
+
+- url: /json/m.*
+  script: service.py
+### END API
+
+- url: /m.*
+  script: interpret.py
+
+- url: /s/.*
+  script: not-found.py
+
+- url: /save
+  script: interpret.py
+
+- url: /search
+  script: search.py
+
+- url: /_ta
+  script: typeahead.py
+
+- url: /_tt
+  script: tooltip.py
+
+- url: /_rate
+  script: rate.py
+
+- url: /html
+  static_dir: html
+
+- url: /tools
+  script: info.py
+
+- url: /about
+  script: info.py
+
+- url: /links
+  script: info.py
+
+- url: /favicon.ico
+  static_files: static/favicon.ico
+  upload: static/favicon.ico
+
+- url: /robots.txt
+  static_files: static/robots.txt
+  upload: static/robots.txt
+
+- url: /.*
+  script: not-found.py
